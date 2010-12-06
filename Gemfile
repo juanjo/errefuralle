@@ -35,6 +35,7 @@ gem 'html5-boilerplate', '~> 0.1.5'
 
 gem 'devise', '1.1.5'
 gem 'cancan', '1.4.1'
+gem 'state_machine', '0.9.4'
 
 group :test do
   gem 'shoulda',            '~> 2.11.3'

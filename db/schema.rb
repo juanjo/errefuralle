@@ -16,6 +16,7 @@ ActiveRecord::Schema.define(:version => 20101206192214) do
     t.string   "title"
     t.text     "description"
     t.integer  "user_id"
+    t.string   "state",       :default => "pending"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -36,6 +37,7 @@ ActiveRecord::Schema.define(:version => 20101206192214) do
     t.integer  "user_id"
     t.text     "description"
     t.integer  "lines"
+    t.string   "state"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+  delegate :can?, :cannot?, :to => :ability
 
   has_and_belongs_to_many :roles
   has_many :snippets
@@ -15,5 +16,11 @@ class User < ActiveRecord::Base
   def role?(role)
     return !!self.roles.find_by_name(role.to_s.camelize)
   end
+
+  private
+
+    def ability
+      @ability ||= Ability.new(self)
+    end
 
 end

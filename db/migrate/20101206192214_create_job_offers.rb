@@ -4,6 +4,7 @@ class CreateJobOffers < ActiveRecord::Migration
       t.string :title
       t.text :description
       t.references :user
+      t.string :state, :default => 'pending'
 
       t.timestamps
     end

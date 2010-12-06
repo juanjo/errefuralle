@@ -5,6 +5,7 @@ class CreateSnippets < ActiveRecord::Migration
       t.references :user
       t.text :description
       t.integer :lines
+      t.string :state
 
       t.timestamps
     end
