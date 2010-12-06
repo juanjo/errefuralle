@@ -1,3 +1,11 @@
 %h1= @snippet.description
+%h2= @snippet.user.email
 
-= link_to 'Back to Snippets', snippets_url
+
+
+%p
+  - if can? :update, @snippet
+    = link_to 'Edit | ', edit_snippet_path(@snippet)
+  - if can? :destroy, @snippet
+    = link_to 'Destroy | ', @snippet, :method => :delete, :confirm => 'Are you sure?'
+  = link_to 'Back to Snippets', snippets_url

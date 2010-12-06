@@ -2,4 +2,4 @@
 
 %ul
 - @snippets.each do |snippet|
-  %li= link_to snippet.description, snippet_path(snippet)
+  %li= link_to "#{snippet.description} -- #{snippet.user.email}", snippet_path(snippet)
