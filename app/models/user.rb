@@ -1,5 +1,6 @@
 class User < ActiveRecord::Base
   has_and_belongs_to_many :roles
+  has_many :snippets
 
   # Include default devise modules. Others available are:
   # :token_authenticatable, :confirmable, :lockable and :timeoutable
