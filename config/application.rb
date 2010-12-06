@@ -38,5 +38,13 @@ module Erresauro
 
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
+
+    # let generators use haml templates
+    config.generators do |g|
+      g.template_engine :haml
+      g.test_framework :shoulda
+      g.fallbacks[:shoulda] = :test_unit
+      g.fixture_replacement :factory_girl, :dir => "test"
+    end
   end
 end

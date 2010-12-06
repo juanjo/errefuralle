@@ -2,6 +2,10 @@ Erresauro::Application.routes.draw do
 
   devise_for :users
 
+  StaticPagesController::AVAILABLE_PAGES.each do |page|
+    match "/#{page}" => "static_pages##{page}", :as => page
+  end
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
