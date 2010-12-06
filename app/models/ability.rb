@@ -8,17 +8,17 @@ class Ability
       can :manage, :all
    
     elsif user.role? :editor
-      #can :manage, [Product, Asset, Issue]
+      can :manage, [Snippet]
    
     elsif user.role? :registered
-      # can :read, [Product, Asset]
-      # # manage products, assets he owns
-      # can :manage, Product do |product|
-      #   product.try(:owner) == user
-      # end
-      # can :manage, Asset do |asset|
-      #   asset.assetable.try(:owner) == user
-      # end
+      can :read, [Snippet]
+
+      can :manage, Snippet do |snippet|
+        snippet.try(:user) == user
+      end
+
+    else
+      #can :read, :all
     end
   end
 end

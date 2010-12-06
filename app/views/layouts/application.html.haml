@@ -1,0 +1,32 @@
+!!!
+%html.no-js{:lang => "en"}
+  =# render :partial => 'layouts/head'
+
+  -# paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+  <!--[if lt IE 7 ]> <body class="ie6"> <![endif]-->
+  <!--[if IE 7 ]>    <body class="ie7"> <![endif]-->
+  <!--[if IE 8 ]>    <body class="ie8"> <![endif]-->
+  <!--[if IE 9 ]>    <body class="ie9"> <![endif]-->
+  <!--[if (gt IE 9)|!(IE)]><!-->
+  %body
+    #container
+      %header#header
+        Erre que Erre
+
+        #user_nav
+          - if user_signed_in?
+            = "Signed in as #{current_user.email}"
+            = link_to 'Logout', destroy_user_session_path
+          - else
+            = link_to 'Sign Up', new_user_registration_path
+            = link_to 'Sign in', new_user_session_path
+
+      #main
+        = render :partial => 'layouts/flashes'
+        = yield
+
+      %footer#footer
+        = render :partial => 'layouts/footer'
+
+    -# Javascript at the bottom for fast page loading
+    =# render :partial => 'layouts/javascripts'
