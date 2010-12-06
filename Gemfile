@@ -37,6 +37,8 @@ gem 'devise', '1.1.5'
 gem 'cancan', '1.4.1'
 gem 'state_machine', '0.9.4'
 
+gem 'highlight', '1.1.2', :require => 'simplabs/highlight'
+
 group :test do
   gem 'shoulda',            '~> 2.11.3'
   gem 'factory_girl_rails', '~> 1.0'

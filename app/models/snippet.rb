@@ -1,6 +1,7 @@
 class Snippet < ActiveRecord::Base
   belongs_to :user
 
+  after_create :count_lines
   after_create :publish_directly
 
   # State Machine
@@ -27,6 +28,10 @@ class Snippet < ActiveRecord::Base
     # TODO: For now everyone can post snippets
     def publish_directly
       publish!
+    end
+
+    def count_lines
+      #lines = code.match(/\n/).length + 1
     end
 
 end

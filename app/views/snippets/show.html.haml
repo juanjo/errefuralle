@@ -1,6 +1,10 @@
 %h1= @snippet.description
 %h2= @snippet.user.email
 
+#highlight_code
+  - cache do
+    = highlight_code(:ruby, @snippet.code).html_safe
+
 %p
   - if can? :update, @snippet
     = link_to 'Edit | ', edit_snippet_path(@snippet)
