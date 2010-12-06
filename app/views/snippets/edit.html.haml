@@ -1,0 +1,10 @@
+%h1 Edit Snippet
+
+= form_for @snippet do |f|
+
+  = f.label :description
+  = f.text_area :description
+
+  = f.submit 'Create'
+
+= link_to 'Back to Snippets', snippets_url
