@@ -3,7 +3,7 @@
 
 #highlight_code
   - cache do
-    = highlight_code(:ruby, @snippet.code).html_safe
+    = highlight_code(:r, @snippet.code).html_safe
 
 %p
   - if can? :update, @snippet
