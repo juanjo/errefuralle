@@ -1,5 +1,6 @@
-%h1= @snippet.description
 %h2= @snippet.user.email
+
+= simple_format @snippet.description
 
 #highlight_code
   - cache do
