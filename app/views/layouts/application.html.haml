@@ -12,7 +12,7 @@
   %body
     #container
       %header#header
-        Erre que Erre
+        R-Project
 
         #user_nav
           - if user_signed_in?
@@ -21,6 +21,11 @@
           - else
             = link_to 'Sign Up', new_user_registration_path
             = link_to 'Sign in', new_user_session_path
+
+        %ul#navigation
+          %li= link_to 'Home', root_url
+          %li= link_to 'Snippets', snippets_url
+          %li= link_to 'JobOffers', job_offers_url
 
       #main
         = render :partial => 'layouts/flashes'

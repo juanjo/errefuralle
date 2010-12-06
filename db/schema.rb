@@ -10,7 +10,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101206173335) do
+ActiveRecord::Schema.define(:version => 20101206192214) do
+
+  create_table "job_offers", :force => true do |t|
+    t.string   "title"
+    t.text     "description"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "roles", :force => true do |t|
     t.string   "name"
@@ -24,7 +32,7 @@ ActiveRecord::Schema.define(:version => 20101206173335) do
   end
 
   create_table "snippets", :force => true do |t|
-    t.text     "code"
+    t.text     "code",        :null => false
     t.integer  "user_id"
     t.text     "description"
     t.integer  "lines"

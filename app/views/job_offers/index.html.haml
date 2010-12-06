@@ -1,0 +1,5 @@
+%h1 Job Offers
+
+%ul
+  - @job_offers.each do |job_offer|
+    %li= link_to job_offer.title, job_offer_path(job_offer)

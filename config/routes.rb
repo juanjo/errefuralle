@@ -4,6 +4,7 @@ Erresauro::Application.routes.draw do
   resources :users
 
   resources :snippets
+  resources :job_offers
 
   StaticPagesController::AVAILABLE_PAGES.each do |page|
     match "/#{page}" => "static_pages##{page}", :as => page
