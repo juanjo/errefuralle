@@ -1,8 +1,6 @@
 %h1= @snippet.description
 %h2= @snippet.user.email
 
-
-
 %p
   - if can? :update, @snippet
     = link_to 'Edit | ', edit_snippet_path(@snippet)

@@ -1,5 +1,8 @@
 %h1 Job Offers
 
+- if can? :create, JobOffer
+  = link_to 'New Job Offer', new_job_offer_path
+
 %ul
   - @job_offers.each do |job_offer|
     %li= link_to job_offer.title, job_offer_path(job_offer)

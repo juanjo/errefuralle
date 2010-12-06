@@ -1,3 +1,10 @@
 %h1= @job_offer.title
 
 = simple_format @job_offer.description
+
+%p
+  - if can? :update, @job_offer
+    = link_to 'Edit | ', edit_job_offer_path(@job_offer)
+  - if can? :destroy, @job_offer
+    = link_to 'Destroy | ', @job_offer, :method => :delete, :confirm => 'Are you sure?'
+  = link_to 'Back to Job Offers', job_offers_url

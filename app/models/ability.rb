@@ -11,7 +11,8 @@ class Ability
       can :manage, [Snippet, JobOffer]
    
     elsif user.role? :registered
-      can [:create, :read], [Snippet]
+      can [:create, :read], Snippet
+      can :read, JobOffer
 
       can :manage, Snippet do |snippet|
         snippet.try(:user) == user

@@ -1,0 +1,15 @@
+%h1 Edit JobOffer
+
+= form_for @job_offer do |f|
+
+  %p
+    = f.label :title
+    = f.text_field :title
+
+  %p
+    = f.label :description
+    = f.text_area :description
+
+  = f.submit 'Update'
+
+= link_to 'Back to JobOffers', job_offers_url

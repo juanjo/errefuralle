@@ -1,5 +1,8 @@
 %h1 Snippets
 
+- if can? :create, Snippet
+  = link_to 'New snippet', new_snippet_path
+
 %ul
 - @snippets.each do |snippet|
   %li= link_to "#{snippet.description} -- #{snippet.user.email}", snippet_path(snippet)
