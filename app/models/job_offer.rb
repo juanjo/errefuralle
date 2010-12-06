@@ -10,7 +10,7 @@ class JobOffer < ActiveRecord::Base
   state_machine :state, :initial => :pending do
 
     after_transition :on => :publish, :do => :send_email_to_user
-    after_transition :on => :cancel, :do => :send_email_to_user    
+    after_transition :on => :cancel, :do => :send_email_to_user
 
     event :publish do
       transition [:pending, :cancelled, :expired] => :published
@@ -25,15 +25,17 @@ class JobOffer < ActiveRecord::Base
     end
 
     state :published, :cancelled, :expired
+
   end
+
+  private
+
+    def send_email_to_user
+      # TODO
+    end
+
+    def publish_directly
+      publish! if user.can? :manage, self
+    end
+
 end
-
-private
-
-  def send_email_to_user
-    # TODO
-  end
-
-  def publish_directly
-    publish! if user.can? :manage, self
-  end
