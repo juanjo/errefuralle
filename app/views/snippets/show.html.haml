@@ -11,16 +11,17 @@
 
     #metainfo
       = image_tag avatar_url(@snippet.user)
-      %span.author= "Creado por #{@snippet.user.try(:email)}"
+      %span.author= "Creado por #{@snippet.user.try(:username)}"
       %span.date= "hace #{distance_of_time_in_words(Time.now, @snippet.created_at)}"
       .menu
-        %h2 Acciones
-        = link_to 'Añadir a favoritos', edit_snippet_path(@snippet)
+        - if user_signed_in?
+          %h2 Acciones
+          = link_to 'Añadir a favoritos', edit_snippet_path(@snippet)
 
-        - if can? :update, @snippet
-          = link_to 'Modificar', edit_snippet_path(@snippet)
-        - if can? :destroy, @snippet
-          = link_to 'Eliminar', @snippet,  :confirm => '¿Estás seguro?', :method => :delete
+          - if can? :update, @snippet
+            = link_to 'Modificar', edit_snippet_path(@snippet)
+          - if can? :destroy, @snippet
+            = link_to 'Eliminar', @snippet,  :confirm => '¿Estás seguro?', :method => :delete
 
       .menu
         %h2 Social

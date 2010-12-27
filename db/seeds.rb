@@ -6,9 +6,9 @@
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Mayor.create(:name => 'Daley', :city => cities.first)
 
-u1 = User.create(:email => 'admin@erre.com', :password => '219921', :password_confirmation => '219921')
-u2 = User.create(:email => 'editor@erre.com', :password => '219921', :password_confirmation => '219921')
-u3 = User.create(:email => 'registered@erre.com', :password => '219921', :password_confirmation => '219921')
+u1 = User.create(:email => 'admin@erre.com', :password => '219921', :password_confirmation => '219921', :username => 'admin')
+u2 = User.create(:email => 'editor@erre.com', :password => '219921', :password_confirmation => '219921', :username => 'editor')
+u3 = User.create(:email => 'registered@erre.com', :password => '219921', :password_confirmation => '219921', :username => 'registered')
 
 admin = Role.create(:name => 'Admin')
 editor = Role.create(:name => 'Editor')

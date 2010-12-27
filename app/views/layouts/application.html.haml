@@ -13,7 +13,7 @@
       #header_container
         #usernav
           - if user_signed_in?
-            = "Hola, #{current_user.email}"
+            = "Hola #{current_user.username}!"
             = link_to 'Salir', destroy_user_session_path
           - else
             = link_to 'Crear cuenta', new_user_registration_path
@@ -27,7 +27,6 @@
   
           #navigation
             %ul
-              %li= link_to 'Inicio', root_url
               %li= link_to 'Código-R', snippets_url
               %li= link_to 'Ofertas de trabajo', job_offers_url
               %li= link_to 'Comunidad', job_offers_url
