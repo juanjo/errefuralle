@@ -667,3 +667,22 @@ form textarea.code {
   font-family: "Courier New", "Courier New", monospace !important;
   font-size: 14px;
 }
+
+/* line 348, ../../app/stylesheets/erre.scss */
+.pagination {
+  margin-top: 10px;
+  font-size: 15px;
+}
+/* line 352, ../../app/stylesheets/erre.scss */
+.pagination a {
+  text-decoration: none;
+  color: #a0d8ff;
+}
+/* line 361, ../../app/stylesheets/erre.scss */
+.pagination span.disabled {
+  color: #ddd;
+}
+/* line 365, ../../app/stylesheets/erre.scss */
+.pagination em {
+  font-weight: bold;
+}

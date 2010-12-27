@@ -2,7 +2,7 @@ class SnippetsController < ApplicationController
   load_and_authorize_resource
 
   def index
-    @snippets = Snippet.with_state(:published).order('created_at DESC')
+    @snippets = Snippet.with_state(:published).paginate(:page => params[:page], :order => 'created_at DESC', :per_page => 8)
   end
 
   def show

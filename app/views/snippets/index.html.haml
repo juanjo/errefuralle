@@ -9,3 +9,6 @@
       %span.date= "creado por #{snippet.user.username} hace #{distance_of_time_in_words(Time.now, snippet.created_at)}"
       %span.title= link_to snippet.title, snippet_path(snippet)
       %span.description= truncate_snippet(snippet.description, 50)
+
+= will_paginate @snippets
+=# will_paginate_entries(@snippets, :entry_name => 'código')

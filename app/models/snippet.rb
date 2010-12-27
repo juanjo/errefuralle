@@ -1,4 +1,4 @@
-class Snippet < ActiveRecord::Base
+class Snippet < ActiveRecord::Base  
   belongs_to :user
 
   after_create :count_lines
