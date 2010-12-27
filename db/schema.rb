@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(:version => 20101206192214) do
   end
 
   create_table "snippets", :force => true do |t|
+    t.string   "title",       :null => false
     t.text     "code",        :null => false
     t.integer  "user_id"
     t.text     "description"

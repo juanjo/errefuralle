@@ -1,9 +1,6 @@
 !!!
 %html.no-js{:lang => "en"}
-  =# render :partial => 'layouts/head'
-  = stylesheet_link_tag 'highlight'
-
-  = csrf_meta_tag
+  = render :partial => 'layouts/head'
 
   -# paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
   <!--[if lt IE 7 ]> <body class="ie6"> <![endif]-->
@@ -13,28 +10,34 @@
   <!--[if (gt IE 9)|!(IE)]><!-->
   %body
     #container
-      %header#header
-        R-Project
-
-        #user_nav
+      #header_container
+        #usernav
           - if user_signed_in?
-            = "Signed in as #{current_user.email}"
-            = link_to 'Logout', destroy_user_session_path
+            = "Hola, #{current_user.email}"
+            = link_to 'Salir', destroy_user_session_path
           - else
-            = link_to 'Sign Up', new_user_registration_path
-            = link_to 'Sign in', new_user_session_path
+            = link_to 'Crear cuenta', new_user_registration_path
+            = link_to 'Acceder', new_user_session_path
 
-        %ul#navigation
-          %li= link_to 'Home', root_url
-          %li= link_to 'Snippets', snippets_url
-          %li= link_to 'JobOffers', job_offers_url
+        %header#header
+          #logo
+            = link_to image_tag('logo.png'), root_url
+
+
+  
+          #navigation
+            %ul
+              %li= link_to 'Inicio', root_url
+              %li= link_to 'Código-R', snippets_url
+              %li= link_to 'Ofertas de trabajo', job_offers_url
+              %li= link_to 'Comunidad', job_offers_url
 
       #main
         = render :partial => 'layouts/flashes'
         = yield
 
-      %footer#footer
-        = render :partial => 'layouts/footer'
+    %footer#footer
+      = render :partial => 'layouts/footer'
 
     -# Javascript at the bottom for fast page loading
-    =# render :partial => 'layouts/javascripts'
+    = render :partial => 'layouts/javascripts'

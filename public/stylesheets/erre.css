@@ -1,0 +1,669 @@
+/* line 27, ../../../../.rvm/gems/ruby-1.9.2-p0@erresauro/gems/html5-boilerplate-0.1.7/stylesheets/html5-boilerplate/_reset.scss */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* line 38, ../../../../.rvm/gems/ruby-1.9.2-p0@erresauro/gems/html5-boilerplate-0.1.7/stylesheets/html5-boilerplate/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 42, ../../../../.rvm/gems/ruby-1.9.2-p0@erresauro/gems/html5-boilerplate-0.1.7/stylesheets/html5-boilerplate/_reset.scss */
+nav ul {
+  list-style: none;
+}
+
+/* line 44, ../../../../.rvm/gems/ruby-1.9.2-p0@erresauro/gems/html5-boilerplate-0.1.7/stylesheets/html5-boilerplate/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 47, ../../../../.rvm/gems/ruby-1.9.2-p0@erresauro/gems/html5-boilerplate-0.1.7/stylesheets/html5-boilerplate/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 49, ../../../../.rvm/gems/ruby-1.9.2-p0@erresauro/gems/html5-boilerplate-0.1.7/stylesheets/html5-boilerplate/_reset.scss */
+a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* line 51, ../../../../.rvm/gems/ruby-1.9.2-p0@erresauro/gems/html5-boilerplate-0.1.7/stylesheets/html5-boilerplate/_reset.scss */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* line 53, ../../../../.rvm/gems/ruby-1.9.2-p0@erresauro/gems/html5-boilerplate-0.1.7/stylesheets/html5-boilerplate/_reset.scss */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* line 55, ../../../../.rvm/gems/ruby-1.9.2-p0@erresauro/gems/html5-boilerplate-0.1.7/stylesheets/html5-boilerplate/_reset.scss */
+del {
+  text-decoration: line-through;
+}
+
+/* line 57, ../../../../.rvm/gems/ruby-1.9.2-p0@erresauro/gems/html5-boilerplate-0.1.7/stylesheets/html5-boilerplate/_reset.scss */
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+/* line 61, ../../../../.rvm/gems/ruby-1.9.2-p0@erresauro/gems/html5-boilerplate-0.1.7/stylesheets/html5-boilerplate/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 63, ../../../../.rvm/gems/ruby-1.9.2-p0@erresauro/gems/html5-boilerplate-0.1.7/stylesheets/html5-boilerplate/_reset.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* line 65, ../../../../.rvm/gems/ruby-1.9.2-p0@erresauro/gems/html5-boilerplate-0.1.7/stylesheets/html5-boilerplate/_reset.scss */
+input, select {
+  vertical-align: middle;
+}
+
+/* line 16, ../../../../.rvm/gems/ruby-1.9.2-p0@erresauro/gems/html5-boilerplate-0.1.7/stylesheets/html5-boilerplate/_fonts.scss */
+body {
+  font-size: 13px;
+  font-family: sans-serif;
+  line-height: 1.231;
+  *font-size: small;
+}
+
+/* line 23, ../../../../.rvm/gems/ruby-1.9.2-p0@erresauro/gems/html5-boilerplate-0.1.7/stylesheets/html5-boilerplate/_fonts.scss */
+table {
+  font-size: inherit;
+  font: 100%;
+}
+
+/* line 25, ../../../../.rvm/gems/ruby-1.9.2-p0@erresauro/gems/html5-boilerplate-0.1.7/stylesheets/html5-boilerplate/_fonts.scss */
+select, input, textarea, button {
+  font: 99% sans-serif;
+}
+
+/* line 30, ../../../../.rvm/gems/ruby-1.9.2-p0@erresauro/gems/html5-boilerplate-0.1.7/stylesheets/html5-boilerplate/_fonts.scss */
+pre, code, kbd, samp {
+  font-family: monospace, sans-serif;
+}
+
+/* line 15, ../../../../.rvm/gems/ruby-1.9.2-p0@erresauro/gems/html5-boilerplate-0.1.7/stylesheets/html5-boilerplate/_base.scss */
+body, select, input, textarea {
+  color: #444444;
+}
+
+/* line 17, ../../../../.rvm/gems/ruby-1.9.2-p0@erresauro/gems/html5-boilerplate-0.1.7/stylesheets/html5-boilerplate/_base.scss */
+html {
+  overflow-y: scroll;
+}
+
+/* line 19, ../../../../.rvm/gems/ruby-1.9.2-p0@erresauro/gems/html5-boilerplate-0.1.7/stylesheets/html5-boilerplate/_base.scss */
+a, a:active, a:visited {
+  color: #607890;
+}
+
+/* line 20, ../../../../.rvm/gems/ruby-1.9.2-p0@erresauro/gems/html5-boilerplate-0.1.7/stylesheets/html5-boilerplate/_base.scss */
+a:hover {
+  color: #003366;
+}
+
+/* line 22, ../../../../.rvm/gems/ruby-1.9.2-p0@erresauro/gems/html5-boilerplate-0.1.7/stylesheets/html5-boilerplate/_base.scss */
+ul, ol {
+  margin-left: 1.8em;
+}
+
+/* line 23, ../../../../.rvm/gems/ruby-1.9.2-p0@erresauro/gems/html5-boilerplate-0.1.7/stylesheets/html5-boilerplate/_base.scss */
+ol {
+  list-style-type: decimal;
+}
+
+/* line 25, ../../../../.rvm/gems/ruby-1.9.2-p0@erresauro/gems/html5-boilerplate-0.1.7/stylesheets/html5-boilerplate/_base.scss */
+td, td img {
+  vertical-align: top;
+}
+
+/* line 27, ../../../../.rvm/gems/ruby-1.9.2-p0@erresauro/gems/html5-boilerplate-0.1.7/stylesheets/html5-boilerplate/_base.scss */
+sub {
+  vertical-align: sub;
+  font-size: smaller;
+}
+
+/* line 29, ../../../../.rvm/gems/ruby-1.9.2-p0@erresauro/gems/html5-boilerplate-0.1.7/stylesheets/html5-boilerplate/_base.scss */
+sup {
+  vertical-align: super;
+  font-size: smaller;
+}
+
+/* line 56, ../../../../.rvm/gems/ruby-1.9.2-p0@erresauro/gems/html5-boilerplate-0.1.7/stylesheets/html5-boilerplate/_base.scss */
+a:hover, a:active {
+  outline: none;
+}
+
+/* line 61, ../../../../.rvm/gems/ruby-1.9.2-p0@erresauro/gems/html5-boilerplate-0.1.7/stylesheets/html5-boilerplate/_base.scss */
+pre {
+  padding: 15px;
+  white-space: pre;
+  white-space: pre-wrap;
+  white-space: pre-line;
+  word-wrap: break-word;
+}
+
+/* line 73, ../../../../.rvm/gems/ruby-1.9.2-p0@erresauro/gems/html5-boilerplate-0.1.7/stylesheets/html5-boilerplate/_base.scss */
+input[type="radio"] {
+  vertical-align: text-bottom;
+}
+
+/* line 74, ../../../../.rvm/gems/ruby-1.9.2-p0@erresauro/gems/html5-boilerplate-0.1.7/stylesheets/html5-boilerplate/_base.scss */
+input[type="checkbox"] {
+  vertical-align: bottom;
+}
+
+/* line 75, ../../../../.rvm/gems/ruby-1.9.2-p0@erresauro/gems/html5-boilerplate-0.1.7/stylesheets/html5-boilerplate/_base.scss */
+.ie7 input[type="checkbox"] {
+  vertical-align: baseline;
+}
+
+/* line 76, ../../../../.rvm/gems/ruby-1.9.2-p0@erresauro/gems/html5-boilerplate-0.1.7/stylesheets/html5-boilerplate/_base.scss */
+.ie6 input {
+  vertical-align: text-bottom;
+}
+
+/* line 81, ../../../../.rvm/gems/ruby-1.9.2-p0@erresauro/gems/html5-boilerplate-0.1.7/stylesheets/html5-boilerplate/_base.scss */
+label, input[type=button], input[type=submit], button {
+  cursor: pointer;
+}
+
+/* line 88, ../../../../.rvm/gems/ruby-1.9.2-p0@erresauro/gems/html5-boilerplate-0.1.7/stylesheets/html5-boilerplate/_base.scss */
+::-moz-selection {
+  background: #ff5e99;
+  color: white;
+  text-shadow: none;
+}
+
+/* line 89, ../../../../.rvm/gems/ruby-1.9.2-p0@erresauro/gems/html5-boilerplate-0.1.7/stylesheets/html5-boilerplate/_base.scss */
+::selection {
+  background: #ff5e99;
+  color: white;
+  text-shadow: none;
+}
+
+/* line 94, ../../../../.rvm/gems/ruby-1.9.2-p0@erresauro/gems/html5-boilerplate-0.1.7/stylesheets/html5-boilerplate/_base.scss */
+a:link {
+  -webkit-tap-highlight-color: #ff5e99;
+}
+
+/* line 105, ../../../../.rvm/gems/ruby-1.9.2-p0@erresauro/gems/html5-boilerplate-0.1.7/stylesheets/html5-boilerplate/_base.scss */
+button {
+  width: auto;
+  overflow: visible;
+}
+
+/* line 109, ../../../../.rvm/gems/ruby-1.9.2-p0@erresauro/gems/html5-boilerplate-0.1.7/stylesheets/html5-boilerplate/_base.scss */
+.ie7 img {
+  -ms-interpolation-mode: bicubic;
+}
+
+/* line 9, ../../../../.rvm/gems/ruby-1.9.2-p0@erresauro/gems/html5-boilerplate-0.1.7/stylesheets/html5-boilerplate/_helpers.scss */
+.ir {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  direction: ltr;
+  background-repeat: no-repeat;
+}
+
+/* line 11, ../../../../.rvm/gems/ruby-1.9.2-p0@erresauro/gems/html5-boilerplate-0.1.7/stylesheets/html5-boilerplate/_helpers.scss */
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+/* line 13, ../../../../.rvm/gems/ruby-1.9.2-p0@erresauro/gems/html5-boilerplate-0.1.7/stylesheets/html5-boilerplate/_helpers.scss */
+.visuallyhidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* line 15, ../../../../.rvm/gems/ruby-1.9.2-p0@erresauro/gems/html5-boilerplate-0.1.7/stylesheets/html5-boilerplate/_helpers.scss */
+.clearfix {
+  *zoom: 1;
+}
+/* line 22, ../../../../.rvm/gems/ruby-1.9.2-p0@erresauro/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+@media print {
+  /* line 24, ../../../../.rvm/gems/ruby-1.9.2-p0@erresauro/gems/html5-boilerplate-0.1.7/stylesheets/html5-boilerplate/_media.scss */
+  * {
+    background: transparent !important;
+    color: #444 !important;
+    text-shadow: none !important;
+  }
+
+  /* line 26, ../../../../.rvm/gems/ruby-1.9.2-p0@erresauro/gems/html5-boilerplate-0.1.7/stylesheets/html5-boilerplate/_media.scss */
+  a, a:visited {
+    color: #444 !important;
+    text-decoration: underline;
+  }
+
+  /* line 28, ../../../../.rvm/gems/ruby-1.9.2-p0@erresauro/gems/html5-boilerplate-0.1.7/stylesheets/html5-boilerplate/_media.scss */
+  a:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 30, ../../../../.rvm/gems/ruby-1.9.2-p0@erresauro/gems/html5-boilerplate-0.1.7/stylesheets/html5-boilerplate/_media.scss */
+  abbr:after {
+    content: " (" attr(title) ")";
+  }
+
+  /* line 32, ../../../../.rvm/gems/ruby-1.9.2-p0@erresauro/gems/html5-boilerplate-0.1.7/stylesheets/html5-boilerplate/_media.scss */
+  .ir a:after {
+    content: "";
+  }
+
+  /* line 34, ../../../../.rvm/gems/ruby-1.9.2-p0@erresauro/gems/html5-boilerplate-0.1.7/stylesheets/html5-boilerplate/_media.scss */
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /* line 36, ../../../../.rvm/gems/ruby-1.9.2-p0@erresauro/gems/html5-boilerplate-0.1.7/stylesheets/html5-boilerplate/_media.scss */
+  img {
+    page-break-inside: avoid;
+  }
+
+  @page {
+    margin: 0.5cm;
+}
+
+  /* line 40, ../../../../.rvm/gems/ruby-1.9.2-p0@erresauro/gems/html5-boilerplate-0.1.7/stylesheets/html5-boilerplate/_media.scss */
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 42, ../../../../.rvm/gems/ruby-1.9.2-p0@erresauro/gems/html5-boilerplate-0.1.7/stylesheets/html5-boilerplate/_media.scss */
+  h2, h3 {
+    page-break-after: avoid;
+  }
+}
+
+@media all and (orientation:portrait) {}
+@media all and (orientation:landscape) {}
+@media screen and (max-device-width: 480px) {}
+/* line 33, ../../app/stylesheets/erre.scss */
+* {
+  line-height: 1.4em;
+  outline: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+/* line 39, ../../app/stylesheets/erre.scss */
+:focus {
+  outline: 0;
+}
+
+/* line 43, ../../app/stylesheets/erre.scss */
+body {
+  border-top: 6px solid #00101b;
+  background-color: #00101b;
+  min-width: 450px;
+  width: auto !important;
+  width: 450px;
+  font-size: 12px;
+  padding: 0;
+}
+
+/* line 53, ../../app/stylesheets/erre.scss */
+#container {
+  background: white url("/images/paper.png") repeat-x 0 0;
+  padding: 10px;
+}
+/* line 57, ../../app/stylesheets/erre.scss */
+#container #usernav {
+  width: 900px;
+  margin: auto;
+  margin-top: -10px;
+  padding: 4px 10px;
+}
+/* line 63, ../../app/stylesheets/erre.scss */
+#container #usernav a {
+  text-decoration: none;
+  color: #fff;
+}
+/* line 69, ../../app/stylesheets/erre.scss */
+#container #header {
+  overflow: hidden;
+  *zoom: 1;
+  width: 900px;
+  margin: 10px auto 30px auto;
+}
+/* line 74, ../../app/stylesheets/erre.scss */
+#container #header #logo {
+  width: 100px;
+  float: right;
+  text-align: right;
+}
+/* line 81, ../../app/stylesheets/erre.scss */
+#container #header #navigation {
+  width: 700px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  padding-top: 20px;
+}
+/* line 89, ../../app/stylesheets/erre.scss */
+#container #header #navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  clear: left;
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: 0%;
+  top: 50%;
+  text-align: center;
+}
+/* line 105, ../../app/stylesheets/erre.scss */
+#container #header #navigation ul li {
+  display: inline;
+  margin: 0 10px;
+}
+/* line 109, ../../app/stylesheets/erre.scss */
+#container #header #navigation ul li a {
+  text-decoration: none;
+  color: #00101b;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 10px;
+}
+/* line 116, ../../app/stylesheets/erre.scss */
+#container #header #navigation ul li a:hover {
+  background-color: #000;
+  color: #fff;
+}
+/* line 126, ../../app/stylesheets/erre.scss */
+#container #main {
+  width: 900px;
+  margin: auto;
+  margin-bottom: 50px;
+}
+/* line 131, ../../app/stylesheets/erre.scss */
+#container #main #flash {
+  padding: 0;
+  margin: 5px 0 5px 0;
+}
+/* line 134, ../../app/stylesheets/erre.scss */
+#container #main #flash p {
+  margin: 0;
+  padding: 5px 0 5px 17px;
+}
+/* line 137, ../../app/stylesheets/erre.scss */
+#container #main h1 {
+  font-size: 20px;
+  color: #00101b;
+  text-shadow: 1px 1px 0 #ccc;
+  margin-bottom: 10px;
+}
+
+/* line 147, ../../app/stylesheets/erre.scss */
+#footer {
+  background-color: #00101b;
+  width: 900px;
+  margin: auto;
+  padding: 30px;
+  color: #fff;
+}
+
+/* line 158, ../../app/stylesheets/erre.scss */
+#snippet #description {
+  margin: 5px 0 20px 0;
+}
+
+/* line 164, ../../app/stylesheets/erre.scss */
+#code {
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 167, ../../app/stylesheets/erre.scss */
+#code #highlight_code {
+  font-family: "Courier New", "Courier New", monospace;
+  font-size: 12px;
+  padding: 20px;
+  background-color: #00101b;
+  color: #fff;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  border-radius: 4px;
+  width: 650px;
+  float: left;
+  border: 2px solid #ddd;
+  overflow: auto;
+}
+/* line 180, ../../app/stylesheets/erre.scss */
+#code #metainfo {
+  float: right;
+  width: 180px;
+  margin: 0;
+}
+/* line 185, ../../app/stylesheets/erre.scss */
+#code #metainfo h2 {
+  color: #00101b;
+}
+/* line 189, ../../app/stylesheets/erre.scss */
+#code #metainfo .author {
+  display: block;
+  font-weight: bold;
+  color: #00101b;
+}
+/* line 195, ../../app/stylesheets/erre.scss */
+#code #metainfo .date {
+  display: block;
+  color: #a0d8ff;
+  font-weight: bold;
+}
+/* line 201, ../../app/stylesheets/erre.scss */
+#code #metainfo .menu {
+  margin: 15px 0;
+}
+/* line 204, ../../app/stylesheets/erre.scss */
+#code #metainfo .menu h2 {
+  margin-bottom: 8px;
+}
+/* line 208, ../../app/stylesheets/erre.scss */
+#code #metainfo .menu a {
+  display: block;
+  text-decoration: none;
+  border-bottom: 1px solid #ddd;
+  color: #555;
+  padding-left: 4px;
+}
+/* line 215, ../../app/stylesheets/erre.scss */
+#code #metainfo .menu a:hover {
+  background-color: #f7f5e3;
+}
+/* line 221, ../../app/stylesheets/erre.scss */
+#code #metainfo #back a.back {
+  text-decoration: none;
+  background: #9AD8FF;
+  background: -moz-linear-gradient(0% 100% 90deg, #9ad8ff, #9ad8ff);
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#9ad8ff), to(#9ad8ff));
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  padding: 4px 10px;
+  color: #fff;
+  font-size: 10px;
+}
+
+/* line 238, ../../app/stylesheets/erre.scss */
+#snippets {
+  margin-top: 20px;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 242, ../../app/stylesheets/erre.scss */
+#snippets .snippet {
+  font-size: 16px;
+  border-bottom: 1px solid #ddd;
+  padding: 4px 10px 10px 10px;
+}
+/* line 248, ../../app/stylesheets/erre.scss */
+#snippets .snippet:hover {
+  background-color: #f7f5e3;
+}
+/* line 252, ../../app/stylesheets/erre.scss */
+#snippets .snippet .date {
+  color: #42ABEC;
+  font-size: 11px;
+}
+/* line 257, ../../app/stylesheets/erre.scss */
+#snippets .snippet .description {
+  font-size: 11px;
+}
+/* line 263, ../../app/stylesheets/erre.scss */
+#snippets .snippet .title a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  text-shadow: 1px 1px 0 #ccc;
+}
+
+/* line 273, ../../app/stylesheets/erre.scss */
+#cancel {
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 276, ../../app/stylesheets/erre.scss */
+#cancel a.cancel {
+  float: left;
+  text-decoration: none;
+  width: auto;
+  height: auto;
+  font-weight: bold;
+  margin-top: 13px;
+  background: #FFAA98;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -o-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -khtml-border-radius: 20px;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 1;
+  padding: 11px 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* line 294, ../../app/stylesheets/erre.scss */
+#cancel a.cancel:hover {
+  background-color: #999;
+}
+
+/* line 303, ../../app/stylesheets/erre.scss */
+form p {
+  margin-top: 15px;
+}
+/* line 306, ../../app/stylesheets/erre.scss */
+form label {
+  font-weight: bold;
+}
+/* line 310, ../../app/stylesheets/erre.scss */
+form input[type="submit"] {
+  float: left;
+  width: auto;
+  height: auto;
+  font-weight: bold;
+  margin-top: 13px;
+  background: #9AD8FF;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -o-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -khtml-border-radius: 20px;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 1;
+  padding: 8px 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* line 327, ../../app/stylesheets/erre.scss */
+form input[type="submit"]:hover {
+  background-color: #999;
+}
+/* line 332, ../../app/stylesheets/erre.scss */
+form input, form textarea {
+  vertical-align: bottom;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  border-radius: 4px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  color: #444;
+  padding: 6px 10px;
+}
+/* line 341, ../../app/stylesheets/erre.scss */
+form textarea.code {
+  font-family: "Courier New", "Courier New", monospace !important;
+  font-size: 14px;
+}

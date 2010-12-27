@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   id="svg2894"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   sodipodi:docname="logo.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   inkscape:export-filename="/Users/juanjo/germany/errefuralle/public/images/rproject.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs2896">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective2902" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="3.959798"
+     inkscape:cx="186.22623"
+     inkscape:cy="802.84271"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1860"
+     inkscape:window-height="1156"
+     inkscape:window-x="60"
+     inkscape:window-y="0" />
+  <metadata
+     id="metadata2899">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-size:39.428936px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#00101b;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Capitals;-inkscape-font-specification:Capitals"
+       x="82.805771"
+       y="303.9556"
+       id="text7873"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan7875"
+         x="82.805771"
+         y="303.9556">R</tspan></text>
+    <path
+       style="font-size:330.02392578px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#a0d8ff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Capitals;-inkscape-font-specification:Capitals"
+       d="M 91.102184,261.23276 C 87.264525,261.2328 85.345083,263.4292 85.345083,267.81871 L 87.443327,267.81871 C 87.635832,265.62397 88.668235,264.52577 90.542158,264.52573 C 91.22239,264.52577 92.254801,264.92474 93.640989,265.72047 L 95.645887,266.87412 C 96.73684,267.50308 97.957057,267.81874 99.304747,267.81871 C 103.14237,267.81874 105.0581,265.63192 105.05812,261.25516 L 102.95987,261.25516 C 102.76732,263.44998 101.73492,264.54444 99.861046,264.5444 C 99.180767,264.54444 98.148378,264.14338 96.762219,263.33474 L 94.761043,262.17734 C 93.670054,261.54847 92.449842,261.2328 91.102184,261.23276 z"
+       id="path7877" />
+  </g>
+</svg>

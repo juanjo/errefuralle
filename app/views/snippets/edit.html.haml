@@ -1,10 +1,8 @@
-%h1 Edit Snippet
+%h1 Modificar nuevo código-R
 
 = form_for @snippet do |f|
+  = render :partial => 'form', :locals => { :f => f }
+  = f.submit 'Modificar código'
 
-  = f.label :description
-  = f.text_area :description
-
-  = f.submit 'Create'
-
-= link_to 'Back to Snippets', snippets_url
+#cancel
+  = link_to 'Cancelar', snippet_url(@snippet), :class => 'cancel'

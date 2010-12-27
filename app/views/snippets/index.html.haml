@@ -1,8 +1,11 @@
-%h1 Snippets
+%h1 Código R
 
-- if can? :create, Snippet
-  = link_to 'New snippet', new_snippet_path
+/ - if can? :create, Snippet
+/   = link_to 'New snippet', new_snippet_path
 
-%ul
-- @snippets.each do |snippet|
-  %li= link_to "#{snippet.description} -- #{snippet.user.email}", snippet_path(snippet)
+#snippets
+  - @snippets.each do |snippet|
+    %div.snippet{:id => "snippet-#{snippet.id}"}
+      %span.date= "creado por #{snippet.user.try(:email)} hace #{distance_of_time_in_words(Time.now, snippet.created_at)}"
+      %span.title= link_to snippet.title, snippet_path(snippet)
+      %span.description= truncate_snippet(snippet.description, 50)

@@ -1,13 +1,5 @@
-%h1 New Snippet
+%h1 Añadir nuevo código-R
 
 = form_for @snippet do |f|
-
-  = f.label :description
-  = f.text_area :description
-
-  = f.label :code
-  = f.text_area :code
-
-  = f.submit 'Create'
-
-= link_to 'Back to Snippets', snippets_url
+  = render :partial => 'form', :locals => { :f => f }
+  = f.submit 'Añadir código'

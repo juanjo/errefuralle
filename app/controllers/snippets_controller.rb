@@ -2,7 +2,7 @@ class SnippetsController < ApplicationController
   load_and_authorize_resource
 
   def index
-    @snippets = Snippet.with_state(:published)
+    @snippets = Snippet.with_state(:published).order('created_at DESC')
   end
 
   def show

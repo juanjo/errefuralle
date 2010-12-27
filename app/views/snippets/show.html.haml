@@ -1,14 +1,30 @@
-%h2= @snippet.user.email
+#snippet
+  %h1.title= @snippet.title
 
-= simple_format @snippet.description
+  #description
+    = simple_format @snippet.description
 
-#highlight_code
-  - cache do
-    = highlight_code(:r, @snippet.code).html_safe
+  #code
+    #highlight_code
+      - cache do
+        = highlight_code(:r, @snippet.code).html_safe
 
-%p
-  - if can? :update, @snippet
-    = link_to 'Edit | ', edit_snippet_path(@snippet)
-  - if can? :destroy, @snippet
-    = link_to 'Destroy | ', @snippet, :method => :delete, :confirm => 'Are you sure?'
-  = link_to 'Back to Snippets', snippets_url
+    #metainfo
+      = image_tag avatar_url(@snippet.user)
+      %span.author= "Creado por #{@snippet.user.try(:email)}"
+      %span.date= "hace #{distance_of_time_in_words(Time.now, @snippet.created_at)}"
+      .menu
+        %h2 Acciones
+        = link_to 'Añadir a favoritos', edit_snippet_path(@snippet)
+
+        - if can? :update, @snippet
+          = link_to 'Modificar', edit_snippet_path(@snippet)
+        - if can? :destroy, @snippet
+          = link_to 'Eliminar', @snippet,  :confirm => '¿Estás seguro?', :method => :delete
+
+      .menu
+        %h2 Social
+        = link_to 'Facebook', "http://www.facebook.com/share.php?u=#{snippet_url(@snippet)}", :target => "_blank"
+        = link_to 'Twitter', "http://twitter.com/home?status=#{snippet_url(@snippet)}", :target => "_blank"
+      / #back
+      /   = link_to 'Volver a Código-R', snippets_url, :class => 'back'

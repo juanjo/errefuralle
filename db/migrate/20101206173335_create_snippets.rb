@@ -1,6 +1,7 @@
 class CreateSnippets < ActiveRecord::Migration
   def self.up
     create_table :snippets do |t|
+      t.string :title, :null => false
       t.text :code, :null => false
       t.references :user
       t.text :description

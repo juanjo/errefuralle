@@ -3,6 +3,8 @@ class Snippet < ActiveRecord::Base
 
   after_create :count_lines
   after_create :publish_directly
+  
+  validates_presence_of :title, :code
 
   # State Machine
   # #######################################

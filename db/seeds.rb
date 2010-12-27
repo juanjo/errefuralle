@@ -18,11 +18,11 @@ u1.roles << admin
 u2.roles << editor
 u3.roles << registered
 
-Snippet.create(:description => 'S1', :user => u3, :code => 'C1')
-Snippet.create(:description => 'S2', :user => u3, :code => 'C2')
-Snippet.create(:description => 'S3', :user => u2, :code => 'C3')
-Snippet.create(:description => 'S4', :user => u2, :code => 'C4')
-Snippet.create(:description => 'S5', :user => u1, :code => 'C5')
+Snippet.create(:description => 'S1', :user => u3, :code => 'C1', :title => 'Reading and writing both ascii files and binary files. Also, measure speed of these')
+Snippet.create(:description => 'S2', :user => u3, :code => 'C2', :title => 'Reading a file with a few columns of numbers, and look at what is there.')
+Snippet.create(:description => 'S3', :user => u2, :code => 'C3', :title => 'Show recessions using filled colour in a macro time-series plot')
+Snippet.create(:description => 'S4', :user => u2, :code => 'C4', :title => 'Two CDFs and a two-sample Kolmogorov-Smirnoff test')
+Snippet.create(:description => 'S5', :user => u1, :code => 'C5', :title => 'Four standard operations with standard distributions')
 
 JobOffer.create(:title => 'Offer 1', :user => u1, :description => 'd1')
 JobOffer.create(:title => 'Offer 2', :user => u2, :description => 'd2')
