@@ -1049,7 +1049,7 @@ a.button {
   background-image: -moz-linear-gradient(top, #ffffff 0%, #ebebeb 100%);
   background-image: linear-gradient(top, #ffffff 0%, #ebebeb 100%);
   width: auto;
-  padding: 7px 10px;
+  padding: 6px 10px;
   font-weight: bold;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;

@@ -744,7 +744,7 @@ a.button {
   color: $button-color;
   @include gradient-link;
   width: auto;
-  padding: 7px 10px;
+  padding: 6px 10px;
   font-weight: bold;
   @include border-radius(4px);
   border: $border;
