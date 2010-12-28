@@ -4,13 +4,13 @@
 #menus
   .info
     %ul
-      %li= link_to 'R-Hispana'
-      %li= link_to 'Preguntas Frecuentes'
-      %li= link_to 'Comunidad'
+      %li= link_to 'R-Hispana', '/about', :title => 'R-Hispana'
+      %li= link_to 'Preguntas Frecuentes', '/faq', :title => 'Ir a preguntas frecuentes'
+      %li= link_to 'Comunidad', '/community', :title => 'Comunidad R-Project'
 
   .info
     %ul
-      %li= link_to '@rhispana', 'http://twitter.com/rhispana', :target => "_blank"
+      %li= link_to '@rhispana', 'http://twitter.com/rhispana', :target => "_blank", :title => 'Seguir a @rhispana'
       %li= link_to 'Facebook'
       %li= link_to 'Lista de correo'
 
