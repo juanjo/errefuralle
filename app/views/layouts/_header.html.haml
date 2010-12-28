@@ -1,0 +1,18 @@
+#navigation
+  %ul
+    - if user_signed_in?
+      %li= "Hola #{current_user.username}!"
+      %li= link_to 'Salir', destroy_user_session_path
+    - else
+      %li= link_to 'Crear cuenta', new_user_registration_path
+      %li= link_to 'Acceder', new_user_session_path
+
+%header
+  #logo
+    = link_to image_tag('logo2.png'), root_url
+
+  %ul#main-menu
+    %li= link_to 'Inicio', root_url
+    %li= link_to 'Código-R', snippets_url
+    %li= link_to 'Ofertas de trabajo', job_offers_url
+    %li= link_to 'Comunidad', job_offers_url
