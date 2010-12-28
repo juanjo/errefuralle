@@ -1,8 +1,23 @@
-%h1 Job Offers
+#conmenu
+  %h1 Ofertas de trabajo relacionadas con R
+  #actions
+    - if can? :create, JobOffer
+      = link_to 'Añadir oferta de trabajo', new_job_offer_path, :class => 'button'
 
-- if can? :create, JobOffer
-  = link_to 'New Job Offer', new_job_offer_path
+#joboffers
 
-%ul
-  - @job_offers.each do |job_offer|
-    %li= link_to job_offer.title, job_offer_path(job_offer)
+  #joblist
+    - @job_offers.each do |job_offer|
+      %div.job_offer{:id => "job_offer-#{job_offer.id}"}
+        %span.date= "creado por #{job_offer.user.username} hace #{distance_of_time_in_words(Time.now, job_offer.created_at)}"
+        %span.title= link_to job_offer.title, job_offer_path(job_offer)
+        #info
+          %span.company= "#{job_offer.company} - "
+          %span.type= job_offer.job_type.try(:name)
+
+  #jobmenu
+    %ul.jobsocial
+      %li.rss= link_to 'Suscripción RSS'
+      %li.twitter= link_to 'Síguenos en Twitter'
+
+= will_paginate @snippets

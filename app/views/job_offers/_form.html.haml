@@ -1,0 +1,18 @@
+%p
+  = f.label :job_type_id, 'Tipo de trabajo:'
+  = f.collection_select(:job_type_id, JobType.all, :id, :name)
+
+%p
+  = f.label :title, 'Título descriptivo de la oferta'
+  %br
+  = f.text_field :title, :size => 140
+
+%p
+  = f.label :company, 'Companía'
+  %br
+  = f.text_field :company, :size => 140
+
+%p
+  = f.label :description, "Descripción"
+  %br
+  = f.text_area :description, :rows => 25, :cols => 138

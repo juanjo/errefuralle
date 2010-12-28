@@ -2,7 +2,7 @@ class JobOffersController < ApplicationController
   load_and_authorize_resource
 
   def index
-    @job_offers = JobOffer.all
+    @job_offers = JobOffer.with_state(:published).paginate(:page => params[:page], :order => 'created_at DESC', :per_page => 15)
   end
 
   def show

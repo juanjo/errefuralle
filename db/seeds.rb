@@ -24,8 +24,14 @@ Snippet.create(:description => 'S3', :user => u2, :code => 'C3', :title => 'Show
 Snippet.create(:description => 'S4', :user => u2, :code => 'C4', :title => 'Two CDFs and a two-sample Kolmogorov-Smirnoff test')
 Snippet.create(:description => 'S5', :user => u1, :code => 'C5', :title => 'Four standard operations with standard distributions')
 
-JobOffer.create(:title => 'Offer 1', :user => u1, :description => 'd1')
-JobOffer.create(:title => 'Offer 2', :user => u2, :description => 'd2')
-JobOffer.create(:title => 'Offer 3', :user => u2, :description => 'd3')
-JobOffer.create(:title => 'Offer 4', :user => u3, :description => 'd4')
-JobOffer.create(:title => 'Offer 5', :user => u3, :description => 'd5')
+
+jt1 = JobType.create(:name => 'Tiempo completo')
+jt2 = JobType.create(:name => 'Tiempo parcial')
+jt3 = JobType.create(:name => 'Teletrabajo')
+jt4 = JobType.create(:name => 'Proyecto')
+
+JobOffer.create(:title => 'Front End Developer', :user => u1, :description => 'd1', :job_type => jt1, :company => 'Google Inc')
+JobOffer.create(:title => 'Full-Stack Engineer (Ruby + MySQL + jQuery)', :user => u2, :description => 'd2', :job_type => jt2, :company => 'Sponsorpay')
+JobOffer.create(:title => 'PHP Developer (Drupal) for Workday Community', :user => u2, :description => 'd3', :job_type => jt3, :company => 'Youtube')
+JobOffer.create(:title => '"Rock Stars" and "Ninjas" Need Not Apply', :user => u3, :description => 'd4', :job_type => jt4, :company => 'Yahoo Enterprises')
+JobOffer.create(:title => 'Project Manager (get some Kanban in your life)', :user => u3, :description => 'd5', :job_type => jt1, :company => 'Sun Microsystems')

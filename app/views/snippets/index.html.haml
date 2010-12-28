@@ -1,7 +1,9 @@
-%h1 Código R
+#conmenu
+  %h1 Código R
+  #actions
+    - if can? :create, Snippet
+      = link_to 'Añadir trozo de código', new_snippet_path, :class => 'button'
 
-/ - if can? :create, Snippet
-/   = link_to 'New snippet', new_snippet_path
 
 #snippets
   - @snippets.each do |snippet|

@@ -33,7 +33,8 @@ class Snippet < ActiveRecord::Base
     end
 
     def count_lines
-      #lines = code.match(/\n/).length + 1
+      #lines = code.match(/\n/).try(:length) + 1
+      #save
     end
 
 end

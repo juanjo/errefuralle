@@ -27,8 +27,71 @@ $font-size: 12px;
 $color-main: #00101b;
 $color-background: #fff;
 $color-lighting: #F7F5E3;
+$color-lighting-dark: #F0F0F0;
 $color-rproject: #a0d8ff;
+$color-github:  #2B80C0;
+
 $erre-width: 900px;
+$jobmenu-width: 300px;
+$default-gap: 20px;
+
+$button-color: lighten($font-color, 10%);           // text-color inside gradients
+
+$gradient-backup-color: #f0f0f0;                    // standard middle value and for non css3-browsers
+$gradient-top-color: lighten($gradient-backup-color, 90%);
+$gradient-bottom-color: darken($gradient-backup-color, 2%);
+
+$text-shadow: lighten($gradient-bottom-color, 100%);// appears only in gradients
+$border-color: lighten(#bbb, 9%);
+$reward-color: $link-color;
+$success-color: #3E6517;
+
+$border: 1px solid $border-color;
+
+$gradient-hover-backup-color: darken($gradient-backup-color, 10%);
+$gradient-hover-top-color: darken($gradient-bottom-color, 7%);
+$gradient-hover-bottom-color: darken($gradient-top-color, 7%);
+
+$gradient-active-backup-color: darken($gradient-backup-color, 15%);
+$gradient-active-top-color: darken($gradient-bottom-color, 10%);
+$gradient-active-bottom-color: darken($gradient-top-color, 10%);
+
+$gradient-link-hover-color: darken($button-color, 5%);
+$gradient-link-active-color: darken($button-color, 5%);
+
+@mixin gradient-default {
+  background: $gradient-backup-color;
+  @include linear-gradient(color-stops($gradient-top-color,$gradient-bottom-color));
+}
+
+@mixin gradient-hover {
+  background: $gradient-hover-backup-color;
+  @include linear-gradient(color-stops($gradient-hover-top-color, $gradient-hover-bottom-color));
+}
+
+@mixin gradient-active {
+  background: darken($gradient-active-backup-color, 15%);
+  @include linear-gradient(color-stops(darken($gradient-active-top-color, 10%),darken($gradient-active-bottom-color, 10%)));
+}
+
+
+@mixin gradient-link {
+  font-weight: bold;
+  @include text-shadow($text-shadow, 0, 1px, 0);
+  @include gradient-default;
+  &:hover {
+    color: $gradient-link-hover-color;
+    @include gradient-hover;
+    }
+  &:active {
+    color: $gradient-link-active-color;
+    @include gradient-active;
+  }
+}
+
+
+
+// basics
 
 * {
   line-height: 1.4em;
@@ -48,6 +111,15 @@ body {
   padding: 0;
 }
 
+// Links
+
+a {
+  text-decoration: none;
+  img {
+    border: none;
+    cursor: pointer;
+  }
+}
 
 
 #container {
@@ -153,10 +225,125 @@ body {
 }
 
 
+#joboffer {
+
+  #title {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+  }
+  h1.title {
+    margin-bottom: 0 !important;
+  }
+	#info {
+	  margin-top: 0;
+	
+	  font-size: 14px;
+	  .company, .separator {
+	    color: #888;
+	  }
+     
+	  .type {
+	    color: #2D9E29;
+	    font-weight: bold;
+	  }
+	}
+
+
+  #explanation {
+    @include clearfix;
+
+    #description {
+
+		  width: $erre-width - 230px;
+		  float: left;
+	  	overflow: auto;
+	
+	    h1, h2, h3, h4, h5 {
+	      margin: 10px 0;
+	      padding: 0;
+ 	      text-shadow: none;
+        color: $color-main !important;
+	    }
+	
+	    h1 {
+	      font-size: 16px;
+ 	    }
+	    h2 {
+	      font-size: 14px;
+ 	    }
+	    h3 {
+	      font-size: 13px;
+ 	    }
+	    h4 {
+	      font-size: 12px;
+ 	    }
+	    h5 {
+	      font-size: 11px;
+ 	    }
+
+      p {
+        margin: 10px 0;
+      }
+
+      a {
+        color: $color-github;
+      }
+    }
+
+		#metainfo {
+		  float: right;
+		  width: 180px;
+		  margin: 0;
+
+		  h2 {
+		    color: $color-main; 	
+	    }
+
+		  .author {
+		    display: block;
+		    font-weight: bold;
+		    color: $color-main;
+		  }
+
+		  .date {
+		    display: block;
+		    color: #a0d8ff;
+		    font-weight: bold;
+		  }
+
+		  .menu {
+		    margin: 15px 0;
+
+	      h2 {
+	        margin-bottom: 8px;
+	      }
+
+		    a {
+		      display: block;
+		      text-decoration: none;
+		      border-bottom: 1px solid #ddd;
+		      color: #555;
+		      padding-left: 4px;
+
+		      &:hover {
+		        background-color: $color-lighting;
+		      }
+		    }
+		  }
+		}
+
+	}
+}
+
 
 #snippet {
   #description {
     margin: 5px 0 20px 0;
+  }
+  
+  h1.title {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px !important;
   }
 }
 
@@ -235,6 +422,84 @@ body {
 }
 
 
+#joboffers {
+  margin-top: 20px;
+  @include clearfix;
+
+  #jobmenu {
+    width: 300px;
+    float: right;
+    ul.jobsocial {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+  		  @include border-radius(4px);
+		    border: 1px solid #ddd;
+		    margin-bottom: 10px;
+
+		    a {
+		      display: block;
+	        padding: 6px 10px;
+	        text-decoration: none;
+	        color: $color-github;
+	        font-weight: bold;
+		    }
+      }
+    }
+  }
+
+  #joblist {
+    width: $erre-width - $jobmenu-width - $default-gap;
+    float: left;
+
+	  .job_offer {
+
+		  font-size: 16px;
+		  border-bottom: 1px solid #ddd;
+		  padding: 4px 10px 10px 10px;
+
+	    &:hover {
+	      background-color: $color-lighting-dark;
+	    }
+
+	    #info {
+	      font-size: 11px;
+	      .company {
+	        color: #888;
+	      }
+
+	      .type {
+	        color: #2D9E29;
+	        font-weight: bold;
+	      }
+	    }
+
+	    .date {
+			  color: #888;
+	      font-size: 11px;
+	    }
+
+	    .description {
+	      font-size: 11px;
+	    }
+
+	    .title {
+
+	      a {
+	        text-decoration: none;
+	        color: #2B80C0;
+	        display: block;
+	        font-weight: bold;
+	      }
+	    }
+	  }
+	}
+}
+
+
+
 #snippets {
   margin-top: 20px;
   @include clearfix;
@@ -250,7 +515,7 @@ body {
     }
 
     .date {
-		  color: #42ABEC;
+		  color: #888;
       font-size: 11px;
     }
 
@@ -262,9 +527,9 @@ body {
 
       a {
         text-decoration: none;
-        color: #000;
+        color: #2B80C0;
         display: block;
-        text-shadow: 1px 1px 0 #ccc;
+        font-weight: bold;
       }
     }
   }
@@ -305,28 +570,19 @@ form {
   }
   label {
     font-weight: bold;
+    margin-right: 10px;
   }
 
 	input[type="submit"] {
-	  float: left;
+	  margin-top: 10px;
+	  color: $button-color;
+	  @include gradient-link;
 	  width: auto;
-	  height: auto;
+	  padding: 6px 10px;
 	  font-weight: bold;
-	  margin-top: 13px;
-	  background: #9AD8FF;
-	  @include border-radius(20px);
-    border: 1px solid #fff;
-	  color: #ffffff;
-	  font-size: 11px;
-	  font-weight: bold;
-	  line-height: 1;
-	  padding: 8px 20px;
-	  text-align: center;
-	  text-transform: uppercase;
-
-    &:hover {
-      background-color: #999;
-    }
+	  @include border-radius(4px);
+	  border: $border;
+	  clear: none;
 	}
 
 	input, textarea {
@@ -347,11 +603,13 @@ form {
 
 .pagination {
   margin-top: 10px;
-  font-size: 15px;
+  font-size: 12px;
 
   a {
     text-decoration: none;
-    color: $color-rproject;
+    color: $color-github;
+    font-weight: bold;
+
   }
 
   a.previous_page, a.next_page {
@@ -364,5 +622,35 @@ form {
 
   em {
     font-weight: bold;
+    font-style: normal;
   }
+}
+
+
+#conmenu {
+  @include clearfix;
+  h1, h2, h3, h4, h5 {
+    float: left;
+    width: 50%;
+  }
+  #actions {
+    float: right;
+    width: 50%;
+    text-align: right;
+	  position: relative;
+	  top: 6px;
+	  right: 0;
+  }
+}
+
+
+a.button {
+  color: $button-color;
+  @include gradient-link;
+  width: auto;
+  padding: 6px 10px;
+  font-weight: bold;
+  @include border-radius(4px);
+  border: $border;
+  clear: none;
 }

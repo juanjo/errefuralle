@@ -1,9 +1,12 @@
 class JobOffer < ActiveRecord::Base
   belongs_to :user
+  belongs_to :job_type
 
-  validates_presence_of :title, :description
+  validates_presence_of :title, :description, :company
 
   after_create :publish_directly
+  before_save :convert_details
+
 
   # State Machine
   # #######################################
@@ -38,4 +41,8 @@ class JobOffer < ActiveRecord::Base
       publish! if user.can? :manage, self
     end
 
+    def convert_details
+      return if self.description.nil?
+      self.description_html = RDiscount.new(self.description, :smart, :filter_html).to_html
+    end
 end

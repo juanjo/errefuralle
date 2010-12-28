@@ -1,10 +1,28 @@
-%h1= @job_offer.title
+#joboffer
+  #title
+    %h1.title= @job_offer.title
+    #info
+      %span.company= @job_offer.company
+      %span.separator -
+      %span.type= @job_offer.job_type.try(:name)
+  
+  #explanation
+    #description
+      = @job_offer.description_html.html_safe
 
-= simple_format @job_offer.description
-
-%p
-  - if can? :update, @job_offer
-    = link_to 'Edit | ', edit_job_offer_path(@job_offer)
-  - if can? :destroy, @job_offer
-    = link_to 'Destroy | ', @job_offer, :method => :delete, :confirm => 'Are you sure?'
-  = link_to 'Back to Job Offers', job_offers_url
+    #metainfo
+      = image_tag avatar_url(@job_offer.user)
+      %span.author= "Añadida por #{@job_offer.user.try(:username)}"
+      %span.date= "hace #{distance_of_time_in_words(Time.now, @job_offer.created_at)}"
+      .menu
+        %h2 Acciones
+        - if user_signed_in?
+          - if can? :update, @job_offer
+            = link_to 'Modificar', edit_job_offer_path(@job_offer)
+          - if can? :destroy, @job_offer
+            = link_to 'Eliminar', @job_offer,  :confirm => '¿Estás seguro?', :method => :delete
+        = link_to 'Volver a listado', job_offers_url
+      .menu
+        %h2 Social
+        = link_to 'Facebook', "http://www.facebook.com/share.php?u=#{job_offer_url(@job_offer)}", :target => "_blank"
+        = link_to 'Twitter', "http://twitter.com/home?status=#{job_offer_url(@job_offer)}", :target => "_blank"

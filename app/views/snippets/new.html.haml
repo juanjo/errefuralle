@@ -1,5 +1,8 @@
-%h1 Añadir nuevo código-R
+#conmenu
+  %h1  Añadir nuevo trozo código R
+  #actions
+    = link_to 'Volver a listado', snippets_url, :class => 'button'
 
 = form_for @snippet do |f|
   = render :partial => 'form', :locals => { :f => f }
-  = f.submit 'Añadir código'
+  = f.submit 'Añadir trozo de código R'

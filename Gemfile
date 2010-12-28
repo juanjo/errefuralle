@@ -32,6 +32,7 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'haml',              '~> 3.0.17'
 gem 'compass',           '~> 0.10.5'
 gem 'html5-boilerplate', '~> 0.1.5'
+gem 'rdiscount', 				 '~> 1.6.5'
 
 gem 'devise', '1.1.5'
 gem 'cancan', '1.4.1'
