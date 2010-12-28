@@ -24,12 +24,19 @@
 
 $font-size: 12px;
 
-$color-main: #00101b;
+
+// Colors
+$color-main: #434343;
+$color-h: #1C1C1C;
 $color-background: #fff;
 $color-lighting: #F7F5E3;
+$color-lighting-form: #FEFEF2;
+$color-lighting-form-black: #00101B;
 $color-lighting-dark: #F0F0F0;
 $color-rproject: #a0d8ff;
-$color-github:  #2B80C0;
+$color-github:  #0080BF;
+$color-bar:  #000E15;
+$color-border:  #ccc;
 
 $erre-width: 900px;
 $jobmenu-width: 300px;
@@ -103,12 +110,15 @@ $gradient-link-active-color: darken($button-color, 5%);
   outline: 0;
 }
 
+html, body {
+	margin:0;
+	padding:0;
+	height:100%;
+}
+
 body {
-  border-top: 6px solid $color-main;
-  background-color: $color-main;
   @include min-width(450px);
   font-size: $font-size;
-  padding: 0;
 }
 
 // Links
@@ -123,8 +133,11 @@ a {
 
 
 #container {
+  border-top: 6px solid $color-bar;
+
+  min-height: 100%;
+  position: relative;
   background: #ffffff url('/images/paper.png') repeat-x 0 0;
-  padding: 10px;
 
 	#usernav {
 	  width: $erre-width;
@@ -197,8 +210,9 @@ a {
 
   #main {
     width: $erre-width;
-    margin: auto;
-    margin-bottom: 50px;
+    margin: auto;  
+    padding-bottom: 200px;
+
 
     #flash {
       padding: 0;
@@ -208,7 +222,7 @@ a {
 
     h1 {
       font-size: 20px;
-      color: $color-main;
+      color: $color-h;
       text-shadow: 1px 1px 0 #ccc;
       margin-bottom: 10px;
     }
@@ -216,14 +230,58 @@ a {
 
 }
 
-#footer {
-  background-color: $color-main;
-  width: $erre-width;
-  margin: auto;
-  padding: 30px;
-  color: #fff; 
-}
 
+footer {
+  background-color: $color-bar;
+  margin: 0;
+  padding: 0;
+
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height: 150px;   /* Height of the footer */
+  @include clearfix;
+
+	#footer {
+	  width: $erre-width;
+	  margin: auto;
+	  padding: 30px;
+	  color: #fff; 
+
+    #isotipo {
+      width: 100px;
+      float: left;
+      position: relative;
+      top: 50%;
+    }
+
+    #menus {
+      width: $erre-width - 108px;
+      float: right;
+      text-align: right;
+
+
+	    .info {
+	      width: 250px;
+	      float: right;
+	      margin-left: 20px;
+	      ul{
+	        list-style-type: none;
+	        margin: 0;
+	        padding: 0;
+
+	        li {
+	          border-bottom: 1px solid #4B4B4B;
+	          padding: 2px 4px;
+	          a {
+	            color: #fff;
+	          }
+	        }
+	      } 
+	    }
+    }
+	}
+}
 
 #joboffer {
 
@@ -423,12 +481,13 @@ a {
 
 
 #joboffers {
-  margin-top: 20px;
   @include clearfix;
 
   #jobmenu {
+    margin-top: 20px;
     width: 300px;
     float: right;
+
     ul.jobsocial {
       list-style-type: none;
       margin: 0;
@@ -489,7 +548,7 @@ a {
 
 	      a {
 	        text-decoration: none;
-	        color: #2B80C0;
+	        color: $color-github;
 	        display: block;
 	        font-weight: bold;
 	      }
@@ -501,7 +560,6 @@ a {
 
 
 #snippets {
-  margin-top: 20px;
   @include clearfix;
 
   .snippet {
@@ -511,7 +569,7 @@ a {
 	  padding: 4px 10px 10px 10px;
 
     &:hover {
-      background-color: $color-lighting;
+      background-color: $color-lighting-dark;
     }
 
     .date {
@@ -527,7 +585,7 @@ a {
 
       a {
         text-decoration: none;
-        color: #2B80C0;
+        color: $color-github;
         display: block;
         font-weight: bold;
       }
@@ -592,11 +650,30 @@ form {
 	  border: 1px solid #ccc;
 	  color: #444;
 	  padding: 6px 10px;
+	
+
+	  &:focus {
+	    background-color: $color-lighting-form;
+	  }	
+	}
+	
+	input.title {
+	  font-size: 17px;
+	  font-weight: bold;
 	}
 	
 	textarea.code {
 	  font-family: "Courier New", "Courier New", monospace !important;
     font-size: 14px;
+    padding: 10px 10px;
+    background-color: $color-lighting-form-black;
+    color: #fff;
+
+
+	  &:focus {
+	    background-color: $color-lighting-form-black;
+	    color: #58C0FF;
+	  }
 	}
 }
 
@@ -629,6 +706,8 @@ form {
 
 #conmenu {
   @include clearfix;
+  border-bottom: 1px solid $color-border;
+
   h1, h2, h3, h4, h5 {
     float: left;
     width: 50%;

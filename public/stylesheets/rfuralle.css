@@ -1,0 +1,36 @@
+/* line 2, ../../app/stylesheets/rfuralle.scss */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* line 8, ../../app/stylesheets/rfuralle.scss */
+#container {
+  min-height: 100%;
+  position: relative;
+}
+
+/* line 13, ../../app/stylesheets/rfuralle.scss */
+#header {
+  background: #ff0;
+  padding: 10px;
+}
+
+/* line 18, ../../app/stylesheets/rfuralle.scss */
+#main {
+  padding: 10px;
+  padding-bottom: 260px;
+  /* Height of the footer */
+}
+
+/* line 23, ../../app/stylesheets/rfuralle.scss */
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 200px;
+  /* Height of the footer */
+  background: #6cf;
+}

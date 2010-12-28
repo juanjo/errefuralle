@@ -10,6 +10,7 @@
   <!--[if (gt IE 9)|!(IE)]><!-->
   %body
     #container
+
       #header_container
         #usernav
           - if user_signed_in?
@@ -18,13 +19,13 @@
           - else
             = link_to 'Crear cuenta', new_user_registration_path
             = link_to 'Acceder', new_user_session_path
-
+      
         %header#header
           #logo
-            = link_to image_tag('logo.png'), root_url
-
-
-  
+            = link_to image_tag('logo2.png'), root_url
+      
+      
+        
           #navigation
             %ul
               %li= link_to 'Código-R', snippets_url
@@ -35,8 +36,11 @@
         = render :partial => 'layouts/flashes'
         = yield
 
-    %footer#footer
-      = render :partial => 'layouts/footer'
+      %footer
+        #footer
+          = render :partial => 'layouts/footer'
+
+
 
     -# Javascript at the bottom for fast page loading
     = render :partial => 'layouts/javascripts'
