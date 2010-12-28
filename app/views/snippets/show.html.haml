@@ -16,7 +16,7 @@
       .menu
         %h2 Acciones
         - if user_signed_in?
-          = link_to 'Añadir a favoritos', edit_snippet_path(@snippet)
+          =# link_to 'Añadir a favoritos', edit_snippet_path(@snippet)
           - if can? :update, @snippet
             = link_to 'Modificar', edit_snippet_path(@snippet)
           - if can? :destroy, @snippet
