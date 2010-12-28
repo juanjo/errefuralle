@@ -383,7 +383,7 @@ a img {
 #container #header #navigation {
   font-size: 11px;
   background-color: #ddd;
-  color: #fff;
+  color: #888;
   font-weight: bold;
   -moz-border-radius-bottomleft: 8px;
   -moz-border-radius-bottomright: 8px;
@@ -919,8 +919,12 @@ form label {
   margin-right: 10px;
 }
 /* line 646, ../../app/stylesheets/erre.scss */
-form input[type="submit"] {
+form #buttons {
+  height: 50px;
   margin-top: 10px;
+}
+/* line 652, ../../app/stylesheets/erre.scss */
+form input[type="submit"] {
   color: #5e5e5e;
   font-weight: bold;
   text-shadow: white 0 1px 0;
@@ -938,7 +942,7 @@ form input[type="submit"] {
   -khtml-border-radius: 4px;
   border-radius: 4px;
   border: 1px solid #d2d2d2;
-  clear: none;
+  vertical-align: middle;
 }
 /* line 97, ../../app/stylesheets/erre.scss */
 form input[type="submit"]:hover {
@@ -956,7 +960,7 @@ form input[type="submit"]:active {
   background-image: -moz-linear-gradient(top, #b8b8b8 0%, #cccccc 100%);
   background-image: linear-gradient(top, #b8b8b8 0%, #cccccc 100%);
 }
-/* line 658, ../../app/stylesheets/erre.scss */
+/* line 663, ../../app/stylesheets/erre.scss */
 form input, form textarea {
   vertical-align: bottom;
   -moz-border-radius: 4px;
@@ -970,62 +974,62 @@ form input, form textarea {
   color: #444;
   padding: 6px 10px;
 }
-/* line 667, ../../app/stylesheets/erre.scss */
+/* line 672, ../../app/stylesheets/erre.scss */
 form input:focus, form textarea:focus {
   background-color: #fefef2;
 }
-/* line 672, ../../app/stylesheets/erre.scss */
+/* line 677, ../../app/stylesheets/erre.scss */
 form input.title {
   font-size: 17px;
   font-weight: bold;
 }
-/* line 677, ../../app/stylesheets/erre.scss */
+/* line 682, ../../app/stylesheets/erre.scss */
 form textarea.code {
   font-family: "Courier New", "Courier New", monospace !important;
   font-size: 14px;
   padding: 10px 10px;
   background-color: #00101b;
-  color: #fff;
+  color: #a0d8ff;
 }
-/* line 685, ../../app/stylesheets/erre.scss */
+/* line 690, ../../app/stylesheets/erre.scss */
 form textarea.code:focus {
   background-color: #00101b;
   color: #58C0FF;
 }
 
-/* line 693, ../../app/stylesheets/erre.scss */
+/* line 698, ../../app/stylesheets/erre.scss */
 .pagination {
   margin-top: 10px;
   font-size: 12px;
 }
-/* line 697, ../../app/stylesheets/erre.scss */
+/* line 702, ../../app/stylesheets/erre.scss */
 .pagination a {
   text-decoration: none;
   color: #0080bf;
   font-weight: bold;
 }
-/* line 708, ../../app/stylesheets/erre.scss */
+/* line 713, ../../app/stylesheets/erre.scss */
 .pagination span.disabled {
   color: #ddd;
 }
-/* line 712, ../../app/stylesheets/erre.scss */
+/* line 717, ../../app/stylesheets/erre.scss */
 .pagination em {
   font-weight: bold;
   font-style: normal;
 }
 
-/* line 719, ../../app/stylesheets/erre.scss */
+/* line 724, ../../app/stylesheets/erre.scss */
 #conmenu {
   overflow: hidden;
   *zoom: 1;
   border-bottom: 1px solid #cccccc;
 }
-/* line 723, ../../app/stylesheets/erre.scss */
+/* line 728, ../../app/stylesheets/erre.scss */
 #conmenu h1, #conmenu h2, #conmenu h3, #conmenu h4, #conmenu h5 {
   float: left;
   width: 50%;
 }
-/* line 727, ../../app/stylesheets/erre.scss */
+/* line 732, ../../app/stylesheets/erre.scss */
 #conmenu #actions {
   float: right;
   width: 50%;
@@ -1035,7 +1039,7 @@ form textarea.code:focus {
   right: 0;
 }
 
-/* line 738, ../../app/stylesheets/erre.scss */
+/* line 743, ../../app/stylesheets/erre.scss */
 a.button {
   color: #5e5e5e;
   font-weight: bold;
@@ -1045,7 +1049,7 @@ a.button {
   background-image: -moz-linear-gradient(top, #ffffff 0%, #ebebeb 100%);
   background-image: linear-gradient(top, #ffffff 0%, #ebebeb 100%);
   width: auto;
-  padding: 6px 10px;
+  padding: 7px 10px;
   font-weight: bold;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -1054,7 +1058,6 @@ a.button {
   -khtml-border-radius: 4px;
   border-radius: 4px;
   border: 1px solid #d2d2d2;
-  clear: none;
 }
 /* line 97, ../../app/stylesheets/erre.scss */
 a.button:hover {
@@ -1073,7 +1076,7 @@ a.button:active {
   background-image: linear-gradient(top, #b8b8b8 0%, #cccccc 100%);
 }
 
-/* line 751, ../../app/stylesheets/erre.scss */
+/* line 754, ../../app/stylesheets/erre.scss */
 #flash .notice, #flash .error, #flash .alert {
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -1084,19 +1087,19 @@ a.button:active {
   border-style: solid;
   border-width: 1px;
 }
-/* line 757, ../../app/stylesheets/erre.scss */
+/* line 760, ../../app/stylesheets/erre.scss */
 #flash .notice {
   border-color: #B2E6AA;
   color: #88B082;
   background-color: #EBFFE8;
 }
-/* line 763, ../../app/stylesheets/erre.scss */
+/* line 766, ../../app/stylesheets/erre.scss */
 #flash .error {
   border-color: #E9AAAA;
   color: #B28181;
   background-color: #FFE7E7;
 }
-/* line 769, ../../app/stylesheets/erre.scss */
+/* line 772, ../../app/stylesheets/erre.scss */
 #flash .alert {
   border-color: #E7E0A9;
   color: #B0AE80;

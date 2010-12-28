@@ -150,7 +150,7 @@ a {
 		#navigation {
 		  font-size: 11px;
 		  background-color: #ddd;
-		  color: #fff;
+		  color: #888;
 		  font-weight: bold;
 		  -moz-border-radius-bottomleft: 8px;
 		  -moz-border-radius-bottomright: 8px;
@@ -643,8 +643,13 @@ form {
     margin-right: 10px;
   }
 
+  #buttons {
+    height: 50px;
+    margin-top: 10px;
+
+  }
+
 	input[type="submit"] {
-	  margin-top: 10px;
 	  color: $button-color;
 	  @include gradient-link;
 	  width: auto;
@@ -652,7 +657,7 @@ form {
 	  font-weight: bold;
 	  @include border-radius(4px);
 	  border: $border;
-	  clear: none;
+  	vertical-align: middle;
 	}
 
 	input, textarea {
@@ -679,7 +684,7 @@ form {
     font-size: 14px;
     padding: 10px 10px;
     background-color: $color-lighting-form-black;
-    color: #fff;
+    color: $color-rproject;
 
 
 	  &:focus {
@@ -739,13 +744,11 @@ a.button {
   color: $button-color;
   @include gradient-link;
   width: auto;
-  padding: 6px 10px;
+  padding: 7px 10px;
   font-weight: bold;
   @include border-radius(4px);
   border: $border;
-  clear: none;
 }
-
 
 #flash {
   .notice, .error, .alert {

@@ -2,7 +2,6 @@
 
 = form_for @snippet do |f|
   = render :partial => 'form', :locals => { :f => f }
-  = f.submit 'Modificar código'
-
-#cancel
-  = link_to 'Cancelar', snippet_url(@snippet), :class => 'cancel'
+  #buttons
+    = f.submit 'Modificar código'
+    = link_to 'Cancelar', snippet_url(@snippet), :class => 'button'
