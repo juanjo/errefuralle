@@ -1,0 +1,18 @@
+%h1= "Hola, #{@resource.email}"
+
+%p
+  = auto_link('Por favor, confirma tu cuenta de usuario en r-es.org haciendo click sobre el siguiente enlace:')
+  %br
+  = link_to confirmation_url(@resource, :confirmation_token => @resource.confirmation_token), confirmation_url(@resource, :confirmation_token => @resource.confirmation_token)
+
+%p
+  Una vez que hayas confirmado tu cuenta, tendrás acceso a r-es.org.
+
+%p.community
+  El Equipo de R-es.org
+
+#info
+  .error
+    Si has recibido este mensaje por error y no te registrastes en r-es.org, acepta nuestras disculpas y elimina este correo.
+  .no_response
+    Por favor, no respondas a este mensaje; fue enviado desde una cuenta de correo electrónico no monitoreada.

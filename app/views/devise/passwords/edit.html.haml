@@ -1,0 +1,22 @@
+- content_for :title, "Cambiar contraseña"
+
+%h1 Cambiar contraseña
+= devise_error_messages!
+
+#registrations
+  #form
+    = form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :put }) do |f|
+      = f.hidden_field :reset_password_token
+      %p
+        = f.label :password, 'Nueva contraseña'
+        %br
+        = f.password_field :password
+      %p
+        = f.label :password_confirmation, 'Repetir nueva contraseña'
+        %br
+        = f.password_field :password_confirmation
+      #buttons
+        = f.submit 'Cambiar mi contraseña'
+
+  #metainfo
+    = render :partial => "devise/shared/links"

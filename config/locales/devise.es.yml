@@ -6,9 +6,9 @@
 es: 
   devise: 
     confirmations: 
-      confirmed: "Tu cuenta ha sido confirmada. Ya has accedido a tu cuenta."
+      confirmed: "Tu cuenta ha sido confirmada."
       new: 
-        resend_confirmation: "Volver a enviar instrucciones de confirmación"
+        resend_confirmation: "Volver a enviar instrucciones de confirmación."
       send_instructions: "Recibirás un email con instrucciones para confirmar tu cuenta en pocos minutos."
     failure: 
       inactive: "Tu cuenta aún no ha sido activada."
@@ -56,10 +56,10 @@ es:
         forgot_password: "¿Olvidaste tu contraseña?"
         send_password_instructions: "Envíame instrucciones para restablecer la contraseña"
       send_instructions: "Recibirás un email con instrucciones para cambiar tu contraseña en pocos minutos."
-      updated: "Tu contraseña ha sido modificada. Ya has accedido a tu cuenta."
+      updated: "Tu contraseña ha sido modificada."
     registrations: 
       destroyed: "!Adiós! Tu cuenta ha sido cancelada. Esperamos volver a verte pronto."
-      signed_up: "Te has registrado correctamente. Si está disponible, te habremos enviado un email de confirmación."
+      signed_up: "Te has registrado correctamente. Te hemos enviado un email de confirmación."
       updated: "Has actualizado tu cuenta correctamente."
     sessions: 
       new: 
