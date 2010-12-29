@@ -1,3 +1,5 @@
+- content_for :title, "Modificar usuarios"
+
 %h1= "Modificar usuario #{@member.username}"
 
 = form_for :member, :url => { :action => "update" }, :html => { :method => :put } do |f|
