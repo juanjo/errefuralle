@@ -44,6 +44,7 @@ $erre-width: 900px;
 $jobmenu-width: 300px;
 $default-gap: 20px;
 $metainfo-users: 200px;
+$round-menu: 10px;
 
 $navibar-color: lighten($font-color, 15%);          // text-color inside navibar
 $navibar-color-hover: lighten($font-color, 10%);
@@ -93,6 +94,7 @@ $gradient-link-active-color: darken($button-color, 5%);
 
 @mixin gradient-link {
   font-weight: bold;
+
   @include text-shadow($text-shadow, 0, 1px, 0);
   @include gradient-default;
   &:hover {
@@ -202,36 +204,57 @@ a {
 		    border: $border;
 		    float: left;
 	
-		    @include border-radius(4px);
+		    @include border-radius($round-menu);
 		    height: 23px;
 
 		    margin: 10px 0 0 0;
-		    padding: 6px 0px 0 4px;
+		    padding: 4px 0px 0 4px;
 		    list-style: none;
 		    text-align: right;
 	
-		    &.offers .all-offers a,
-		    &.my_offers .offer-status a,
-		    &.static_pages.faq .faq a {
-		      color: $navibar-color-hover;
-		      @include gradient-hover;
-		    }
 		
 		    li {
 			    font-size: $font-size + 1px;
 		      margin: 0 0 0 -3px;
 		      display: inline;
 		      overflow: hidden;
+				
 		      a {
 		        @include gradient-link;
+		
 		        color: $navibar-color;
 		        border-right: 1px solid lighten($navibar-color, 80%);
 		        border-bottom: 1px solid darken($gradient-backup-color, 5%);
 		        font-weight: bold;
 		        padding: 6px 10px 5px 10px;
+		
+		        &:hover {
+  			      color: $navibar-color-hover;
+	  		      @include gradient-hover;
+		        }
 		      }
+		
+			    &:first-child {
+			      a {
+						  -moz-border-radius-bottomleft: $round-menu;
+						  -webkit-border-bottom-left-radius: $round-menu;
+						  -moz-border-radius-topleft: $round-menu;
+						  -webkit-border-top-left-radius: $round-menu;
+			      }
+			    }
+			
+			    &:last-child {
+			      a {
+   					  -moz-border-radius-bottomright: $round-menu;
+	  				  -webkit-border-bottom-right-radius: $round-menu;
+		  			  -moz-border-radius-topright: $round-menu;
+			  		  -webkit-border-top-right-radius: $round-menu;
+			      }
+			    }
+		
 		    }
 		  }
+		
 	  }
   }
 
