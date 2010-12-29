@@ -2,7 +2,7 @@ class SnippetsController < ApplicationController
   load_and_authorize_resource
 
   def index
-    @snippets = Snippet.with_state(:published).paginate(:page => params[:page], :order => 'created_at DESC', :per_page => 8)
+    @snippets = Snippet.with_state(:published).paginate(:page => params[:page], :order => 'created_at DESC', :per_page => 8, :include => [:user])
   end
 
   def show
@@ -40,5 +40,6 @@ class SnippetsController < ApplicationController
     flash[:notice] = 'Snippet destroyed'
     redirect_to snippets_url
   end
+
 
 end

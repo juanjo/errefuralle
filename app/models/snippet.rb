@@ -6,6 +6,8 @@ class Snippet < ActiveRecord::Base
   
   validates_presence_of :title, :code
 
+  has_friendly_id :title, :use_slug => true, :approximate_ascii => true
+
   # State Machine
   # #######################################
   state_machine :state, :initial => :pending do

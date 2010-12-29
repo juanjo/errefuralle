@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101228143939) do
+ActiveRecord::Schema.define(:version => 20101229014245) do
 
   create_table "job_offers", :force => true do |t|
     t.string   "title",                                   :null => false
@@ -41,8 +41,21 @@ ActiveRecord::Schema.define(:version => 20101228143939) do
     t.integer "user_id"
   end
 
+  create_table "slugs", :force => true do |t|
+    t.string   "name"
+    t.integer  "sluggable_id"
+    t.integer  "sequence",                     :default => 1, :null => false
+    t.string   "sluggable_type", :limit => 40
+    t.string   "scope"
+    t.datetime "created_at"
+  end
+
+  add_index "slugs", ["name", "sluggable_type", "sequence", "scope"], :name => "index_slugs_on_n_s_s_and_s", :unique => true
+  add_index "slugs", ["sluggable_id"], :name => "index_slugs_on_sluggable_id"
+
   create_table "snippets", :force => true do |t|
     t.string   "title",       :null => false
+    t.string   "cached_slug"
     t.text     "code",        :null => false
     t.integer  "user_id"
     t.text     "description"
