@@ -43,7 +43,7 @@ $color-title: #00418D;
 $erre-width: 900px;
 $jobmenu-width: 300px;
 $default-gap: 20px;
-$metainfo-users: 250px;
+$metainfo-users: 200px;
 
 $navibar-color: lighten($font-color, 15%);          // text-color inside navibar
 $navibar-color-hover: lighten($font-color, 10%);
@@ -815,6 +815,8 @@ a.button {
 	    color: $color-main;
 	    border-bottom: 1px solid #ccc;
 	    padding-left: 10px;
+	    font-size: 12px;
+	    margin-bottom: 0;
     }
 	  .menu {
 	    margin: 15px 0;
@@ -872,7 +874,7 @@ a.button {
 	
 	    .email {
 	      font-size: 11px;
-	      width: 130px;
+	      width: 180px;
 	      float: left;
 	    }
 
