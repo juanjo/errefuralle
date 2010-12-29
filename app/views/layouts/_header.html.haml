@@ -3,6 +3,7 @@
     - if user_signed_in?
       %li= image_tag('guest-12.png')
       %li= "Hola #{current_user.username}!"
+      %li= link_to 'Perfil', edit_user_registration_url
       %li= link_to 'Salir', destroy_user_session_path
     - else
       %li= link_to 'Crear cuenta', new_user_registration_path

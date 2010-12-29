@@ -1,0 +1,32 @@
+%h1 Modificar mi perfil de usuario
+= devise_error_messages!
+
+#registrations
+  #form
+    = form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f|
+      %p
+        = f.label :username, 'Nombre de usuario'
+        = f.text_field :username
+
+      %p
+        = f.label :email, 'Correo electrónico'
+        = f.text_field :email
+
+      %p
+        = f.label :current_password, 'Contraseña actual'
+        = f.password_field :current_password
+
+      %p
+        = f.label :password, 'Nueva contraseña'
+        = f.password_field :password
+
+      %p
+        = f.label :password_confirmation, 'Repetir nueva contraseña'
+        = f.password_field :password_confirmation
+
+      #buttons
+        = f.submit 'Modificar cuenta de usuario'
+
+  #metainfo
+    %ul.auth_menu
+      %li.cancel= link_to "Cancelar mi cuenta", registration_path(resource_name), :confirm => "¿Estás seguro de querer cancelar tu cuenta?", :method => :delete

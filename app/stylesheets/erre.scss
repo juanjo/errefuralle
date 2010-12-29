@@ -164,7 +164,8 @@ a {
 		  -webkit-border-bottom-right-radius: 8px;
 		  width: $erre-width;
 		  margin: auto;
-	  
+	    text-align: left;
+	
 	    ul {
 	      list-style-type: none;
 	      margin: 0;
@@ -943,7 +944,31 @@ ul.auth_menu {
   li.confirmation {
     background: transparent url('/images/icons/mail-12.png') no-repeat 4px 50%;
   }
+  li.cancel {
+    background: transparent url('/images/icons/delete-12.png') no-repeat 4px 50%;
+  }
 
 
 
+}
+
+
+#error_explanation {
+  border-color: #E9AAAA;
+  color: #B28181;
+  background-color: #FFE7E7;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.field_with_errors {
+  margin: 0;
+  padding: 0;
+  label {
+    color: #B28181;
+  }
+
+  input {
+    background-color: #FFF7F8;
+  }
 }

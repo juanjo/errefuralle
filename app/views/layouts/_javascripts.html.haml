@@ -14,13 +14,6 @@
 
 /[if lt IE 7 ]
   = javascript_include_tag 'dd_belatedpng'
-  
-// CSS Popup
-:javascript
-  $(document).ready(function() { $('a[rel*=facebox]').facebox({
-    loadingImage : '#{image_path('facebox/loading.gif')}', 
-    closeImage : '#{image_path('facebox/closelabel.gif')}'
-  })});
 
 = javascript_include_tag :all
 -#  Append your own using content_for :javascripts
