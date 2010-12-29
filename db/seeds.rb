@@ -10,12 +10,29 @@ u1 = User.create(:email => 'admin@erre.com', :password => '219921', :password_co
 u2 = User.create(:email => 'editor@erre.com', :password => '219921', :password_confirmation => '219921', :username => 'editor')
 u3 = User.create(:email => 'registered@erre.com', :password => '219921', :password_confirmation => '219921', :username => 'registered')
 
+u4 = User.create(:email => 'admisn@erre.com', :password => '219921', :password_confirmation => '219921', :username => 'admins')
+u5 = User.create(:email => 'editsor@erre.com', :password => '219921', :password_confirmation => '219921', :username => 'editsor')
+u6 = User.create(:email => 'regisstered@erre.com', :password => '219921', :password_confirmation => '219921', :username => 'resgistered')
+u7 = User.create(:email => 'admins@erre.com', :password => '219921', :password_confirmation => '219921', :username => 'admsin')
+u8 = User.create(:email => 'editsor@erre.com', :password => '219921', :password_confirmation => '219921', :username => 'edistor')
+u9 = User.create(:email => 'regisstered@erre.com', :password => '219921', :password_confirmation => '219921', :username => 'registesred')
+u10 = User.create(:email => 'admsin@erre.com', :password => '219921', :password_confirmation => '219921', :username => 'adsmin')
+u11 = User.create(:email => 'edistor@erre.com', :password => '219921', :password_confirmation => '219921', :username => 'esditor')
+u12 = User.create(:email => 'regisstered@erre.com', :password => '219921', :password_confirmation => '219921', :username => 'regsistered')
+
+
 admin = Role.create(:name => 'Admin')
 editor = Role.create(:name => 'Editor')
 registered = Role.create(:name => 'Registered')
 
+u1.confirm!
+u2.confirm!
+u3.confirm!
+
 u1.roles << admin
+u2.roles << registered
 u2.roles << editor
+u2.roles << admin
 u3.roles << registered
 
 Snippet.create(:description => 'S1', :user => u3, :code => 'C1', :title => 'Reading and writing both ascii files and binary files. Also, measure speed of these')

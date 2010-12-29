@@ -1,0 +1,15 @@
+%h1= "#{pluralize(@members.count, 'Usuario')}"
+
+#members
+  #confirmed_members
+    = render :partial => 'members', :locals => { :members => @members}
+
+  #metainfo
+    .menu
+      %h2 Información sobre usuarios
+      %ul
+        %li= "#{pluralize(@admins, 'Administrador')}"
+        %li= "#{pluralize(@editors, 'Editor')}"
+        %li= "#{pluralize(@registered, 'Registrado')}"
+        %li= "#{pluralize(@unconfirmed, 'Usuario')} por confirmar"
+

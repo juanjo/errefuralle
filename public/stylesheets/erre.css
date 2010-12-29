@@ -335,26 +335,26 @@ button {
 @media all and (orientation:portrait) {}
 @media all and (orientation:landscape) {}
 @media screen and (max-device-width: 480px) {}
-/* line 111, ../../app/stylesheets/erre.scss */
+/* line 112, ../../app/stylesheets/erre.scss */
 * {
   line-height: 1.4em;
   outline: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
 
-/* line 117, ../../app/stylesheets/erre.scss */
+/* line 118, ../../app/stylesheets/erre.scss */
 :focus {
   outline: 0;
 }
 
-/* line 121, ../../app/stylesheets/erre.scss */
+/* line 122, ../../app/stylesheets/erre.scss */
 html, body {
   margin: 0;
   padding: 0;
   height: 100%;
 }
 
-/* line 127, ../../app/stylesheets/erre.scss */
+/* line 128, ../../app/stylesheets/erre.scss */
 body {
   min-width: 450px;
   width: auto !important;
@@ -362,24 +362,24 @@ body {
   font-size: 12px;
 }
 
-/* line 134, ../../app/stylesheets/erre.scss */
+/* line 135, ../../app/stylesheets/erre.scss */
 a {
   text-decoration: none;
 }
-/* line 136, ../../app/stylesheets/erre.scss */
+/* line 137, ../../app/stylesheets/erre.scss */
 a img {
   border: none;
   cursor: pointer;
 }
 
-/* line 143, ../../app/stylesheets/erre.scss */
+/* line 144, ../../app/stylesheets/erre.scss */
 #container {
   border-top: 6px solid #00101b;
   min-height: 100%;
   position: relative;
   background: white url("/images/paper.png") repeat-x 0 0;
 }
-/* line 150, ../../app/stylesheets/erre.scss */
+/* line 151, ../../app/stylesheets/erre.scss */
 #container #header #navigation {
   font-size: 11px;
   background-color: #ddd;
@@ -392,37 +392,37 @@ a img {
   width: 900px;
   margin: auto;
 }
-/* line 162, ../../app/stylesheets/erre.scss */
+/* line 163, ../../app/stylesheets/erre.scss */
 #container #header #navigation ul {
   list-style-type: none;
   margin: 0;
   padding: 6px 10px;
 }
-/* line 166, ../../app/stylesheets/erre.scss */
+/* line 167, ../../app/stylesheets/erre.scss */
 #container #header #navigation ul li {
   display: inline;
   margin-right: 10px;
 }
-/* line 169, ../../app/stylesheets/erre.scss */
+/* line 170, ../../app/stylesheets/erre.scss */
 #container #header #navigation ul li a {
   text-decoration: none;
   color: #888;
   text-shadow: 1px 1px 0 #fff;
 }
-/* line 179, ../../app/stylesheets/erre.scss */
+/* line 180, ../../app/stylesheets/erre.scss */
 #container #header header {
   overflow: hidden;
   *zoom: 1;
   width: 900px;
   margin: 10px auto 30px auto;
 }
-/* line 184, ../../app/stylesheets/erre.scss */
+/* line 185, ../../app/stylesheets/erre.scss */
 #container #header header #logo {
   width: 100px;
   float: right;
   text-align: right;
 }
-/* line 190, ../../app/stylesheets/erre.scss */
+/* line 191, ../../app/stylesheets/erre.scss */
 #container #header header ul#main-menu {
   -moz-box-shadow: #666666 0px 1px 2px -1px;
   -webkit-box-shadow: #666666 0px 1px 2px -1px;
@@ -442,7 +442,7 @@ a img {
   list-style: none;
   text-align: right;
 }
-/* line 205, ../../app/stylesheets/erre.scss */
+/* line 206, ../../app/stylesheets/erre.scss */
 #container #header header ul#main-menu.offers .all-offers a, #container #header header ul#main-menu.my_offers .offer-status a, #container #header header ul#main-menu.static_pages.faq .faq a {
   color: #5e5e5e;
   background: #d6d6d6;
@@ -450,14 +450,14 @@ a img {
   background-image: -moz-linear-gradient(top, #d9d9d9 0%, #ededed 100%);
   background-image: linear-gradient(top, #d9d9d9 0%, #ededed 100%);
 }
-/* line 209, ../../app/stylesheets/erre.scss */
+/* line 210, ../../app/stylesheets/erre.scss */
 #container #header header ul#main-menu li {
   font-size: 13px;
   margin: 0 0 0 -3px;
   display: inline;
   overflow: hidden;
 }
-/* line 214, ../../app/stylesheets/erre.scss */
+/* line 215, ../../app/stylesheets/erre.scss */
 #container #header header ul#main-menu li a {
   font-weight: bold;
   text-shadow: white 0 1px 0;
@@ -471,7 +471,7 @@ a img {
   font-weight: bold;
   padding: 6px 10px 5px 10px;
 }
-/* line 97, ../../app/stylesheets/erre.scss */
+/* line 98, ../../app/stylesheets/erre.scss */
 #container #header header ul#main-menu li a:hover {
   color: #515151;
   background: #d6d6d6;
@@ -479,7 +479,7 @@ a img {
   background-image: -moz-linear-gradient(top, #d9d9d9 0%, #ededed 100%);
   background-image: linear-gradient(top, #d9d9d9 0%, #ededed 100%);
 }
-/* line 101, ../../app/stylesheets/erre.scss */
+/* line 102, ../../app/stylesheets/erre.scss */
 #container #header header ul#main-menu li a:active {
   color: #515151;
   background: #a3a3a3;
@@ -487,31 +487,32 @@ a img {
   background-image: -moz-linear-gradient(top, #b8b8b8 0%, #cccccc 100%);
   background-image: linear-gradient(top, #b8b8b8 0%, #cccccc 100%);
 }
-/* line 227, ../../app/stylesheets/erre.scss */
+/* line 228, ../../app/stylesheets/erre.scss */
 #container #main {
   width: 900px;
   margin: auto;
   padding-bottom: 200px;
 }
-/* line 233, ../../app/stylesheets/erre.scss */
+/* line 234, ../../app/stylesheets/erre.scss */
 #container #main #flash {
   padding: 0;
   margin: 5px 0 5px 0;
 }
-/* line 236, ../../app/stylesheets/erre.scss */
+/* line 237, ../../app/stylesheets/erre.scss */
 #container #main #flash p {
   margin: 0;
   padding: 5px 0 5px 17px;
 }
-/* line 239, ../../app/stylesheets/erre.scss */
+/* line 240, ../../app/stylesheets/erre.scss */
 #container #main h1 {
   font-size: 20px;
   color: #1c1c1c;
   text-shadow: 1px 1px 0 #ccc;
   margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
 }
 
-/* line 250, ../../app/stylesheets/erre.scss */
+/* line 252, ../../app/stylesheets/erre.scss */
 footer {
   background-color: #00101b;
   margin: 0;
@@ -524,146 +525,147 @@ footer {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 261, ../../app/stylesheets/erre.scss */
+/* line 263, ../../app/stylesheets/erre.scss */
 footer #footer {
   width: 900px;
   margin: auto;
   padding: 30px;
   color: #fff;
 }
-/* line 267, ../../app/stylesheets/erre.scss */
+/* line 269, ../../app/stylesheets/erre.scss */
 footer #footer #isotipo {
   width: 100px;
   float: left;
   position: relative;
   top: 50%;
 }
-/* line 274, ../../app/stylesheets/erre.scss */
+/* line 276, ../../app/stylesheets/erre.scss */
 footer #footer #menus {
   width: 792px;
   float: right;
   text-align: right;
 }
-/* line 280, ../../app/stylesheets/erre.scss */
+/* line 282, ../../app/stylesheets/erre.scss */
 footer #footer #menus .info {
   width: 250px;
   float: right;
   margin-left: 20px;
 }
-/* line 284, ../../app/stylesheets/erre.scss */
+/* line 286, ../../app/stylesheets/erre.scss */
 footer #footer #menus .info ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-/* line 289, ../../app/stylesheets/erre.scss */
+/* line 291, ../../app/stylesheets/erre.scss */
 footer #footer #menus .info ul li {
   border-bottom: 1px solid #4B4B4B;
   padding: 2px 4px;
 }
-/* line 292, ../../app/stylesheets/erre.scss */
+/* line 294, ../../app/stylesheets/erre.scss */
 footer #footer #menus .info ul li a {
   color: #fff;
 }
 
-/* line 304, ../../app/stylesheets/erre.scss */
+/* line 306, ../../app/stylesheets/erre.scss */
 #joboffer #title {
   border-bottom: 1px solid #ccc;
   margin-bottom: 20px;
 }
-/* line 308, ../../app/stylesheets/erre.scss */
+/* line 310, ../../app/stylesheets/erre.scss */
 #joboffer h1.title {
   margin-bottom: 0 !important;
 }
-/* line 311, ../../app/stylesheets/erre.scss */
+/* line 313, ../../app/stylesheets/erre.scss */
 #joboffer #info {
   margin-top: 0;
   font-size: 14px;
 }
-/* line 315, ../../app/stylesheets/erre.scss */
+/* line 317, ../../app/stylesheets/erre.scss */
 #joboffer #info .company, #joboffer #info .separator {
   color: #888;
 }
-/* line 319, ../../app/stylesheets/erre.scss */
+/* line 321, ../../app/stylesheets/erre.scss */
 #joboffer #info .type {
   color: #2D9E29;
   font-weight: bold;
 }
-/* line 326, ../../app/stylesheets/erre.scss */
+/* line 328, ../../app/stylesheets/erre.scss */
 #joboffer #explanation {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 329, ../../app/stylesheets/erre.scss */
+/* line 331, ../../app/stylesheets/erre.scss */
 #joboffer #explanation #description {
   width: 670px;
   float: left;
   overflow: auto;
 }
-/* line 335, ../../app/stylesheets/erre.scss */
+/* line 337, ../../app/stylesheets/erre.scss */
 #joboffer #explanation #description h1, #joboffer #explanation #description h2, #joboffer #explanation #description h3, #joboffer #explanation #description h4, #joboffer #explanation #description h5 {
   margin: 10px 0;
   padding: 0;
   text-shadow: none;
   color: #434343 !important;
+  border: none;
 }
-/* line 342, ../../app/stylesheets/erre.scss */
+/* line 345, ../../app/stylesheets/erre.scss */
 #joboffer #explanation #description h1 {
   font-size: 16px;
 }
-/* line 345, ../../app/stylesheets/erre.scss */
+/* line 348, ../../app/stylesheets/erre.scss */
 #joboffer #explanation #description h2 {
   font-size: 14px;
 }
-/* line 348, ../../app/stylesheets/erre.scss */
+/* line 351, ../../app/stylesheets/erre.scss */
 #joboffer #explanation #description h3 {
   font-size: 13px;
 }
-/* line 351, ../../app/stylesheets/erre.scss */
+/* line 354, ../../app/stylesheets/erre.scss */
 #joboffer #explanation #description h4 {
   font-size: 12px;
 }
-/* line 354, ../../app/stylesheets/erre.scss */
+/* line 357, ../../app/stylesheets/erre.scss */
 #joboffer #explanation #description h5 {
   font-size: 11px;
 }
-/* line 358, ../../app/stylesheets/erre.scss */
+/* line 361, ../../app/stylesheets/erre.scss */
 #joboffer #explanation #description p {
   margin: 10px 0;
 }
-/* line 362, ../../app/stylesheets/erre.scss */
+/* line 365, ../../app/stylesheets/erre.scss */
 #joboffer #explanation #description a {
   color: #0080bf;
 }
-/* line 367, ../../app/stylesheets/erre.scss */
+/* line 370, ../../app/stylesheets/erre.scss */
 #joboffer #explanation #metainfo {
   float: right;
   width: 180px;
   margin: 0;
 }
-/* line 372, ../../app/stylesheets/erre.scss */
+/* line 375, ../../app/stylesheets/erre.scss */
 #joboffer #explanation #metainfo h2 {
   color: #434343;
   border-bottom: 1px solid #ccc;
   padding-left: 4px;
 }
-/* line 378, ../../app/stylesheets/erre.scss */
+/* line 381, ../../app/stylesheets/erre.scss */
 #joboffer #explanation #metainfo .author {
   display: block;
   font-weight: bold;
   color: #434343;
 }
-/* line 384, ../../app/stylesheets/erre.scss */
+/* line 387, ../../app/stylesheets/erre.scss */
 #joboffer #explanation #metainfo .date {
   display: block;
   color: #00418d;
   font-weight: bold;
 }
-/* line 390, ../../app/stylesheets/erre.scss */
+/* line 393, ../../app/stylesheets/erre.scss */
 #joboffer #explanation #metainfo .menu {
   margin: 20px 0;
 }
-/* line 393, ../../app/stylesheets/erre.scss */
+/* line 396, ../../app/stylesheets/erre.scss */
 #joboffer #explanation #metainfo .menu a {
   display: block;
   text-decoration: none;
@@ -671,27 +673,27 @@ footer #footer #menus .info ul li a {
   color: #555;
   padding-left: 4px;
 }
-/* line 400, ../../app/stylesheets/erre.scss */
+/* line 403, ../../app/stylesheets/erre.scss */
 #joboffer #explanation #metainfo .menu a:hover {
   background-color: #fbfeea;
 }
 
-/* line 412, ../../app/stylesheets/erre.scss */
+/* line 415, ../../app/stylesheets/erre.scss */
 #snippet #description {
   margin: 5px 0 20px 0;
 }
-/* line 416, ../../app/stylesheets/erre.scss */
+/* line 419, ../../app/stylesheets/erre.scss */
 #snippet h1.title {
   border-bottom: 1px solid #ccc;
   margin-bottom: 20px !important;
 }
 
-/* line 423, ../../app/stylesheets/erre.scss */
+/* line 426, ../../app/stylesheets/erre.scss */
 #code {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 426, ../../app/stylesheets/erre.scss */
+/* line 429, ../../app/stylesheets/erre.scss */
 #code #highlight_code {
   font-family: "Courier New", "Courier New", monospace;
   font-size: 12px;
@@ -709,35 +711,35 @@ footer #footer #menus .info ul li a {
   border: 2px solid #ddd;
   overflow: auto;
 }
-/* line 439, ../../app/stylesheets/erre.scss */
+/* line 442, ../../app/stylesheets/erre.scss */
 #code #metainfo {
   float: right;
   width: 180px;
   margin: 0;
 }
-/* line 444, ../../app/stylesheets/erre.scss */
+/* line 447, ../../app/stylesheets/erre.scss */
 #code #metainfo h2 {
   color: #434343;
   border-bottom: 1px solid #ccc;
   padding-left: 4px;
 }
-/* line 450, ../../app/stylesheets/erre.scss */
+/* line 453, ../../app/stylesheets/erre.scss */
 #code #metainfo .author {
   display: block;
   font-weight: bold;
   color: #434343;
 }
-/* line 456, ../../app/stylesheets/erre.scss */
+/* line 459, ../../app/stylesheets/erre.scss */
 #code #metainfo .date {
   display: block;
   color: #00418d;
   font-weight: bold;
 }
-/* line 462, ../../app/stylesheets/erre.scss */
+/* line 465, ../../app/stylesheets/erre.scss */
 #code #metainfo .menu {
   margin: 20px 0;
 }
-/* line 465, ../../app/stylesheets/erre.scss */
+/* line 468, ../../app/stylesheets/erre.scss */
 #code #metainfo .menu a {
   display: block;
   text-decoration: none;
@@ -745,11 +747,11 @@ footer #footer #menus .info ul li a {
   color: #555;
   padding-left: 4px;
 }
-/* line 472, ../../app/stylesheets/erre.scss */
+/* line 475, ../../app/stylesheets/erre.scss */
 #code #metainfo .menu a:hover {
   background-color: #fbfeea;
 }
-/* line 478, ../../app/stylesheets/erre.scss */
+/* line 481, ../../app/stylesheets/erre.scss */
 #code #metainfo #back a.back {
   text-decoration: none;
   background: #9AD8FF;
@@ -763,24 +765,24 @@ footer #footer #menus .info ul li a {
   font-size: 10px;
 }
 
-/* line 495, ../../app/stylesheets/erre.scss */
+/* line 498, ../../app/stylesheets/erre.scss */
 #joboffers {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 498, ../../app/stylesheets/erre.scss */
+/* line 501, ../../app/stylesheets/erre.scss */
 #joboffers #jobmenu {
   margin-top: 20px;
   width: 300px;
   float: right;
 }
-/* line 503, ../../app/stylesheets/erre.scss */
+/* line 506, ../../app/stylesheets/erre.scss */
 #joboffers #jobmenu ul.jobsocial {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-/* line 508, ../../app/stylesheets/erre.scss */
+/* line 511, ../../app/stylesheets/erre.scss */
 #joboffers #jobmenu ul.jobsocial li {
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -791,51 +793,51 @@ footer #footer #menus .info ul li a {
   border: 1px solid #ddd;
   margin-bottom: 10px;
 }
-/* line 513, ../../app/stylesheets/erre.scss */
+/* line 516, ../../app/stylesheets/erre.scss */
 #joboffers #jobmenu ul.jobsocial li a {
   display: block;
   padding: 6px 10px;
   text-decoration: none;
   font-weight: bold;
 }
-/* line 523, ../../app/stylesheets/erre.scss */
+/* line 526, ../../app/stylesheets/erre.scss */
 #joboffers #joblist {
   width: 580px;
   float: left;
 }
-/* line 527, ../../app/stylesheets/erre.scss */
+/* line 530, ../../app/stylesheets/erre.scss */
 #joboffers #joblist .job_offer {
   font-size: 16px;
   border-bottom: 1px solid #ddd;
   padding: 4px 10px 10px 10px;
 }
-/* line 533, ../../app/stylesheets/erre.scss */
+/* line 536, ../../app/stylesheets/erre.scss */
 #joboffers #joblist .job_offer:hover {
   background-color: #f0f0f0;
 }
-/* line 537, ../../app/stylesheets/erre.scss */
+/* line 540, ../../app/stylesheets/erre.scss */
 #joboffers #joblist .job_offer #info {
   font-size: 11px;
 }
-/* line 539, ../../app/stylesheets/erre.scss */
+/* line 542, ../../app/stylesheets/erre.scss */
 #joboffers #joblist .job_offer #info .company {
   color: #888;
 }
-/* line 543, ../../app/stylesheets/erre.scss */
+/* line 546, ../../app/stylesheets/erre.scss */
 #joboffers #joblist .job_offer #info .type {
   color: #2D9E29;
   font-weight: bold;
 }
-/* line 549, ../../app/stylesheets/erre.scss */
+/* line 552, ../../app/stylesheets/erre.scss */
 #joboffers #joblist .job_offer .date {
   color: #888;
   font-size: 11px;
 }
-/* line 554, ../../app/stylesheets/erre.scss */
+/* line 557, ../../app/stylesheets/erre.scss */
 #joboffers #joblist .job_offer .description {
   font-size: 11px;
 }
-/* line 560, ../../app/stylesheets/erre.scss */
+/* line 563, ../../app/stylesheets/erre.scss */
 #joboffers #joblist .job_offer .title a {
   text-decoration: none;
   color: #00418d;
@@ -843,31 +845,31 @@ footer #footer #menus .info ul li a {
   font-weight: bold;
 }
 
-/* line 573, ../../app/stylesheets/erre.scss */
+/* line 576, ../../app/stylesheets/erre.scss */
 #snippets {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 576, ../../app/stylesheets/erre.scss */
+/* line 579, ../../app/stylesheets/erre.scss */
 #snippets .snippet {
   font-size: 16px;
   border-bottom: 1px solid #ddd;
   padding: 4px 10px 10px 10px;
 }
-/* line 582, ../../app/stylesheets/erre.scss */
+/* line 585, ../../app/stylesheets/erre.scss */
 #snippets .snippet:hover {
   background-color: #f0f0f0;
 }
-/* line 586, ../../app/stylesheets/erre.scss */
+/* line 589, ../../app/stylesheets/erre.scss */
 #snippets .snippet .date {
   color: #888;
   font-size: 11px;
 }
-/* line 591, ../../app/stylesheets/erre.scss */
+/* line 594, ../../app/stylesheets/erre.scss */
 #snippets .snippet .description {
   font-size: 11px;
 }
-/* line 597, ../../app/stylesheets/erre.scss */
+/* line 600, ../../app/stylesheets/erre.scss */
 #snippets .snippet .title a {
   text-decoration: none;
   display: block;
@@ -875,12 +877,12 @@ footer #footer #menus .info ul li a {
   color: #00418d;
 }
 
-/* line 607, ../../app/stylesheets/erre.scss */
+/* line 610, ../../app/stylesheets/erre.scss */
 #cancel {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 610, ../../app/stylesheets/erre.scss */
+/* line 613, ../../app/stylesheets/erre.scss */
 #cancel a.cancel {
   float: left;
   text-decoration: none;
@@ -904,26 +906,26 @@ footer #footer #menus .info ul li a {
   text-align: center;
   text-transform: uppercase;
 }
-/* line 628, ../../app/stylesheets/erre.scss */
+/* line 631, ../../app/stylesheets/erre.scss */
 #cancel a.cancel:hover {
   background-color: #999;
 }
 
-/* line 637, ../../app/stylesheets/erre.scss */
+/* line 640, ../../app/stylesheets/erre.scss */
 form p {
   margin-top: 15px;
 }
-/* line 640, ../../app/stylesheets/erre.scss */
+/* line 643, ../../app/stylesheets/erre.scss */
 form label {
   font-weight: bold;
   margin-right: 10px;
 }
-/* line 645, ../../app/stylesheets/erre.scss */
+/* line 648, ../../app/stylesheets/erre.scss */
 form #buttons {
   height: 50px;
   margin-top: 10px;
 }
-/* line 651, ../../app/stylesheets/erre.scss */
+/* line 654, ../../app/stylesheets/erre.scss */
 form input[type="submit"] {
   color: #5e5e5e;
   font-weight: bold;
@@ -944,7 +946,7 @@ form input[type="submit"] {
   border: 1px solid #d2d2d2;
   vertical-align: middle;
 }
-/* line 97, ../../app/stylesheets/erre.scss */
+/* line 98, ../../app/stylesheets/erre.scss */
 form input[type="submit"]:hover {
   color: #515151;
   background: #d6d6d6;
@@ -952,7 +954,7 @@ form input[type="submit"]:hover {
   background-image: -moz-linear-gradient(top, #d9d9d9 0%, #ededed 100%);
   background-image: linear-gradient(top, #d9d9d9 0%, #ededed 100%);
 }
-/* line 101, ../../app/stylesheets/erre.scss */
+/* line 102, ../../app/stylesheets/erre.scss */
 form input[type="submit"]:active {
   color: #515151;
   background: #a3a3a3;
@@ -960,7 +962,7 @@ form input[type="submit"]:active {
   background-image: -moz-linear-gradient(top, #b8b8b8 0%, #cccccc 100%);
   background-image: linear-gradient(top, #b8b8b8 0%, #cccccc 100%);
 }
-/* line 662, ../../app/stylesheets/erre.scss */
+/* line 665, ../../app/stylesheets/erre.scss */
 form input, form textarea {
   vertical-align: bottom;
   -moz-border-radius: 4px;
@@ -974,16 +976,16 @@ form input, form textarea {
   color: #444;
   padding: 6px 10px;
 }
-/* line 671, ../../app/stylesheets/erre.scss */
+/* line 674, ../../app/stylesheets/erre.scss */
 form input:focus, form textarea:focus {
   background-color: #fefef2;
 }
-/* line 676, ../../app/stylesheets/erre.scss */
+/* line 679, ../../app/stylesheets/erre.scss */
 form input.title {
   font-size: 17px;
   font-weight: bold;
 }
-/* line 681, ../../app/stylesheets/erre.scss */
+/* line 684, ../../app/stylesheets/erre.scss */
 form textarea.code {
   font-family: "Courier New", "Courier New", monospace !important;
   font-size: 14px;
@@ -991,45 +993,46 @@ form textarea.code {
   background-color: #00101b;
   color: #a0d8ff;
 }
-/* line 689, ../../app/stylesheets/erre.scss */
+/* line 692, ../../app/stylesheets/erre.scss */
 form textarea.code:focus {
   background-color: #00101b;
   color: #58C0FF;
 }
 
-/* line 697, ../../app/stylesheets/erre.scss */
+/* line 700, ../../app/stylesheets/erre.scss */
 .pagination {
   margin-top: 10px;
   font-size: 12px;
 }
-/* line 701, ../../app/stylesheets/erre.scss */
+/* line 704, ../../app/stylesheets/erre.scss */
 .pagination a {
   text-decoration: none;
   color: #0080bf;
   font-weight: bold;
 }
-/* line 712, ../../app/stylesheets/erre.scss */
+/* line 715, ../../app/stylesheets/erre.scss */
 .pagination span.disabled {
   color: #ddd;
 }
-/* line 716, ../../app/stylesheets/erre.scss */
+/* line 719, ../../app/stylesheets/erre.scss */
 .pagination em {
   font-weight: bold;
   font-style: normal;
 }
 
-/* line 723, ../../app/stylesheets/erre.scss */
+/* line 726, ../../app/stylesheets/erre.scss */
 #conmenu {
   overflow: hidden;
   *zoom: 1;
   border-bottom: 1px solid #cccccc;
 }
-/* line 727, ../../app/stylesheets/erre.scss */
+/* line 730, ../../app/stylesheets/erre.scss */
 #conmenu h1, #conmenu h2, #conmenu h3, #conmenu h4, #conmenu h5 {
   float: left;
   width: 50%;
+  border: none !important;
 }
-/* line 731, ../../app/stylesheets/erre.scss */
+/* line 735, ../../app/stylesheets/erre.scss */
 #conmenu #actions {
   float: right;
   width: 50%;
@@ -1039,7 +1042,7 @@ form textarea.code:focus {
   right: 0;
 }
 
-/* line 742, ../../app/stylesheets/erre.scss */
+/* line 746, ../../app/stylesheets/erre.scss */
 a.button {
   color: #5e5e5e;
   font-weight: bold;
@@ -1059,7 +1062,7 @@ a.button {
   border-radius: 4px;
   border: 1px solid #d2d2d2;
 }
-/* line 97, ../../app/stylesheets/erre.scss */
+/* line 98, ../../app/stylesheets/erre.scss */
 a.button:hover {
   color: #515151;
   background: #d6d6d6;
@@ -1067,7 +1070,7 @@ a.button:hover {
   background-image: -moz-linear-gradient(top, #d9d9d9 0%, #ededed 100%);
   background-image: linear-gradient(top, #d9d9d9 0%, #ededed 100%);
 }
-/* line 101, ../../app/stylesheets/erre.scss */
+/* line 102, ../../app/stylesheets/erre.scss */
 a.button:active {
   color: #515151;
   background: #a3a3a3;
@@ -1076,7 +1079,7 @@ a.button:active {
   background-image: linear-gradient(top, #b8b8b8 0%, #cccccc 100%);
 }
 
-/* line 753, ../../app/stylesheets/erre.scss */
+/* line 757, ../../app/stylesheets/erre.scss */
 #flash .notice, #flash .error, #flash .alert {
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -1087,21 +1090,133 @@ a.button:active {
   border-style: solid;
   border-width: 1px;
 }
-/* line 759, ../../app/stylesheets/erre.scss */
+/* line 763, ../../app/stylesheets/erre.scss */
 #flash .notice {
   border-color: #B2E6AA;
   color: #88B082;
   background-color: #EBFFE8;
 }
-/* line 765, ../../app/stylesheets/erre.scss */
+/* line 769, ../../app/stylesheets/erre.scss */
 #flash .error {
   border-color: #E9AAAA;
   color: #B28181;
   background-color: #FFE7E7;
 }
-/* line 771, ../../app/stylesheets/erre.scss */
+/* line 775, ../../app/stylesheets/erre.scss */
 #flash .alert {
   border-color: #E7E0A9;
   color: #B0AE80;
   background-color: #FFFCE7;
+}
+
+/* line 785, ../../app/stylesheets/erre.scss */
+#members #metainfo {
+  float: right;
+  width: 250px;
+}
+/* line 789, ../../app/stylesheets/erre.scss */
+#members #metainfo h2 {
+  color: #434343;
+  border-bottom: 1px solid #ccc;
+  padding-left: 10px;
+}
+/* line 794, ../../app/stylesheets/erre.scss */
+#members #metainfo .menu {
+  margin: 15px 0;
+}
+/* line 797, ../../app/stylesheets/erre.scss */
+#members #metainfo .menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 802, ../../app/stylesheets/erre.scss */
+#members #metainfo .menu ul li {
+  border-bottom: 1px solid #ddd;
+  padding: 4px 10px;
+}
+/* line 806, ../../app/stylesheets/erre.scss */
+#members #metainfo .menu ul li a {
+  display: block;
+  text-decoration: none;
+  color: #555;
+}
+/* line 811, ../../app/stylesheets/erre.scss */
+#members #metainfo .menu ul li a:hover {
+  background-color: #fbfeea;
+}
+/* line 821, ../../app/stylesheets/erre.scss */
+#members #confirmed_members, #members #unconfirmed_members {
+  float: left;
+  width: 630px;
+  padding-top: 0;
+  margin-top: 15px;
+}
+/* line 827, ../../app/stylesheets/erre.scss */
+#members #confirmed_members .member, #members #unconfirmed_members .member {
+  overflow: hidden;
+  *zoom: 1;
+  background: transparent url("/images/icons/user-12.png") no-repeat 0 50%;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 5px 10px 25px;
+}
+/* line 833, ../../app/stylesheets/erre.scss */
+#members #confirmed_members .member:hover, #members #unconfirmed_members .member:hover {
+  background-color: #f0f0f0;
+}
+/* line 837, ../../app/stylesheets/erre.scss */
+#members #confirmed_members .member a, #members #unconfirmed_members .member a {
+  color: #0080bf;
+}
+/* line 841, ../../app/stylesheets/erre.scss */
+#members #confirmed_members .member .username, #members #unconfirmed_members .member .username {
+  font-weight: bold;
+  font-size: 12px;
+  width: 90px;
+  float: left;
+}
+/* line 848, ../../app/stylesheets/erre.scss */
+#members #confirmed_members .member .email, #members #unconfirmed_members .member .email {
+  font-size: 11px;
+  width: 130px;
+  float: left;
+}
+/* line 854, ../../app/stylesheets/erre.scss */
+#members #confirmed_members .member .roles, #members #unconfirmed_members .member .roles {
+  font-size: 11px;
+  width: 160px;
+  float: left;
+  color: #999;
+}
+/* line 861, ../../app/stylesheets/erre.scss */
+#members #confirmed_members .member .confirmed, #members #unconfirmed_members .member .confirmed {
+  width: 20px;
+  float: left;
+}
+/* line 866, ../../app/stylesheets/erre.scss */
+#members #confirmed_members .member .icon, #members #unconfirmed_members .member .icon {
+  width: 20px;
+  float: right;
+}
+/* line 871, ../../app/stylesheets/erre.scss */
+#members #confirmed_members .member .date, #members #unconfirmed_members .member .date {
+  font-size: 11px;
+  width: 80px;
+  float: left;
+  text-align: center;
+}
+/* line 880, ../../app/stylesheets/erre.scss */
+#members #confirmed_members .thead, #members #unconfirmed_members .thead {
+  background-image: none;
+  background-color: #555;
+  color: #fff;
+}
+/* line 885, ../../app/stylesheets/erre.scss */
+#members #confirmed_members .thead:hover, #members #unconfirmed_members .thead:hover {
+  background-color: #555;
+  color: #fff;
+}
+/* line 889, ../../app/stylesheets/erre.scss */
+#members #confirmed_members .thead .roles, #members #unconfirmed_members .thead .roles {
+  color: #fff;
 }

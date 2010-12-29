@@ -43,6 +43,7 @@ $color-title: #00418D;
 $erre-width: 900px;
 $jobmenu-width: 300px;
 $default-gap: 20px;
+$metainfo-users: 250px;
 
 $navibar-color: lighten($font-color, 15%);          // text-color inside navibar
 $navibar-color-hover: lighten($font-color, 10%);
@@ -241,6 +242,7 @@ a {
       color: $color-h;
       text-shadow: 1px 1px 0 #ccc;
       margin-bottom: 10px;
+      border-bottom: 1px solid #ccc;
     }
   }
 
@@ -337,6 +339,7 @@ footer {
 	      padding: 0;
  	      text-shadow: none;
         color: $color-main !important;
+        border: none;
 	    }
 	
 	    h1 {
@@ -727,6 +730,7 @@ form {
   h1, h2, h3, h4, h5 {
     float: left;
     width: 50%;
+    border: none !important;
   }
   #actions {
     float: right;
@@ -773,4 +777,118 @@ a.button {
     color: #B0AE80;
     background-color: #FFFCE7;
   }
+}
+
+
+#members {  
+
+  #metainfo {
+    float: right;
+    width: $metainfo-users;
+
+    h2 {
+	    color: $color-main;
+	    border-bottom: 1px solid #ccc;
+	    padding-left: 10px;
+    }
+	  .menu {
+	    margin: 15px 0;
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+  	      border-bottom: 1px solid #ddd;
+		      padding: 4px 10px;
+
+			    a {
+			      display: block;
+			      text-decoration: none;
+			      color: #555;
+
+			      &:hover {
+			        background-color: $color-lighting;
+			      }
+			    }
+		   } 
+	    }
+	  }
+
+  }
+
+	#confirmed_members, #unconfirmed_members {
+	  float: left;
+	  width: $erre-width - $metainfo-users - $default-gap;
+	  padding-top: 0;
+	  margin-top: 15px;
+	
+	  .member {
+	    @include clearfix;	    
+	    background: transparent url('/images/icons/user-12.png') no-repeat 0 50%;
+	    border-bottom: 1px solid #ccc;
+	    padding: 10px 5px 10px 25px;
+
+	    &:hover {
+	      background-color: $color-lighting-dark;
+	    }
+	
+	    a {
+	      color: $color-github;
+	    }
+
+	    .username {
+	      font-weight: bold;
+	      font-size: 12px;
+	      width: 90px;
+	      float: left;
+	    }
+	
+	    .email {
+	      font-size: 11px;
+	      width: 130px;
+	      float: left;
+	    }
+
+	    .roles {
+	      font-size: 11px;
+	      width: 160px;
+	      float: left;
+	      color: #999;
+	    }
+
+	    .confirmed {
+	      width: 20px;
+	      float: left;
+	    }
+	
+	    .icon {
+	      width: 20px;
+	      float: right;
+	    }
+	
+	    .date {
+	      font-size: 11px;
+	      width: 80px;
+	      float: left;
+	      text-align: center;
+	    }
+	
+	  }
+	
+	  .thead {
+	    background-image: none;
+	    background-color: #555;
+	    color: #fff;
+	
+	    &:hover {
+  	    background-color: #555;
+	      color: #fff;
+	    }
+	    .roles {
+	      color: #fff;
+	    }
+  	}
+	}
 }

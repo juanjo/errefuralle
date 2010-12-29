@@ -1,0 +1,26 @@
+%h1= "Modificar usuario #{@member.username}"
+
+= form_for :member, :url => { :action => "update" }, :html => { :method => :put } do |f|
+  %p
+    = f.label :username, 'Nombre de usuario'
+    %br
+    = f.text_field :username, :size => 50, :class => 'title', :readonly => true
+
+  %p
+    = f.label :email, 'Correo electrónico'
+    %br
+    = f.text_field :email, :size => 50, :class => 'title'
+
+  %p
+    = f.label :roles, 'Roles'
+    %br
+    - Role.all.each do |role|
+      = check_box_tag 'role_id[]', role.id, @member.roles.include?(role)
+      = role.name
+
+  %p
+    = f.label :roles, 'Información del usuario'
+
+  #buttons
+    = f.submit 'Modificar usuario'
+    = link_to 'Cancelar', members_url, :class => 'button'

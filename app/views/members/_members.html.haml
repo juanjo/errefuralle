@@ -1,0 +1,29 @@
+%div{:class => 'member thead'}
+  .confirmed A
+  .username Usuario
+  .email Email
+  .date Creación
+  .date Activación
+  .roles Roles
+  .icon E
+  .icon M
+ 
+- members.each do |member|
+  %div{:id => "member-#{member.id}", :class => 'member'}
+    %div.confirmed= member.confirmed_at ? image_tag('icons/lightbulb-12.png') : image_tag('icons/lightbulb-12-off.png')
+    .username= member.username
+    .email= mail_to member.email, member.email, :title => "Enviar email a #{member.email}"
+    .date= distance_of_time_in_words(Time.now, member.created_at)
+    .date= member.confirmed_at ? distance_of_time_in_words(Time.now, member.confirmed_at) : '--'
+    .roles= member.roles.map {|rol| rol.name }.join(' / ')
+    .icon
+      - if member == current_user
+        = image_tag('icons/delete-12-off.png')
+      - else
+        = link_to image_tag('icons/delete-12.png'), member_url(member), :title => "Eliminar usuario", :confirm => '¿Estás seguro en eliminar este usuario?', :method => :delete
+
+    .icon
+      - if member.confirmed_at
+        = link_to image_tag('icons/edit-12.png'), edit_member_url(member), :title => "Eliminar usuario"
+      - else
+        = image_tag('icons/edit-12-off.png')

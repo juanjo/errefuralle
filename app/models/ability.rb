@@ -20,6 +20,7 @@ class Ability
 
     else
       can :read, :all
+      cannot :read, User
     end
   end
 end
