@@ -1478,3 +1478,36 @@ ul.auth_menu li.cancel {
 #errorExplanation ul {
   margin: 4px 20px;
 }
+
+/* line 1161, ../../app/stylesheets/erre.scss */
+#fourhundred {
+  border-top: 1px solid #ccc;
+  text-align: left;
+}
+/* line 1165, ../../app/stylesheets/erre.scss */
+#fourhundred h1.oops {
+  border: none !important;
+  font-size: 100px !important;
+  text-shadow: 3px 3px 4px #8B8B8B !important;
+}
+/* line 1172, ../../app/stylesheets/erre.scss */
+#fourhundred h1.excuses {
+  border: none !important;
+  font-size: 40px !important;
+  line-height: 35px !important;
+}
+/* line 1179, ../../app/stylesheets/erre.scss */
+#fourhundred h1.fourofour {
+  border: none !important;
+  font-size: 40px !important;
+  color: #ccc !important;
+  text-shadow: none;
+}
+/* line 1186, ../../app/stylesheets/erre.scss */
+#fourhundred #nerd {
+  position: absolute;
+  bottom: 150px;
+  margin-bottom: -20px;
+  padding-bottom: -50px;
+  padding: 0;
+}

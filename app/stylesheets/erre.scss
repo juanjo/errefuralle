@@ -1156,3 +1156,38 @@ ul.auth_menu {
 field_with_errors {
 
 }
+
+
+#fourhundred {
+  border-top: 1px solid #ccc;
+  text-align: left;
+
+  h1.oops {
+    border: none !important;
+    font-size: 100px !important;
+    text-shadow: 3px 3px 4px #8B8B8B !important;
+
+  }
+
+  h1.excuses {
+    border: none !important;
+    font-size: 40px !important;
+    line-height: 35px !important;
+  }
+
+
+  h1.fourofour {
+    border: none !important;
+    font-size: 40px !important;
+    color: #ccc !important;
+    text-shadow: none;
+  }
+
+  #nerd {
+    position: absolute;
+    bottom: 150px;
+    margin-bottom: -20px;
+    padding-bottom: -50px;
+    padding: 0;
+  }
+}
