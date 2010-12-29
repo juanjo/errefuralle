@@ -5,6 +5,7 @@ class Snippet < ActiveRecord::Base
   after_create :publish_directly
   
   validates_presence_of :title, :code
+  validates_length_of :title, :within => 4..255
 
   has_friendly_id :title, :use_slug => true, :approximate_ascii => true
 

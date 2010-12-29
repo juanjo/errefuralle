@@ -38,8 +38,8 @@ gem 'devise', '1.1.5'
 gem 'cancan', '1.4.1'
 gem 'state_machine', '0.9.4'
 gem 'will_paginate', '~> 3.0.pre2'
-gem "friendly_id", "~> 3.1"
 
+gem "friendly_id", "~> 3.1"
 
 gem 'highlight', '1.1.2', :require => 'simplabs/highlight'
 

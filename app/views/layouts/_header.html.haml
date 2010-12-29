@@ -14,9 +14,8 @@
     = link_to image_tag('logo2.png'), root_url
 
   %ul#main-menu
-    %li= link_to 'Inicio', root_url
-    - if can? :manage, User
-      %li= link_to 'Usuarios', members_url
-    %li= link_to 'Fragmentos de código en R', snippets_url
-    %li= link_to 'Ofertas de trabajo', job_offers_url
     %li= link_to 'Comunidad', '/community'
+    %li= link_to 'Fragmentos R', snippets_url
+    %li= link_to 'Ofertas de trabajo', job_offers_url
+    - if can? :manage, User
+      %li= link_to 'Gestión de usuarios', members_url

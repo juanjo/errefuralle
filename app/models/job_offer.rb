@@ -3,6 +3,7 @@ class JobOffer < ActiveRecord::Base
   belongs_to :job_type
 
   validates_presence_of :title, :description, :company
+  validates_length_of :title, :within => 4..255
 
   after_create :publish_directly
   before_save :convert_details
