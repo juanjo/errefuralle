@@ -134,6 +134,11 @@ body {
 
 a {
   text-decoration: none;
+  color: $color-github;
+
+  &:visited {
+    color: $color-github;
+  }
   img {
     border: none;
     cursor: pointer;
@@ -309,6 +314,7 @@ footer {
   }
   h1.title {
     margin-bottom: 0 !important;
+    border: none !important;
   }
 	#info {
 	  margin-top: 0;
@@ -891,4 +897,53 @@ a.button {
 	    }
   	}
 	}
+}
+
+
+
+#registrations {
+  @include clearfix;
+
+  #form {
+    width: 250px;
+    float: left;
+    border-right: 1px solid #ccc;
+  }
+
+  #metainfo {
+    width: $erre-width - 250px - 30px;
+    float: right;
+  }
+}
+
+
+ul.auth_menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  li {
+    border-bottom: 1px solid #ccc;
+
+    a {
+      display: block;
+      padding: 10px 10px 10px 24px;
+ 
+
+    }
+  }
+  li.access {
+    background: transparent url('/images/icons/access-12.png') no-repeat 4px 50%;
+  }
+  li.forget {
+    background: transparent url('/images/icons/unlock-12.png') no-repeat 4px 50%;
+  }
+  li.account {
+    background: transparent url('/images/icons/user-12.png') no-repeat 4px 50%;
+  }
+  li.confirmation {
+    background: transparent url('/images/icons/mail-12.png') no-repeat 4px 50%;
+  }
+
+
+
 }

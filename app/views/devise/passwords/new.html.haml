@@ -1,0 +1,21 @@
+%h1 Recuperación de contraseña
+
+#registrations
+  #form
+    = form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :post }) do |f|
+      = devise_error_messages!
+      %p
+        = f.label :email, 'Correo electrónico'
+        %br
+        = f.text_field :email
+
+      %p
+        = f.label :password, 'Contraseña'
+        %br
+        = f.password_field :password
+
+      #buttons
+        = f.submit 'Regenerar contraseña'
+
+  #metainfo
+    = render :partial => "devise/shared/links"
