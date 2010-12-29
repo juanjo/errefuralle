@@ -3,6 +3,7 @@
 %h1 Modificar nuevo código-R
 
 = form_for @snippet do |f|
+  = error_messages_for @snippet
   = render :partial => 'form', :locals => { :f => f }
   #buttons
     = f.submit 'Modificar código'

@@ -6,6 +6,7 @@
     = link_to 'Volver a listado', snippets_url, :class => 'button'
 
 = form_for @snippet do |f|
+  = error_messages_for @snippet
   = render :partial => 'form', :locals => { :f => f }
   #buttons
     = f.submit 'Añadir trozo de código R'

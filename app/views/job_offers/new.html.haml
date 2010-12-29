@@ -7,6 +7,7 @@
     = link_to 'Volver a ofertas de trabajo', job_offers_url, :class => 'button'
 
 = form_for @job_offer do |f|
+  = error_messages_for @job_offer
   = render :partial => 'form', :locals => { :f => f }
   #buttons
     = f.submit 'Añadir oferta de trabajo'

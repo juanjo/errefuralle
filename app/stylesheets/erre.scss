@@ -977,16 +977,17 @@ ul.auth_menu {
   background-color: #FFE7E7;
   padding: 20px;
   margin-bottom: 20px;
+
 }
 
 .field_with_errors {
-  margin: 0;
-  padding: 0;
+  margin: 0 !important;
+  padding: 0 !important;
   label {
     color: #B28181;
   }
 
-  input {
+  input, textarea {
     background-color: #FFF7F8;
   }
 }
@@ -1125,3 +1126,31 @@ ul.auth_menu {
 }
 
 
+
+#errorExplanation {
+  margin-top: 10px;
+  border-color: #E9AAAA;
+  color: #B28181;
+  background-color: #FFE7E7;
+  padding: 20px;
+  margin-bottom: 20px;
+
+  h2 {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0;
+    color: #992224 !important;
+  }
+
+  p {
+    color: #992224 !important;
+  }
+
+  ul {
+    margin: 4px 20px;
+  }
+} 
+
+field_with_errors {
+
+}

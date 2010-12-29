@@ -7,6 +7,7 @@
     = link_to 'Volver a listado', posts_url, :class => 'button'
 
 = form_for @post do |f|
+  = error_messages_for @post
   = render :partial => 'form', :locals => { :f => f }
   #buttons
     = f.submit 'Añadir mini-noticia'
