@@ -10,6 +10,8 @@ class User < ActiveRecord::Base
   validates_uniqueness_of :username
   validates_length_of :username, :in => 2..10
 
+  after_create :add_registered_role
+
   # Include default devise modules. Others available are:
   # :token_authenticatable, :confirmable, :lockable and :timeoutable
   devise :database_authenticatable, :registerable,
@@ -29,6 +31,10 @@ class User < ActiveRecord::Base
 
     def ability
       @ability ||= Ability.new(self)
+    end
+    
+    def add_registered_role
+      self.roles << Role.find(Role::REGISTERED)
     end
 
 end
