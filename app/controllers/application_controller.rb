@@ -10,6 +10,7 @@ class ApplicationController < ActionController::Base
     invalid_page
   end
 
+
   private
 
     def invalid_page

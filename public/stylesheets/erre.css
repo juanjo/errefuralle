@@ -1525,3 +1525,35 @@ ul.auth_menu li.cancel {
   padding-bottom: -50px;
   padding: 0;
 }
+
+/* line 1218, ../../app/stylesheets/erre.scss */
+#denied {
+  border-top: 1px solid #ccc;
+  text-align: left;
+}
+/* line 1222, ../../app/stylesheets/erre.scss */
+#denied h1.access {
+  border: none !important;
+  font-size: 50px !important;
+  text-shadow: 3px 3px 4px #8B8B8B !important;
+}
+/* line 1229, ../../app/stylesheets/erre.scss */
+#denied h2.excuses {
+  border: none !important;
+  font-size: 30px !important;
+  line-height: 28px !important;
+}
+/* line 1235, ../../app/stylesheets/erre.scss */
+#denied h3.list {
+  border: none !important;
+  font-size: 20px !important;
+  line-height: 35px !important;
+}
+/* line 1241, ../../app/stylesheets/erre.scss */
+#denied #nerd {
+  position: absolute;
+  bottom: 150px;
+  margin-bottom: -20px;
+  padding-bottom: -50px;
+  padding: 0;
+}

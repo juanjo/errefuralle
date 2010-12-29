@@ -1214,3 +1214,35 @@ field_with_errors {
     padding: 0;
   }
 }
+
+#denied {
+  border-top: 1px solid #ccc;
+  text-align: left;
+
+  h1.access {
+    border: none !important;
+    font-size: 50px !important;
+    text-shadow: 3px 3px 4px #8B8B8B !important;
+
+  }
+
+  h2.excuses {
+    border: none !important;
+    font-size: 30px !important;
+    line-height: 28px !important;
+  }
+
+  h3.list {
+    border: none !important;
+    font-size: 20px !important;
+    line-height: 35px !important;
+  }
+
+  #nerd {
+    position: absolute;
+    bottom: 150px;
+    margin-bottom: -20px;
+    padding-bottom: -50px;
+    padding: 0;
+  }
+}

@@ -1,2 +1,9 @@
 - content_for :title, "Acceso denegado"
-%h1 Acceso denegado
+#denied
+  %h1.access Acceso denegado
+  %h2.excuses necesitas ser miembro de la hermandad Lambda Lambda Lambda, hermano!
+  %h3.list
+    por qué no pruebas a enviar un correo a 
+    = mail_to "r-help-es@r-project.org"
+
+  = image_tag('nerd.jpg', :id => 'nerd')
