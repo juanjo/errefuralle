@@ -1,10 +1,10 @@
 .post{:id => "post_#{post.id}"}
   .entry
     = link_to post.title, post, :class => 'link'
-    = auto_link(post.content)
+    = auto_link(truncate_snippet(post.content, 50))
 
   .metadata
-    = "Añadido por #{post.user.username}"
+    = "añadido por #{post.user.username}"
     = "hace #{distance_of_time_in_words(Time.now, post.created_at)}"
 
   / .admin_actions

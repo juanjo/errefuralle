@@ -1,0 +1,72 @@
+- content_for :title, 'Sintaxis Markdown'
+
+%h1 Sintaxis Markdown
+
+%p
+  Este documento describe algunas de las partes mas importantes del editor Markdown. Hay mucha mas informacion de la que mencionamos aqui. Para ver el documento completo les referimos al siguiente enlace 
+  %a{:href => 'http://daringfireball.net/projects/markdown/syntax', :title => 'Ir a Markdown Syntax'} Markdown Syntax
+
+%h2 Cabeceras
+%p
+  Para las cabeceras debe prefijar el signo de almohadilla. El numero de almohadillas indicara el nivel de cabecera:
+%pre
+  \# Esto es un H1
+  \## Esto es un H2
+  \### Esto es un H3
+  \#### Esto es un H4
+  \##### Esto es un H5
+
+%h2 Párrafos
+%p
+  Los párrafos se separan mediante líneas en blanco. 
+%pre
+  Este es el primer parrafo.
+
+  Este es el segundo parrafo.
+
+
+
+%h2 Enlaces
+%p
+  Un enlace o link tiene siempre dos partes. La primera parte es el texto que vera el usuario y que esta rodeado por corchetes. La segunda parte es la direccion web que seguira el enlace y que esta rodeado por parentesis.
+
+%pre
+  [texto del enlace](http://example.com/) 
+
+
+
+
+%h2 Formato
+%p
+  Para poner una frase en negrita se rodea el texto con dos asteriscos: 
+%pre
+  **Esto esta en negrita**
+
+%p
+  Para escribir el texto en italica rodear la frase con un unico asterisco: 
+%pre
+  *Esto esta en italica*
+
+%p
+  Para escribir el texto tachado, rodee la frase con dos guiones: 
+%pre
+  \--Esto esta tachado--
+
+
+
+
+%h2 Listas
+
+%p
+  Para crear una lista numerada basta con poner delante de cada elemento un numero seguido de un punto y un espacio.
+%pre
+  1. Item 1
+  2. Item 2
+  3. Item 3
+
+%p
+  Para crear una lista no numerada preceder cada elemento con un asterisco.
+%pre
+  * Item
+  * Item
+  * Item

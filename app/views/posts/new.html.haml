@@ -1,0 +1,12 @@
+- content_for :title, "Añadir nueva mini-noticia"
+
+#conmenu
+  %h1 Añadir nueva mini-noticia
+  #actions
+    = link_to 'Ayuda', '/markdown', :class => 'button', :target => '_blank'
+    = link_to 'Volver a listado', posts_url, :class => 'button'
+
+= form_for @post do |f|
+  = render :partial => 'form', :locals => { :f => f }
+  #buttons
+    = f.submit 'Añadir mini-noticia'

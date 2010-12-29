@@ -139,6 +139,9 @@ a {
   &:visited {
     color: $color-title;
   }
+  &:hover {
+    color: #FF0038;
+  }
   img {
     border: none;
     cursor: pointer;
@@ -250,6 +253,20 @@ a {
       text-shadow: 1px 1px 0 #ccc;
       margin-bottom: 10px;
       border-bottom: 1px solid #ccc;
+    }
+
+    h2 {
+      font-size: 17px;
+      color: $color-h;
+      text-shadow: 1px 1px 0 #ccc;
+      margin: 20px 0 10px 0;
+    }
+
+    pre {
+      font-family: "Courier New", "Courier New", monospace !important;
+      font-size: 15px;
+      margin: 0;
+      padding: 10px 0;
     }
   }
 
@@ -737,12 +754,12 @@ form {
 
   h1, h2, h3, h4, h5 {
     float: left;
-    width: 50%;
+    width: 70%;
     border: none !important;
   }
   #actions {
     float: right;
-    width: 50%;
+    width: 30%;
     text-align: right;
 	  position: relative;
 	  top: 6px;
@@ -989,15 +1006,12 @@ ul.auth_menu {
   }
 
   .post {
-    font-size: 13px;
     border-top: 1px solid #ddd;
     padding: 20px 10px;   
 
     &:hover {
       background-color: $color-lighting-dark;
     }
-
-
 
     .entry {
       a.link {
@@ -1013,3 +1027,101 @@ ul.auth_menu {
     color: #999;
   }
 }
+
+#post {
+  @include clearfix;
+  margin-top: 20px;
+
+  #entry {
+    font-size: 15px;
+    float: left;
+    width: $erre-width - 210px- $default-gap;
+
+  	overflow: auto;
+
+    h1, h2, h3, h4, h5 {
+      margin: 10px 0;
+      padding: 0;
+      text-shadow: none;
+      color: $color-main !important;
+      border: none;
+    }
+
+    h1 {
+      font-size: 16px;
+    }
+    h2 {
+      font-size: 14px;
+    }
+    h3 {
+      font-size: 13px;
+    }
+    h4 {
+      font-size: 12px;
+    }
+    h5 {
+      font-size: 11px;
+    }
+
+    p {
+      margin: 10px 0;
+    }
+
+    a {
+      color: $color-github;
+    }
+
+  }
+
+  #metainfo {
+    float: right;
+    width: 180px;
+
+	  .author {
+	    display: block;
+	    font-weight: bold;
+	    color: $color-main;
+	  }
+
+	  .date {
+	    display: block;
+	    color: $color-title;
+	    font-weight: bold;
+	  }
+
+
+    h2 {
+	    color: $color-main;
+	    border-bottom: 1px solid #ccc;
+	    padding-left: 4px;
+    }
+
+	  .menu {
+	    margin: 15px 0;
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+  	      border-bottom: 1px solid #ddd;
+
+
+			    a {
+			      display: block;
+			      text-decoration: none;
+			      color: #555;
+ 		        padding-left: 4px;
+
+			      &:hover {
+			        background-color: $color-lighting;
+			      }
+			    }
+		    } 
+	    }
+	  }
+  }
+}
+
+

@@ -3,6 +3,7 @@
 #conmenu
   %h1 Modificar oferta de trabajo
   #actions
+    = link_to 'Ayuda', '/markdown', :class => 'button', :target => '_blank'
     = link_to 'Volver a ofertas de trabajo', job_offers_url, :class => 'button'
 
 = form_for @job_offer do |f|

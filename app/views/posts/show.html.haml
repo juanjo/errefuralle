@@ -1,0 +1,30 @@
+- content_for :title, @post.title
+
+#conmenu
+  %h1= @post.title
+  #actions
+    = link_to 'Volver', :back, :class => 'button'
+
+#post
+  #entry
+    = auto_link(@post.content_html)
+
+  #metainfo
+    = image_tag avatar_url(@post.user)
+    %span.author= "Añadida por #{@post.user.try(:username)}"
+    %span.date= "hace #{distance_of_time_in_words(Time.now, @post.created_at)}"
+
+    .menu
+      %h2 Acciones
+      %ul
+        - if can? :update, @post
+          %li= link_to 'Modificar', edit_post_path(@post)
+        - if can? :destroy, @post
+          %li= link_to 'Eliminar', @post, :confirm => '¿Estás seguro?', :method => :delete
+        %li= link_to 'Volver a listado', posts_url
+
+    .menu
+      %h2 Social
+      %ul
+        %li= link_to 'Facebook', "http://www.facebook.com/share.php?u=#{post_url(@post)}", :target => "_blank"
+        %li= link_to 'Twitter', "http://twitter.com/home?status=#{post_url(@post)}", :target => "_blank"

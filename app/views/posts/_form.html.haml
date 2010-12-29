@@ -1,0 +1,9 @@
+%p
+  = f.label :title, 'Título descriptivo'
+  %br
+  = f.text_field :title, :size => 95, :class => 'title'
+
+%p
+  = f.label :content, "Contenido"
+  %br
+  = f.text_area :content, :rows => 10, :cols => 140

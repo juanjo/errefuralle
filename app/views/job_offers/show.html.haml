@@ -22,7 +22,7 @@
           - if can? :update, @job_offer
             = link_to 'Modificar', edit_job_offer_path(@job_offer)
           - if can? :destroy, @job_offer
-            = link_to 'Eliminar', @job_offer,  :confirm => '¿Estás seguro?', :method => :delete
+            = link_to 'Eliminar', @job_offer, :confirm => '¿Estás seguro?', :method => :delete
         = link_to 'Volver a listado', job_offers_url
       .menu
         %h2 Social
