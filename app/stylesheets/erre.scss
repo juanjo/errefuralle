@@ -134,10 +134,10 @@ body {
 
 a {
   text-decoration: none;
-  color: $color-github;
+  color: $color-title;
 
   &:visited {
-    color: $color-github;
+    color: $color-title;
   }
   img {
     border: none;
@@ -213,6 +213,7 @@ a {
 		      color: $navibar-color-hover;
 		      @include gradient-hover;
 		    }
+		
 		    li {
 			    font-size: $font-size + 1px;
 		      margin: 0 0 0 -3px;
@@ -239,7 +240,7 @@ a {
 
     #flash {
       padding: 0;
-      margin: 5px 0 5px 0;
+      margin: 5px 0 10px 0;
       p { margin: 0; padding: 5px 0 5px 17px }
     }
 
@@ -256,7 +257,7 @@ a {
 
 
 footer {
-  background-color: $color-bar;
+  background: $color-bar url('/images/bgf.png') repeat 0 0;
   margin: 0;
   padding: 0;
 
@@ -970,5 +971,45 @@ ul.auth_menu {
 
   input {
     background-color: #FFF7F8;
+  }
+}
+
+
+#posts {
+
+	h1.date {
+	  margin-top: 20px;
+	  border: none !important;
+	}
+	
+  .date {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .post {
+    font-size: 13px;
+    border-top: 1px solid #ddd;
+    padding: 20px 10px;   
+
+    &:hover {
+      background-color: $color-lighting-dark;
+    }
+
+
+
+    .entry {
+      a.link {
+        font-weight: bold;
+        font-size: 120%;
+        margin-right: 4px;
+        color: $color-title;
+      }
+    }
+  }
+
+  .metadata {
+    color: #999;
   }
 }

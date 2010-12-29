@@ -1,0 +1,19 @@
+- content_for :title, "Noticias"
+
+#conmenu
+  %h1 Mini-Noticias
+  #actions
+    - if can? :create, Snippet
+      = link_to 'Añadir nueva mini-noticia', new_snippet_path, :class => 'button'
+
+- last_date = nil
+#posts
+  - @posts.each do |post|
+    %div{:class => "#{cycle('even', 'odd')}"}
+    - unless last_date && (last_date.day == post.created_at.day) && (last_date.month == post.created_at.month) && (last_date.year == post.created_at.year)
+      %h1.date= post.created_at.strftime("%d %B %Y")
+      - last_date = post.created_at
+
+    = render :partial => 'post', :locals => { :post => post }
+
+= will_paginate @posts

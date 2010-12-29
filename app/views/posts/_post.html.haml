@@ -1,0 +1,17 @@
+.post{:id => "post_#{post.id}"}
+  .entry
+    = link_to post.title, post, :class => 'link'
+    = auto_link(post.content)
+
+  .metadata
+    = "Añadido por #{post.user.username}"
+    = "hace #{distance_of_time_in_words(Time.now, post.created_at)}"
+
+  / .admin_actions
+  /   - if can? :destroy, post
+  /     = link_to 'Eliminar', post, :confirm => '¿Estás seguro?', :method => :delete
+  / 
+  / / - if can? :update, post
+  / /   = link_to 'Modificar', edit_post_path(post), :title => "La última ocasión para modificar la noticia terminará #{time_left.nil? ? 'Nunca' : ('en ' + time_left.to_s + ' minutos')}."
+  / 
+  / 

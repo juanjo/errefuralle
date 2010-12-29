@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101229014245) do
+ActiveRecord::Schema.define(:version => 20101229021741) do
 
   create_table "job_offers", :force => true do |t|
     t.string   "title",                                   :null => false
@@ -26,6 +26,19 @@ ActiveRecord::Schema.define(:version => 20101229014245) do
 
   create_table "job_types", :force => true do |t|
     t.string   "name",       :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "posts", :force => true do |t|
+    t.string   "title",      :null => false
+    t.string   "url"
+    t.text     "content"
+    t.text     "metadata"
+    t.string   "name"
+    t.text     "tags"
+    t.integer  "user_id"
+    t.string   "byline"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -64,6 +77,9 @@ ActiveRecord::Schema.define(:version => 20101229014245) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "snippets", ["cached_slug"], :name => "index_snippets_on_cached_slug", :unique => true
+  add_index "snippets", ["title"], :name => "index_snippets_on_title"
 
   create_table "users", :force => true do |t|
     t.string   "username",                                            :null => false

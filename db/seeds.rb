@@ -52,3 +52,9 @@ JobOffer.create(:title => 'Full-Stack Engineer (Ruby + MySQL + jQuery)', :user =
 JobOffer.create(:title => 'PHP Developer (Drupal) for Workday Community', :user => u2, :description => 'd3', :job_type => jt3, :company => 'Youtube')
 JobOffer.create(:title => '"Rock Stars" and "Ninjas" Need Not Apply', :user => u3, :description => 'd4', :job_type => jt4, :company => 'Yahoo Enterprises')
 JobOffer.create(:title => 'Project Manager (get some Kanban in your life)', :user => u3, :description => 'd5', :job_type => jt1, :company => 'Sun Microsystems')
+
+
+Post.create(:title => 'Los toros', :content => 'Tests and Docs makes better code I just wrote an article about How I write Tests. I dont use TDD. Instead I follow a process that comes much more natural to me.', :user => u1)
+Post.create(:title => 'Las vacas',:content => 'Project Manager (get some Kanban in your life) Project Manager (get some Kanban in your life) Project Manager (get some Kanban in your life)', :user => u1)
+Post.create(:title => 'El campo', :content => 'Go to http://www.rubyonrails.org and say hello to david@loudthinking.com (get some Kanban in your life)', :user => u1)
+Post.create(:title => 'La leche', :content => 'Render views and partials outside controllers in Rails 3 Short blog post about using AbstractController::Base to render views and partials from within models, libraries etc.', :user => u1)

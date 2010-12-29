@@ -29,6 +29,8 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 #   gem 'webrat'
 # end
 
+gem 'mysql2',            '~>0.2.6'
+
 gem 'haml',              '~> 3.0.17'
 gem 'compass',           '~> 0.10.5'
 gem 'html5-boilerplate', '~> 0.1.5'

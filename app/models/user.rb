@@ -2,8 +2,9 @@ class User < ActiveRecord::Base
   delegate :can?, :cannot?, :to => :ability
 
   has_and_belongs_to_many :roles
-  has_many :snippets
-  has_many :job_offers
+  has_many :snippets, :order => 'created_at DESC'
+  has_many :job_offers, :order => 'created_at DESC'
+  has_many :posts, :order => 'created_at DESC'
 
   validates_presence_of :username
   validates_uniqueness_of :username
