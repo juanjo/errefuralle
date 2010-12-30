@@ -35,7 +35,7 @@ gem 'dynamic_form',   			'~> 1.1.3'
 
 gem "friendly_id", 					'~> 3.1'
 
-gem 'highlight', 						'1.1.2', :require => 'simplabs/highlight'
+gem 'spox-ultraviolet',			'~> 0.10.5'
 
 gem 'hoptoad_notifier',     '~> 2.3.7'
 

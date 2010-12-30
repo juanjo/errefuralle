@@ -285,11 +285,13 @@ a {
       margin: 20px 0 10px 0;
     }
 
-    pre {
-      font-family: "Courier New", "Courier New", monospace !important;
-      font-size: 15px;
-      margin: 0;
-      padding: 10px 0;
+    #markdown {
+      pre {
+        font-family: "Courier New", "Courier New", monospace !important;
+        font-size: 15px;
+        margin: 0;
+        padding: 10px 0;
+      }
     }
   }
 
@@ -475,16 +477,37 @@ footer {
   @include clearfix;
 
 	#highlight_code {
-	  font-family: "Courier New", "Courier New", monospace;
-	  font-size: 12px;
-	  padding: 20px;
+	  width: $erre-width - 210px;
+	  float: left;
+	  padding: 0;
 	  background-color: #00101b;
 	  color: #fff;
-	  @include border-radius(4px);
-	  width: $erre-width - 250px;
-	  float: left;
+	  @include border-radius(8px);
 	  border: 2px solid #ddd;
   	overflow: auto;
+  	
+  	pre {
+      font-size: 12px;
+  	  font-family: "Courier New", "Courier New", monospace !important;
+  	  padding: 0;
+  	  
+  	  span {
+  	    font-family: "Courier New", "Courier New", monospace !important;
+  	    
+  	  }
+  	  
+  	  span.line-numbers {
+  	    font-family: "Courier New", "Courier New", monospace !important;
+  	    margin-right: 12px;
+  	    text-align: right;
+        display: inline-block;
+        width: 30px;
+        padding: 0 10px;
+        font-weight: bold;
+  	  }  	  
+
+  	  
+  	}
 	}
 	
 	#metainfo {

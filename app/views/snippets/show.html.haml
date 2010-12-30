@@ -1,5 +1,10 @@
 - content_for :title, @snippet.title
 
+- uv_theme = 'cobalt'
+
+- content_for :stylesheets do
+  = stylesheet_link_tag "uv/#{uv_theme}", :media => 'all', :cache => true
+
 #snippet
   %h1.title= @snippet.title
 
@@ -9,7 +14,7 @@
   #code
     #highlight_code
       - cache do
-        = highlight_code(:r, @snippet.code).html_safe
+        = parse_uv(@snippet.code, uv_theme)
 
     #metainfo
       = image_tag avatar_url(@snippet.user)
