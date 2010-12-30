@@ -37,6 +37,8 @@ gem "friendly_id", 					'~> 3.1'
 
 gem 'highlight', 						'1.1.2', :require => 'simplabs/highlight'
 
+gem 'hoptoad_notifier',     '~> 2.3.7'
+
 group :test do
   gem 'shoulda',            '~> 2.11.3'
   gem 'factory_girl_rails', '~> 1.0'
