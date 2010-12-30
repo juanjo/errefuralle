@@ -5,6 +5,6 @@ module SnippetsHelper
   end
   
   def parse_uv(code, theme)
-    Uv.parse(code, "xhtml", "r", true, theme).html_safe
+    Uv.parse(code, "xhtml", "R", true, theme).html_safe
   end
 end
