@@ -41,7 +41,7 @@ ActiveRecord::Schema.define(:version => 20110101230019) do
   end
 
   create_table "posts", :force => true do |t|
-    t.string   "title",        :null => false
+    t.string   "title",                       :null => false
     t.string   "url"
     t.text     "content",      :null => false
     t.text     "content_html"
