@@ -52,9 +52,9 @@
       body: "Hay algunos problemas con los siguientes campos:"
     messages:
       invalid:       "es inválido"
-      too_long:      "demasiado largo (el máximo es {{count}} caracteres)"
-      too_short:     "demasiado corto (el mínimo es {{count}} caracteres)"
-      wrong_length:  "longitud invalida (debe tener {{count}} caracteres)"
+      too_long:      "demasiado largo (el máximo es %{count} caracteres)"
+      too_short:     "demasiado corto (el mínimo es %{count} caracteres)"
+      wrong_length:  "longitud invalida (debe tener %{count} caracteres)"
       taken:         "ya está ocupado"
       inclusion:     "no está incluido en la lista"
       exclusion:     "esta reservado"
