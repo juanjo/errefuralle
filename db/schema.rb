@@ -68,13 +68,13 @@ ActiveRecord::Schema.define(:version => 20101229021741) do
   add_index "slugs", ["sluggable_id"], :name => "index_slugs_on_sluggable_id"
 
   create_table "snippets", :force => true do |t|
-    t.string   "title",       :null => false
+    t.string   "title",                              :null => false
     t.string   "cached_slug"
-    t.text     "code",        :null => false
+    t.text     "code",                               :null => false
     t.integer  "user_id"
     t.text     "description"
-    t.integer  "lines"
-    t.string   "state"
+    t.integer  "lines",       :default => 0
+    t.string   "state",       :default => "pending"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

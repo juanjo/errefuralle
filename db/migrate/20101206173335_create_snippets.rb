@@ -6,8 +6,8 @@ class CreateSnippets < ActiveRecord::Migration
       t.text :code, :null => false
       t.references :user
       t.text :description
-      t.integer :lines
-      t.string :state
+      t.integer :lines, :default => 0
+      t.string :state, :default => 'pending'
 
       t.timestamps
     end

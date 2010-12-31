@@ -1,10 +1,11 @@
 class Snippet < ActiveRecord::Base  
   belongs_to :user
 
-  after_create :count_lines
+  before_save :count_lines
   after_create :publish_directly
   
   validates_presence_of :title, :code
+  validates_uniqueness_of :title
   validates_length_of :title, :within => 4..255
 
   has_friendly_id :title, :use_slug => true, :approximate_ascii => true
@@ -36,8 +37,7 @@ class Snippet < ActiveRecord::Base
     end
 
     def count_lines
-      #lines = code.match(/\n/).try(:length) + 1
-      #save
+      self.lines = self.code.split(/\n/).size
     end
 
 end
