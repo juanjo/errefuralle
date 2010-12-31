@@ -14,6 +14,10 @@ Factory.define :snippet do |f|
   f.code                "The moon and the stars"
 end
 
+Factory.define :job_type do |f|
+  f.name               "Slave"
+end
+
 Factory.define :job_offer do |f|
   f.sequence(:title)      { |n| "Job Offer #{n}"}
   f.description           "The moon and the stars"
