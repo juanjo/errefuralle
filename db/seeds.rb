@@ -9,13 +9,16 @@ registered  = Role.create(:name => 'Registered')
 # Usuarios
 # ////////////////////////////////////////////////////////////
 u0 = User.create(:email => 'juanjicho@gmail.com', :password => '219921', :password_confirmation => '219921', :username => 'juanjo')
-u1 = User.create(:email => 'patricia.garcia.gonzalez@gmassssssil.com', :password => 't3qu13r0', :password_confirmation => 't3qu13r0', :username => 'patricia')
+u1 = User.create(:email => 'patricia.garcia.gonzalez@gmail.com', :password => 't3qu13r0', :password_confirmation => 't3qu13r0', :username => 'patricia')
+u2 = User.create(:email => 'fguillen.mail@gmail.com', :password => 'pepe', :password_confirmation => 'pepe', :username => 'fguillen')
 
 u0.confirm!
 u1.confirm!
+u2.confirm!
 
 u0.roles << admin
 u1.roles << admin
+u2.roles << admin
 
 # Tipos de trabajo
 # ////////////////////////////////////////////////////////////
