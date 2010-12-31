@@ -3,15 +3,14 @@ class CreatePosts < ActiveRecord::Migration
     create_table :posts do |t|
       t.string :title, :null => false
       t.string :url
-      t.text :content
-      t.text :content_html      
-      t.text :metadata
-      t.string :name
-      t.text :tags, :limit => 255
+      t.text :content, :null => false
+      t.text :content_html
       t.references :user
-      t.string :byline
       t.timestamps
     end
+
+    add_index :posts, :title
+
   end
 
   def self.down

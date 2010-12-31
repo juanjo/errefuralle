@@ -33,19 +33,17 @@ ActiveRecord::Schema.define(:version => 20101229021741) do
   create_table "posts", :force => true do |t|
     t.string   "title",        :null => false
     t.string   "url"
-    t.text     "content"
+    t.text     "content",      :null => false
     t.text     "content_html"
-    t.text     "metadata"
-    t.string   "name"
-    t.text     "tags"
     t.integer  "user_id"
-    t.string   "byline"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
+  add_index "posts", ["title"], :name => "index_posts_on_title"
+
   create_table "roles", :force => true do |t|
-    t.string   "name"
+    t.string   "name",       :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -1,8 +1,8 @@
 # Factory.define :user do |f|
 #   f.sequence(:username)   { |n| "Tom #{n}"}
-#   f.sequence(:email)      { |n| "test@email#{n}.com"}  
+#   f.sequence(:email)      { |n| "test@email#{n}.com"}
 #   f.password              "666666"
-#   f.password_confirmation "666666"  
+#   f.password_confirmation "666666"
 # end
 
 Factory.define :role do |f|
@@ -19,4 +19,9 @@ Factory.define :job_offer do |f|
   f.description           "The moon and the stars"
   f.company               "Apple Inc."
   # f.association           :user
+end
+
+Factory.define :post do |f|
+  f.sequence(:title)     { |n| "Title #{n}"}
+  f.content              ("A" * 25)
 end
