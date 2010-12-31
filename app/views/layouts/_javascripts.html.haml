@@ -2,20 +2,20 @@
 - if defined?(google_api_key) && !google_api_key.blank?
   = javascript_include_tag "http://www.google.com/jsapi?key=#{google_api_key}"
   :javascript
-    google.load("jquery", "1.4.2");
+    google.load("jquery", "1.4.4");
 - else
-  = javascript_include_tag "#{request.protocol}ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"
+  = javascript_include_tag "#{request.protocol}ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"
 
 -# fall back to local jQuery if necessary
 :javascript
   !window.jQuery && document.write('#{escape_javascript(javascript_include_tag "jquery-1.4.2.min")}')
   
-= javascript_include_tag 'rails', 'application', :cache => true
+= javascript_include_tag 'rails', :cache => true
 
 /[if lt IE 7 ]
   = javascript_include_tag 'dd_belatedpng'
 
-= javascript_include_tag :all
+=# javascript_include_tag :all
 -#  Append your own using content_for :javascripts
 = yield :javascripts
 
