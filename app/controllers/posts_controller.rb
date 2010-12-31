@@ -1,3 +1,4 @@
+# encoding: utf-8
 class PostsController < ApplicationController
   load_and_authorize_resource
 
@@ -16,7 +17,7 @@ class PostsController < ApplicationController
   def create
     @post.user = current_user
     if @post.save
-      flash[:notice] = 'Mini-noticia creada con exito'
+      flash[:notice] = 'Mini-noticia creada con éxito.'
       redirect_to @post
     else
       render :action => 'new'
@@ -28,7 +29,7 @@ class PostsController < ApplicationController
   
   def update
     if @post.update_attributes(params[:post])
-      flash[:notice] = 'Mini-noticia actializada con exito.'
+      flash[:notice] = 'Mini-noticia modificada con éxito.'
       redirect_to @post
     else
       render :action => 'edit'
@@ -37,7 +38,7 @@ class PostsController < ApplicationController
   
   def destroy
     @post.destroy
-    flash[:notice] = 'Moni-noticia eliminada'
+    flash[:notice] = 'Moni-noticia eliminada.'
     redirect_to posts_url
     
   end

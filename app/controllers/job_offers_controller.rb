@@ -1,3 +1,4 @@
+# encoding: utf-8
 class JobOffersController < ApplicationController
   load_and_authorize_resource
 
@@ -16,7 +17,7 @@ class JobOffersController < ApplicationController
   def create
     @job_offer.user = current_user
     if @job_offer.save
-      flash[:notice] = 'JobOffer created successfully.'
+      flash[:notice] = 'Oferta de trabajo creada con éxito.'
       redirect_to @job_offer
     else
       render :action => 'new'
@@ -28,7 +29,7 @@ class JobOffersController < ApplicationController
 
   def update
     if @job_offer.update_attributes(params[:job_offer])
-      flash[:notice] = 'Updated successfully.'
+      flash[:notice] = 'Oferta de trabajo modificada con éxito.'
       redirect_to @job_offer
     else
       render :action => 'edit'
@@ -37,7 +38,7 @@ class JobOffersController < ApplicationController
 
   def destroy
     @job_offer.destroy
-    flash[:notice] = 'JobOffer destroyed'
+    flash[:notice] = 'Oferta de trabajo eliminada.'
     redirect_to job_offers_url
   end
 

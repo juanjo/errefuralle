@@ -1,3 +1,4 @@
+# encoding: utf-8
 class SnippetsController < ApplicationController
   load_and_authorize_resource
 
@@ -16,7 +17,7 @@ class SnippetsController < ApplicationController
   def create
     @snippet.user = current_user
     if @snippet.save
-      flash[:notice] = 'Snippet created successfully.'
+      flash[:notice] = 'Fragmento de código creado con éxito.'
       redirect_to @snippet
     else
       render :action => 'new'
@@ -28,7 +29,7 @@ class SnippetsController < ApplicationController
   
   def update
     if @snippet.update_attributes(params[:snippet])
-      flash[:notice] = 'Updated successfully.'
+      flash[:notice] = 'Fragmento de código actualizado con éxito.'
       redirect_to @snippet
     else
       render :action => 'edit'
@@ -37,7 +38,7 @@ class SnippetsController < ApplicationController
   
   def destroy
     @snippet.destroy
-    flash[:notice] = 'Snippet destroyed'
+    flash[:notice] = 'Fragmento de código eliminado.'
     redirect_to snippets_url
   end
 

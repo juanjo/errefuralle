@@ -1,3 +1,4 @@
+# encoding: utf-8
 class MembersController < ApplicationController
   load_and_authorize_resource :class => "User"
 
@@ -13,7 +14,7 @@ class MembersController < ApplicationController
     @member = User.find(params[:id])
     
     unless @member.confirmed_at
-      flash[:error] = 'No es posible editar a un usuario no confirmado'
+      flash[:error] = 'No es posible editar a un usuario no confirmado.'
       redirect_to members_url
     end
     
@@ -26,7 +27,7 @@ class MembersController < ApplicationController
       @member.roles.delete_all
       (params[:role_id] || []).each { |i| @member.roles << Role.find(i) }
       
-      flash[:notice] = 'Usuario modificado con exito'
+      flash[:notice] = 'Usuario modificado con éxito.'
       redirect_to members_url
     else
       render :action => 'edit'
@@ -39,9 +40,9 @@ class MembersController < ApplicationController
     
     unless @member == User.first
       @member.destroy
-      flash[:notice] = 'Usuario eliminado con exito'
+      flash[:notice] = 'Usuario eliminado con éxito.'
     else
-      flash[:error] = 'No es posible eliminar a este usuario'
+      flash[:error] = 'No es posible eliminar a este usuario.'
     end
     
     redirect_to members_url
