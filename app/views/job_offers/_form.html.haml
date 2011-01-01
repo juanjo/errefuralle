@@ -1,4 +1,8 @@
 %p
+  = f.check_box :telecommute
+  = f.label :title, 'Teletrabajo'
+
+%p
   = f.label :job_type_id, 'País de trabajo:'
   = f.collection_select(:country_id, Country.all(:order => 'name ASC'), :id, :name, {:prompt => '----'})
 

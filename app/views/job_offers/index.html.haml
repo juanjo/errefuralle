@@ -18,7 +18,7 @@
           \-
           %span.type= job_offer.job_type.try(:name)
           \-
-          %span.country= job_offer.country.try(:name)
+          %span.country= job_offer.telecommute? ? 'Teletrabajo' : job_offer.country.try(:name)
 
 
   #jobmenu
