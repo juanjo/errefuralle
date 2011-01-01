@@ -7,6 +7,8 @@
       %span.company= @job_offer.company
       %span.separator -
       %span.type= @job_offer.job_type.try(:name)
+      %span.separator -      
+      %span.country= @job_offer.country.try(:name)      
   
   #explanation
     #description

@@ -1,9 +1,9 @@
-# Factory.define :user do |f|
-#   f.sequence(:username)   { |n| "Tom #{n}"}
-#   f.sequence(:email)      { |n| "test@email#{n}.com"}
-#   f.password              "666666"
-#   f.password_confirmation "666666"
-# end
+Factory.define :user do |f|
+  f.sequence(:username)   { |n| "Tom #{n}"}
+  f.sequence(:email)      { |n| "test@email#{n}.com"}
+  f.password              "666666"
+  f.password_confirmation "666666"
+end
 
 Factory.define :role do |f|
   f.name               "Superman"
@@ -28,4 +28,11 @@ end
 Factory.define :post do |f|
   f.sequence(:title)     { |n| "Title #{n}"}
   f.content              ("A" * 25)
+end
+
+Factory.define :country do |f|
+  f.name "Spain"
+  f.isonum 724
+  f.iso2 'ES'
+  f.iso3 'ESP'
 end

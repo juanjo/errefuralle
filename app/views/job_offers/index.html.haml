@@ -14,8 +14,12 @@
         %span.date= "creado por #{job_offer.user.username} hace #{distance_of_time_in_words(Time.now, job_offer.created_at)}"
         %span.title= link_to job_offer.title, job_offer_path(job_offer)
         #info
-          %span.company= "#{job_offer.company} - "
+          %span.company= job_offer.company
+          \-
           %span.type= job_offer.job_type.try(:name)
+          \-
+          %span.country= job_offer.country.try(:name)
+
 
   #jobmenu
     %ul.jobsocial

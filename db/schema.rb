@@ -10,7 +10,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101229021741) do
+ActiveRecord::Schema.define(:version => 20110101230019) do
+
+  create_table "countries", :force => true do |t|
+    t.integer  "isonum",                  :null => false
+    t.string   "iso2",       :limit => 2, :null => false
+    t.string   "iso3",       :limit => 3, :null => false
+    t.string   "name",                    :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "job_offers", :force => true do |t|
     t.string   "title",                                   :null => false
@@ -22,6 +31,7 @@ ActiveRecord::Schema.define(:version => 20101229021741) do
     t.string   "state",            :default => "pending"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "country_id"
   end
 
   create_table "job_types", :force => true do |t|

@@ -372,6 +372,11 @@ footer {
 	    color: #2D9E29;
 	    font-weight: bold;
 	  }
+	  
+	  .country {
+	    color: $color-title;
+	    font-weight: bold;
+	  }
 	}
 
 
@@ -620,6 +625,12 @@ footer {
 	        color: #2D9E29;
 	        font-weight: bold;
 	      }
+	      .country {
+	        color: #555;
+	        font-weight: bold;
+	        text-align: right;
+	      }
+	      
 	    }
 
 	    .date {

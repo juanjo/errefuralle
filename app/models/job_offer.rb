@@ -1,6 +1,7 @@
 class JobOffer < ActiveRecord::Base
   belongs_to :user
   belongs_to :job_type
+  belongs_to :country
 
   validates_presence_of :title, :description, :company
   validates_length_of :title, :within => 4..255
