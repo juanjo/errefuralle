@@ -1,7 +1,7 @@
 .post{:id => "post_#{post.id}"}
   .entry
     = link_to post.title, post, :class => 'link'
-    = auto_link(truncate_snippet(post.content, 50))
+    = auto_link(truncate_snippet(post.content, 50, true))
 
   .metadata
     = "añadido por #{post.user.username}"
