@@ -25,7 +25,7 @@ gem 'mysql2',            		'~>0.2.6'
 gem 'haml',              		'~> 3.0.17'
 gem 'compass',           		'~> 0.10.5'
 gem 'html5-boilerplate', 		'~> 0.1.5'
-gem 'rdiscount', 				 		'~> 1.6.5'
+gem 'moredown',             '~> 1.3.0'
 
 gem 'devise', 							'1.1.5'
 gem 'cancan', 							'1.4.1'

@@ -4,6 +4,7 @@ class JobOffer < ActiveRecord::Base
 
   validates_presence_of :title, :description, :company
   validates_length_of :title, :within => 4..255
+  validates_length_of :company, :within => 1..255
 
   after_create :publish_directly
   before_save :convert_details
@@ -39,11 +40,11 @@ class JobOffer < ActiveRecord::Base
     end
 
     def publish_directly
-      publish! if user.can? :manage, self
+      publish! if self.user.can? :manage, self
     end
 
     def convert_details
       return if self.description.nil?
-      self.description_html = RDiscount.new(self.description, :smart, :filter_html).to_html
+      self.description_html = Moredown.text_to_html(self.description)
     end
 end

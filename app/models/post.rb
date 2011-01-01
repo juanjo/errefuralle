@@ -1,5 +1,7 @@
 class Post < ActiveRecord::Base
 
+  default_scope :order => 'created_at DESC'
+
   belongs_to :user
 
   before_save :convert_content
@@ -18,6 +20,6 @@ class Post < ActiveRecord::Base
 
     def convert_content
       return if self.content.nil?
-      self.content_html = RDiscount.new(self.content, :smart, :filter_html).to_html
+      self.content_html = Moredown.text_to_html(self.content)
     end
 end
