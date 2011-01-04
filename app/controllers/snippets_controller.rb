@@ -1,6 +1,8 @@
 # encoding: utf-8
 class SnippetsController < ApplicationController
   load_and_authorize_resource
+  
+  respond_to :html, :R, :only => :show
 
   def index
     @snippets = Snippet.with_state(:published).paginate(:page => params[:page], :order => 'created_at DESC', :per_page => 8, :include => [:user])
@@ -8,6 +10,9 @@ class SnippetsController < ApplicationController
 
   def show
     @snippet = Snippet.find(params[:id])
+    respond_with(@snippet) do |format|  
+      format.R { render :text => @snippet.code }  
+    end
   end
 
   def new

@@ -22,6 +22,7 @@
       %span.date= "hace #{distance_of_time_in_words(Time.now, @snippet.created_at)}"
       .menu
         %h2 Acciones
+        = link_to 'Descargar código .R', snippet_path(@snippet, :format => :R)
         - if user_signed_in?
           =# link_to 'Añadir a favoritos', edit_snippet_path(@snippet)
           - if can? :update, @snippet

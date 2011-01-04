@@ -1183,12 +1183,12 @@ a.button:active {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 871, ../../app/stylesheets/erre.scss */
+/* line 870, ../../app/stylesheets/erre.scss */
 #members #metainfo {
   float: right;
   width: 200px;
 }
-/* line 875, ../../app/stylesheets/erre.scss */
+/* line 874, ../../app/stylesheets/erre.scss */
 #members #metainfo h2 {
   color: #434343;
   border-bottom: 1px solid #ccc;
@@ -1196,39 +1196,39 @@ a.button:active {
   font-size: 12px;
   margin-bottom: 0;
 }
-/* line 882, ../../app/stylesheets/erre.scss */
+/* line 881, ../../app/stylesheets/erre.scss */
 #members #metainfo .menu {
   margin: 15px 0;
 }
-/* line 885, ../../app/stylesheets/erre.scss */
+/* line 884, ../../app/stylesheets/erre.scss */
 #members #metainfo .menu ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-/* line 890, ../../app/stylesheets/erre.scss */
+/* line 889, ../../app/stylesheets/erre.scss */
 #members #metainfo .menu ul li {
   border-bottom: 1px solid #ddd;
   padding: 4px 10px;
 }
-/* line 894, ../../app/stylesheets/erre.scss */
+/* line 893, ../../app/stylesheets/erre.scss */
 #members #metainfo .menu ul li a {
   display: block;
   text-decoration: none;
   color: #555;
 }
-/* line 899, ../../app/stylesheets/erre.scss */
+/* line 898, ../../app/stylesheets/erre.scss */
 #members #metainfo .menu ul li a:hover {
   background-color: #fbfeea;
 }
-/* line 909, ../../app/stylesheets/erre.scss */
+/* line 908, ../../app/stylesheets/erre.scss */
 #members #confirmed_members, #members #unconfirmed_members {
   float: left;
   width: 680px;
   padding-top: 0;
   margin-top: 15px;
 }
-/* line 915, ../../app/stylesheets/erre.scss */
+/* line 914, ../../app/stylesheets/erre.scss */
 #members #confirmed_members .member, #members #unconfirmed_members .member {
   overflow: hidden;
   *zoom: 1;
@@ -1236,121 +1236,121 @@ a.button:active {
   border-bottom: 1px solid #ccc;
   padding: 10px 5px 10px 25px;
 }
-/* line 921, ../../app/stylesheets/erre.scss */
+/* line 920, ../../app/stylesheets/erre.scss */
 #members #confirmed_members .member:hover, #members #unconfirmed_members .member:hover {
   background-color: #f0f0f0;
 }
-/* line 925, ../../app/stylesheets/erre.scss */
+/* line 924, ../../app/stylesheets/erre.scss */
 #members #confirmed_members .member a, #members #unconfirmed_members .member a {
   color: #0080bf;
 }
-/* line 929, ../../app/stylesheets/erre.scss */
+/* line 928, ../../app/stylesheets/erre.scss */
 #members #confirmed_members .member .username, #members #unconfirmed_members .member .username {
   font-weight: bold;
   font-size: 12px;
   width: 90px;
   float: left;
 }
-/* line 936, ../../app/stylesheets/erre.scss */
+/* line 935, ../../app/stylesheets/erre.scss */
 #members #confirmed_members .member .email, #members #unconfirmed_members .member .email {
   font-size: 11px;
   width: 180px;
   float: left;
 }
-/* line 942, ../../app/stylesheets/erre.scss */
+/* line 941, ../../app/stylesheets/erre.scss */
 #members #confirmed_members .member .roles, #members #unconfirmed_members .member .roles {
   font-size: 11px;
   width: 160px;
   float: left;
   color: #999;
 }
-/* line 949, ../../app/stylesheets/erre.scss */
+/* line 948, ../../app/stylesheets/erre.scss */
 #members #confirmed_members .member .confirmed, #members #unconfirmed_members .member .confirmed {
   width: 20px;
   float: left;
 }
-/* line 954, ../../app/stylesheets/erre.scss */
+/* line 953, ../../app/stylesheets/erre.scss */
 #members #confirmed_members .member .icon, #members #unconfirmed_members .member .icon {
   width: 20px;
   float: right;
 }
-/* line 959, ../../app/stylesheets/erre.scss */
+/* line 958, ../../app/stylesheets/erre.scss */
 #members #confirmed_members .member .date, #members #unconfirmed_members .member .date {
   font-size: 11px;
   width: 80px;
   float: left;
   text-align: center;
 }
-/* line 968, ../../app/stylesheets/erre.scss */
+/* line 967, ../../app/stylesheets/erre.scss */
 #members #confirmed_members .thead, #members #unconfirmed_members .thead {
   background-image: none;
   background-color: #555;
   color: #fff;
 }
-/* line 973, ../../app/stylesheets/erre.scss */
+/* line 972, ../../app/stylesheets/erre.scss */
 #members #confirmed_members .thead:hover, #members #unconfirmed_members .thead:hover {
   background-color: #555;
   color: #fff;
 }
-/* line 977, ../../app/stylesheets/erre.scss */
+/* line 976, ../../app/stylesheets/erre.scss */
 #members #confirmed_members .thead .roles, #members #unconfirmed_members .thead .roles {
   color: #fff;
 }
 
-/* line 986, ../../app/stylesheets/erre.scss */
+/* line 985, ../../app/stylesheets/erre.scss */
 #registrations {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 989, ../../app/stylesheets/erre.scss */
+/* line 988, ../../app/stylesheets/erre.scss */
 #registrations #form {
   width: 250px;
   float: left;
   border-right: 1px solid #ccc;
 }
-/* line 995, ../../app/stylesheets/erre.scss */
+/* line 994, ../../app/stylesheets/erre.scss */
 #registrations #metainfo {
   width: 620px;
   float: right;
 }
 
-/* line 1002, ../../app/stylesheets/erre.scss */
+/* line 1001, ../../app/stylesheets/erre.scss */
 ul.auth_menu {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-/* line 1006, ../../app/stylesheets/erre.scss */
+/* line 1005, ../../app/stylesheets/erre.scss */
 ul.auth_menu li {
   border-bottom: 1px solid #ccc;
 }
-/* line 1009, ../../app/stylesheets/erre.scss */
+/* line 1008, ../../app/stylesheets/erre.scss */
 ul.auth_menu li a {
   display: block;
   padding: 10px 10px 10px 24px;
 }
-/* line 1016, ../../app/stylesheets/erre.scss */
+/* line 1015, ../../app/stylesheets/erre.scss */
 ul.auth_menu li.access {
   background: transparent url("/images/icons/access-12.png") no-repeat 4px 50%;
 }
-/* line 1019, ../../app/stylesheets/erre.scss */
+/* line 1018, ../../app/stylesheets/erre.scss */
 ul.auth_menu li.forget {
   background: transparent url("/images/icons/unlock-12.png") no-repeat 4px 50%;
 }
-/* line 1022, ../../app/stylesheets/erre.scss */
+/* line 1021, ../../app/stylesheets/erre.scss */
 ul.auth_menu li.account {
   background: transparent url("/images/icons/user-12.png") no-repeat 4px 50%;
 }
-/* line 1025, ../../app/stylesheets/erre.scss */
+/* line 1024, ../../app/stylesheets/erre.scss */
 ul.auth_menu li.confirmation {
   background: transparent url("/images/icons/mail-12.png") no-repeat 4px 50%;
 }
-/* line 1028, ../../app/stylesheets/erre.scss */
+/* line 1027, ../../app/stylesheets/erre.scss */
 ul.auth_menu li.cancel {
   background: transparent url("/images/icons/delete-12.png") no-repeat 4px 50%;
 }
 
-/* line 1037, ../../app/stylesheets/erre.scss */
+/* line 1036, ../../app/stylesheets/erre.scss */
 #error_explanation {
   border-color: #E9AAAA;
   color: #B28181;
@@ -1359,66 +1359,66 @@ ul.auth_menu li.cancel {
   margin-bottom: 20px;
 }
 
-/* line 1046, ../../app/stylesheets/erre.scss */
+/* line 1045, ../../app/stylesheets/erre.scss */
 .field_with_errors {
   margin: 0 !important;
   padding: 0 !important;
 }
-/* line 1049, ../../app/stylesheets/erre.scss */
+/* line 1048, ../../app/stylesheets/erre.scss */
 .field_with_errors label {
   color: #B28181;
 }
-/* line 1053, ../../app/stylesheets/erre.scss */
+/* line 1052, ../../app/stylesheets/erre.scss */
 .field_with_errors input, .field_with_errors textarea {
   background-color: #FFF7F8;
 }
 
-/* line 1061, ../../app/stylesheets/erre.scss */
+/* line 1060, ../../app/stylesheets/erre.scss */
 #posts h1.date {
   margin-top: 20px;
   border: none !important;
 }
-/* line 1066, ../../app/stylesheets/erre.scss */
+/* line 1065, ../../app/stylesheets/erre.scss */
 #posts .date {
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 20px;
 }
-/* line 1072, ../../app/stylesheets/erre.scss */
+/* line 1071, ../../app/stylesheets/erre.scss */
 #posts .post {
   border-top: 1px solid #ddd;
   padding: 20px 10px;
 }
-/* line 1076, ../../app/stylesheets/erre.scss */
+/* line 1075, ../../app/stylesheets/erre.scss */
 #posts .post:hover {
   background-color: #f0f0f0;
 }
-/* line 1081, ../../app/stylesheets/erre.scss */
+/* line 1080, ../../app/stylesheets/erre.scss */
 #posts .post .entry a.link {
   font-weight: bold;
   font-size: 120%;
   margin-right: 4px;
   color: #00418d;
 }
-/* line 1090, ../../app/stylesheets/erre.scss */
+/* line 1089, ../../app/stylesheets/erre.scss */
 #posts .metadata {
   color: #999;
 }
 
-/* line 1095, ../../app/stylesheets/erre.scss */
+/* line 1094, ../../app/stylesheets/erre.scss */
 #post {
   overflow: hidden;
   *zoom: 1;
   margin-top: 20px;
 }
-/* line 1099, ../../app/stylesheets/erre.scss */
+/* line 1098, ../../app/stylesheets/erre.scss */
 #post #entry {
   font-size: 15px;
   float: left;
   width: 670px;
   overflow: auto;
 }
-/* line 1106, ../../app/stylesheets/erre.scss */
+/* line 1105, ../../app/stylesheets/erre.scss */
 #post #entry h1, #post #entry h2, #post #entry h3, #post #entry h4, #post #entry h5 {
   margin: 10px 0;
   padding: 0;
@@ -1426,84 +1426,84 @@ ul.auth_menu li.cancel {
   color: #434343 !important;
   border: none;
 }
-/* line 1114, ../../app/stylesheets/erre.scss */
+/* line 1113, ../../app/stylesheets/erre.scss */
 #post #entry h1 {
   font-size: 16px;
 }
-/* line 1117, ../../app/stylesheets/erre.scss */
+/* line 1116, ../../app/stylesheets/erre.scss */
 #post #entry h2 {
   font-size: 14px;
 }
-/* line 1120, ../../app/stylesheets/erre.scss */
+/* line 1119, ../../app/stylesheets/erre.scss */
 #post #entry h3 {
   font-size: 13px;
 }
-/* line 1123, ../../app/stylesheets/erre.scss */
+/* line 1122, ../../app/stylesheets/erre.scss */
 #post #entry h4 {
   font-size: 12px;
 }
-/* line 1126, ../../app/stylesheets/erre.scss */
+/* line 1125, ../../app/stylesheets/erre.scss */
 #post #entry h5 {
   font-size: 11px;
 }
-/* line 1130, ../../app/stylesheets/erre.scss */
+/* line 1129, ../../app/stylesheets/erre.scss */
 #post #entry p {
   margin: 10px 0;
 }
-/* line 1134, ../../app/stylesheets/erre.scss */
+/* line 1133, ../../app/stylesheets/erre.scss */
 #post #entry a {
   color: #0080bf;
 }
-/* line 1140, ../../app/stylesheets/erre.scss */
+/* line 1139, ../../app/stylesheets/erre.scss */
 #post #metainfo {
   float: right;
   width: 180px;
 }
-/* line 1144, ../../app/stylesheets/erre.scss */
+/* line 1143, ../../app/stylesheets/erre.scss */
 #post #metainfo .author {
   display: block;
   font-weight: bold;
   color: #434343;
 }
-/* line 1150, ../../app/stylesheets/erre.scss */
+/* line 1149, ../../app/stylesheets/erre.scss */
 #post #metainfo .date {
   display: block;
   color: #00418d;
   font-weight: bold;
 }
-/* line 1157, ../../app/stylesheets/erre.scss */
+/* line 1156, ../../app/stylesheets/erre.scss */
 #post #metainfo h2 {
   color: #434343;
   border-bottom: 1px solid #ccc;
   padding-left: 4px;
 }
-/* line 1163, ../../app/stylesheets/erre.scss */
+/* line 1162, ../../app/stylesheets/erre.scss */
 #post #metainfo .menu {
   margin: 15px 0;
 }
-/* line 1166, ../../app/stylesheets/erre.scss */
+/* line 1165, ../../app/stylesheets/erre.scss */
 #post #metainfo .menu ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-/* line 1171, ../../app/stylesheets/erre.scss */
+/* line 1170, ../../app/stylesheets/erre.scss */
 #post #metainfo .menu ul li {
   border-bottom: 1px solid #ddd;
 }
-/* line 1175, ../../app/stylesheets/erre.scss */
+/* line 1174, ../../app/stylesheets/erre.scss */
 #post #metainfo .menu ul li a {
   display: block;
   text-decoration: none;
   color: #555;
   padding-left: 4px;
 }
-/* line 1181, ../../app/stylesheets/erre.scss */
+/* line 1180, ../../app/stylesheets/erre.scss */
 #post #metainfo .menu ul li a:hover {
   background-color: #fbfeea;
 }
 
-/* line 1193, ../../app/stylesheets/erre.scss */
+/* line 1192, ../../app/stylesheets/erre.scss */
 #errorExplanation {
   margin-top: 10px;
   border-color: #E9AAAA;
@@ -1512,47 +1512,47 @@ ul.auth_menu li.cancel {
   padding: 20px;
   margin-bottom: 20px;
 }
-/* line 1201, ../../app/stylesheets/erre.scss */
+/* line 1200, ../../app/stylesheets/erre.scss */
 #errorExplanation h2 {
   margin: 0 !important;
   padding: 0 !important;
   border: 0;
   color: #992224 !important;
 }
-/* line 1208, ../../app/stylesheets/erre.scss */
+/* line 1207, ../../app/stylesheets/erre.scss */
 #errorExplanation p {
   color: #992224 !important;
 }
-/* line 1212, ../../app/stylesheets/erre.scss */
+/* line 1211, ../../app/stylesheets/erre.scss */
 #errorExplanation ul {
   margin: 4px 20px;
 }
 
-/* line 1222, ../../app/stylesheets/erre.scss */
+/* line 1221, ../../app/stylesheets/erre.scss */
 #fourhundred {
   border-top: 1px solid #ccc;
   text-align: left;
 }
-/* line 1226, ../../app/stylesheets/erre.scss */
+/* line 1225, ../../app/stylesheets/erre.scss */
 #fourhundred h1.oops {
   border: none !important;
   font-size: 100px !important;
   text-shadow: 3px 3px 4px #8B8B8B !important;
 }
-/* line 1233, ../../app/stylesheets/erre.scss */
+/* line 1232, ../../app/stylesheets/erre.scss */
 #fourhundred h1.excuses {
   border: none !important;
   font-size: 40px !important;
   line-height: 35px !important;
 }
-/* line 1240, ../../app/stylesheets/erre.scss */
+/* line 1239, ../../app/stylesheets/erre.scss */
 #fourhundred h1.fourofour {
   border: none !important;
   font-size: 40px !important;
   color: #ccc !important;
   text-shadow: none;
 }
-/* line 1247, ../../app/stylesheets/erre.scss */
+/* line 1246, ../../app/stylesheets/erre.scss */
 #fourhundred #nerd {
   position: absolute;
   bottom: 150px;
@@ -1561,30 +1561,30 @@ ul.auth_menu li.cancel {
   padding: 0;
 }
 
-/* line 1256, ../../app/stylesheets/erre.scss */
+/* line 1255, ../../app/stylesheets/erre.scss */
 #denied {
   border-top: 1px solid #ccc;
   text-align: left;
 }
-/* line 1260, ../../app/stylesheets/erre.scss */
+/* line 1259, ../../app/stylesheets/erre.scss */
 #denied h1.access {
   border: none !important;
   font-size: 50px !important;
   text-shadow: 3px 3px 4px #8B8B8B !important;
 }
-/* line 1267, ../../app/stylesheets/erre.scss */
+/* line 1266, ../../app/stylesheets/erre.scss */
 #denied h2.excuses {
   border: none !important;
   font-size: 30px !important;
   line-height: 28px !important;
 }
-/* line 1273, ../../app/stylesheets/erre.scss */
+/* line 1272, ../../app/stylesheets/erre.scss */
 #denied h3.list {
   border: none !important;
   font-size: 20px !important;
   line-height: 35px !important;
 }
-/* line 1279, ../../app/stylesheets/erre.scss */
+/* line 1278, ../../app/stylesheets/erre.scss */
 #denied #nerd {
   position: absolute;
   bottom: 150px;
