@@ -865,6 +865,7 @@ a.button {
 
 
 #members {  
+  @include clearfix;
 
   #metainfo {
     float: right;
