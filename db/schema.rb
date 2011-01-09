@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110101230019) do
+ActiveRecord::Schema.define(:version => 20110104232625) do
 
   create_table "countries", :force => true do |t|
     t.integer  "isonum",                  :null => false
@@ -32,6 +32,7 @@ ActiveRecord::Schema.define(:version => 20110101230019) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "country_id"
+    t.boolean  "telecommute",      :default => false
   end
 
   create_table "job_types", :force => true do |t|
@@ -41,7 +42,7 @@ ActiveRecord::Schema.define(:version => 20110101230019) do
   end
 
   create_table "posts", :force => true do |t|
-    t.string   "title",                       :null => false
+    t.string   "title",        :null => false
     t.string   "url"
     t.text     "content",      :null => false
     t.text     "content_html"
