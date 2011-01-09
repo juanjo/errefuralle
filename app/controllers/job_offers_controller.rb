@@ -20,7 +20,7 @@ class JobOffersController < ApplicationController
       flash[:notice] = 'Oferta de trabajo creada con éxito.'
       redirect_to @job_offer
     else
-      flash[:alert] = 'Algún error al intentar crear Oferta de trabajo.'
+      flash.now[:error] = 'Algún error al intentar crear Oferta de trabajo.'
       render :action => 'new'
     end
   end
@@ -33,7 +33,7 @@ class JobOffersController < ApplicationController
       flash[:notice] = 'Oferta de trabajo modificada con éxito.'
       redirect_to @job_offer
     else
-      flash[:alert] = 'Algún error al modificar crear Oferta de trabajo.'
+      flash.now[:error] = 'Algún error al modificar crear Oferta de trabajo.'
       render :action => 'edit'
     end
   end

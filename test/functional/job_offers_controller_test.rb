@@ -31,11 +31,11 @@ class JobOffersControllerTest < ActionController::TestCase
       assert_not_nil( assigns(:job_offer) )
     end
     
-    should 'return an alert if error in create' do
+    should 'return an error if error in create' do
       JobOffer.any_instance.stubs(:valid?).returns(false)
       post :create
       assert_template 'new'
-      assert_not_nil( flash[:alert] )
+      assert_not_nil( flash[:error] )
     end
     
     should 'create success' do
@@ -54,12 +54,12 @@ class JobOffersControllerTest < ActionController::TestCase
       assert_not_nil( assigns(:job_offer) )
     end
     
-    should 'return an alert if error in update' do
+    should 'return an error if error in update' do
       job_offer = Factory(:job_offer, :user => @user)
       JobOffer.any_instance.stubs(:valid?).returns(false)
       put :update, :id => job_offer.to_param
       assert_template 'edit'
-      assert_not_nil( flash[:alert] )
+      assert_not_nil( flash[:error] )
     end
     
     should 'update valid' do
