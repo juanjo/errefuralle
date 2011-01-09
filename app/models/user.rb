@@ -34,7 +34,7 @@ class User < ActiveRecord::Base
     end
     
     def add_registered_role
-      self.roles << Role.find(Role::REGISTERED)
+      self.roles << Role[:registered]
     end
 
 end

@@ -1,11 +1,5 @@
 # encoding: utf-8
 
-# Roles
-# ////////////////////////////////////////////////////////////
-admin       = Role.create(:name => 'Admin')
-editor      = Role.create(:name => 'Editor')
-registered  = Role.create(:name => 'Registered')
-
 # Usuarios
 # ////////////////////////////////////////////////////////////
 u0 = User.create(:email => 'juanjicho@gmail.com', :password => '219921', :password_confirmation => '219921', :username => 'juanjo')
@@ -16,9 +10,9 @@ u0.confirm!
 u1.confirm!
 u2.confirm!
 
-u0.roles << admin
-u1.roles << admin
-u2.roles << admin
+u0.roles << Role[:admin]
+u1.roles << Role[:admin]
+u2.roles << Role[:admin]
 
 # Tipos de trabajo
 # ////////////////////////////////////////////////////////////
