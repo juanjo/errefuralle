@@ -10,7 +10,6 @@ class RoleTest < ActiveSupport::TestCase
 
   context 'basics' do
     setup do
-      @role  = Factory(:role)
     end
     
     should "return the role it is asked for" do
