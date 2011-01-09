@@ -1,10 +1,7 @@
 Erresauro::Application.routes.draw do
-
   devise_for :users
-  resources :users
   
   resources :members
-
   resources :snippets
   resources :job_offers
   resources :posts
