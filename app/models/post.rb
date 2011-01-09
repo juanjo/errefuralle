@@ -19,7 +19,6 @@ class Post < ActiveRecord::Base
   private
 
     def convert_content
-      return if self.content.nil?
       self.content_html = Moredown.text_to_html(self.content)
     end
 end

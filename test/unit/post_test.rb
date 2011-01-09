@@ -15,16 +15,15 @@ class PostTest < ActiveSupport::TestCase
 
   context 'basics' do
     setup do
-      @post  = Factory(:post)
     end
 
     should 'be converted the content after save' do
-      post  = Factory.build(:post)
+      post = Factory.build(:post)
       assert_nil post.content_html
       post.save
-      assert_not_nil post.content_html      
+      assert_not_nil post.content_html
     end
-
+    
   end
 
 end
