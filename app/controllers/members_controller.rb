@@ -25,7 +25,7 @@ class MembersController < ApplicationController
     
     if @member.update_attributes(params[:user])
       @member.roles.delete_all
-      (params[:role_id] || []).each { |i| @member.roles << Role[i.to_sym] }
+      (params[:role_id] || []).each { |i| @member.roles << Role.find(i) }
       
       flash[:notice] = 'Usuario modificado con éxito.'
       redirect_to members_url
