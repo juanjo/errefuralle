@@ -1,10 +1,15 @@
 # encoding: utf-8
 
+Role::ROLES.each_value do |role|
+  Role.create(:name => role)
+end
+
 # Usuarios
 # ////////////////////////////////////////////////////////////
 u0 = User.create(:email => 'juanjicho@gmail.com', :password => 'XXXXXX', :password_confirmation => 'XXXXXX', :username => 'juanjo')
 u1 = User.create(:email => 'patricia.garcia.gonzalez@gmail.com', :password => 'XXXXXX', :password_confirmation => 'XXXXXX', :username => 'patricia')
 u2 = User.create(:email => 'fguillen.mail@gmail.com', :password => 'XXXXXX', :password_confirmation => 'XXXXXX', :username => 'fguillen')
+
 
 u0.confirm!
 u1.confirm!
@@ -20,7 +25,3 @@ jt1 = JobType.create(:name => 'Tiempo completo')
 jt2 = JobType.create(:name => 'Tiempo parcial')
 jt3 = JobType.create(:name => 'Teletrabajo')
 jt4 = JobType.create(:name => 'Proyecto')
-
-# Mini-Noticias
-# ////////////////////////////////////////////////////////////
-#Post.create(:title => 'La comunidad R Hispana ya cuenta con nueva web', :content => 'Después de una larga espera, y grandes cambios en estos últimos tiempos, hoy ya, podemos anunciar el nuevo website de la comunidad R hispana.', :user => u0)
