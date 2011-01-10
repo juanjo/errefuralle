@@ -12,6 +12,7 @@ class Ability
    
     elsif user.role? :registered
       can [:create, :read], Snippet
+      can [:create, :read], Post
       can :read, JobOffer
 
       can :manage, Snippet do |snippet|
