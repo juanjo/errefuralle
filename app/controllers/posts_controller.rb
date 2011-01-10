@@ -20,6 +20,7 @@ class PostsController < ApplicationController
       flash[:notice] = 'Mini-noticia creada con éxito.'
       redirect_to @post
     else
+      flash.now[:error] = 'Algún error al intentar crear Mini-noticia.'
       render :action => 'new'
     end
   end
@@ -32,6 +33,7 @@ class PostsController < ApplicationController
       flash[:notice] = 'Mini-noticia modificada con éxito.'
       redirect_to @post
     else
+      flash.now[:error] = 'Algún error al intentar modificar Mini-noticia.'
       render :action => 'edit'
     end    
   end
@@ -40,6 +42,5 @@ class PostsController < ApplicationController
     @post.destroy
     flash[:notice] = 'Moni-noticia eliminada.'
     redirect_to posts_url
-    
   end
 end

@@ -3,6 +3,7 @@ class JobOffer < ActiveRecord::Base
   belongs_to :job_type
   belongs_to :country
 
+  validates_uniqueness_of :title
   validates_presence_of :title, :description, :company
   validates_length_of :title, :within => 4..255
   validates_length_of :company, :within => 1..255

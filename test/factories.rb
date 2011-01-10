@@ -22,7 +22,7 @@ Factory.define :job_offer do |f|
   f.sequence(:title)      { |n| "Job Offer #{n}"}
   f.description           "The moon and the stars"
   f.company               "Apple Inc."
-  # f.association           :user
+  f.association           :user
 end
 
 Factory.define :post do |f|

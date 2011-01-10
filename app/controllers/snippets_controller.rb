@@ -25,6 +25,7 @@ class SnippetsController < ApplicationController
       flash[:notice] = 'Fragmento de código creado con éxito.'
       redirect_to @snippet
     else
+      flash.now[:error] = 'Algún error al intentar crear fragmento de código.'
       render :action => 'new'
     end
   end
@@ -37,6 +38,7 @@ class SnippetsController < ApplicationController
       flash[:notice] = 'Fragmento de código actualizado con éxito.'
       redirect_to @snippet
     else
+      flash.now[:error] = 'Algún error al intentar actualizar fragmento de código.'
       render :action => 'edit'
     end
   end
@@ -46,6 +48,4 @@ class SnippetsController < ApplicationController
     flash[:notice] = 'Fragmento de código eliminado.'
     redirect_to snippets_url
   end
-
-
 end

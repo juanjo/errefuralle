@@ -24,7 +24,7 @@ class User < ActiveRecord::Base
   scope :unconfirmed, where('confirmed_at IS NULL')  
 
   def role?(role)
-    return !!self.roles.find_by_name(role.to_s.camelize)
+    return !!self.roles.find_by_name(Role::ROLES[role])
   end
 
   private
@@ -34,7 +34,7 @@ class User < ActiveRecord::Base
     end
     
     def add_registered_role
-      self.roles << Role.find(Role::REGISTERED)
+      self.roles << Role[:registered]
     end
 
 end

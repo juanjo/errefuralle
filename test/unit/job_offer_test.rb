@@ -18,15 +18,9 @@ class JobOfferTest < ActiveSupport::TestCase
 
   context 'basics' do
     setup do
-      @job_offer  = Factory(:job_offer)
-      @user       = Factory(:user)
+      @user = Factory(:user)
+      @user.roles << Role[:admin]
       @user.confirm!
-
-      @admin      = Factory(:role, :name => 'Admin')
-      @editor     = Factory(:role, :name => 'Editor')
-      @registered = Factory(:role, :name => 'Registered')
-
-      @user.roles << @admin
     end
 
     context 'state machine' do
@@ -36,7 +30,11 @@ class JobOfferTest < ActiveSupport::TestCase
       end
 
       should 'have state published after create if the user has the ability' do
-        assert_equal 'published', @job_offer.state
+        user = Factory(:user)
+        user.roles << Role[:admin]
+         
+        job_offer = Factory.create(:job_offer, :user => user)
+        assert_equal 'published', job_offer.state
       end
     end
   end

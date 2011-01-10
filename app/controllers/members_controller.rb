@@ -4,8 +4,8 @@ class MembersController < ApplicationController
 
   def index
     @members      = User.confirmed
-    @admins       = Role.find_by_name('Admin').users.count
-    @editors      = Role.find_by_name('Editor').users.count
+    @admins       = Role[:admin].users.count
+    @editors      = Role[:editor].users.count
     @registered   = User.confirmed.count - @admins - @editors
     @unconfirmed  = User.unconfirmed.count
   end
@@ -25,11 +25,12 @@ class MembersController < ApplicationController
     
     if @member.update_attributes(params[:user])
       @member.roles.delete_all
-      (params[:role_id] || []).each { |i| @member.roles << Role.find(i) }
+      (params[:role_id] || []).each { |i| @member.roles << Role[i.to_sym] }
       
       flash[:notice] = 'Usuario modificado con éxito.'
       redirect_to members_url
     else
+      flash.now[:error] = 'Algún error al intentar modifcar usuario.'
       render :action => 'edit'
     end
     

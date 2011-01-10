@@ -5,6 +5,7 @@ module SnippetsHelper
                      :image => /!\[.*\]\(.+\ ".+"\)/ }
   
   def truncate_snippet(thought, wordcount, clean = false)
+    return ''  if thought.blank?
     thought = regex_cleaner(thought) if clean
     thought.split[0..(wordcount - 1)].join(" ") + (thought.split.size > wordcount ? "..." : "")
   end

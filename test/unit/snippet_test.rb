@@ -14,7 +14,6 @@ class SnippetTest < ActiveSupport::TestCase
 
   context "basics" do
     setup do
-      @snippet = Factory(:snippet)
     end
 
     should 'save the number of lines' do
@@ -33,7 +32,8 @@ class SnippetTest < ActiveSupport::TestCase
       end
 
       should 'have state published after create' do
-        assert_equal 'published', @snippet.state
+        snippet = Factory(:snippet)
+        assert_equal 'published', snippet.state
       end
     end
   end
