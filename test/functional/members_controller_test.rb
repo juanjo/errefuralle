@@ -68,11 +68,13 @@ class MembersControllerTest < ActionController::TestCase
       assert( !user.role?(:editor) )
       assert( user.role?(:admin) )
       
+      role_editor = Role[:editor]
+      
       put(
         :update, 
         :id => user.to_param, 
         :user => { :username => 'new_name' },
-        :role_id => ['editor']
+        :role_id => [role_editor.id]
       )
       
       assert_redirected_to members_url
