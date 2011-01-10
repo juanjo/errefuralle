@@ -8,9 +8,9 @@ registered  = Role.create(:name => 'Registered')
 
 # Usuarios
 # ////////////////////////////////////////////////////////////
-u0 = User.create(:email => 'juanjicho@gmail.com', :password => '219921', :password_confirmation => '219921', :username => 'juanjo')
-u1 = User.create(:email => 'patricia.garcia.gonzalez@gmail.com', :password => 't3qu13r0', :password_confirmation => 't3qu13r0', :username => 'patricia')
-u2 = User.create(:email => 'fguillen.mail@gmail.com', :password => 'pepe', :password_confirmation => 'pepe', :username => 'fguillen')
+u0 = User.create(:email => 'juanjicho@gmail.com', :password => 'XXXXXX', :password_confirmation => 'XXXXXX', :username => 'juanjo')
+u1 = User.create(:email => 'patricia.garcia.gonzalez@gmail.com', :password => 'XXXXXX', :password_confirmation => 'XXXXXX', :username => 'patricia')
+u2 = User.create(:email => 'fguillen.mail@gmail.com', :password => 'XXXXXX', :password_confirmation => 'XXXXXX', :username => 'fguillen')
 
 u0.confirm!
 u1.confirm!

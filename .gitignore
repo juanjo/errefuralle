@@ -11,6 +11,7 @@ config/database.yml
 config/mail.yml
 config/mail_settings.yml
 config/initializers/omniauth.rb
+config/initializers/setup_mail.rb
 public/custom_styles
 public/system
 .DS_Store
