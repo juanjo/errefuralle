@@ -263,6 +263,27 @@ a {
     margin: auto;  
     padding-bottom: 200px;
 
+    #about {
+      h1 {
+        margin-bottom: 25px;
+      }
+      p {
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+      p.hello {
+        text-align: right;
+      }
+      
+      ul.hello {
+        margin-bottom: 10px;
+
+        li {
+          font-size: 16px;
+          margin-bottom: 10px;
+        }
+      }
+    }
 
     #flash {
       padding: 0;
@@ -284,6 +305,8 @@ a {
       text-shadow: 1px 1px 0 #ccc;
       margin: 20px 0 10px 0;
     }
+
+
 
     #markdown {
       pre {

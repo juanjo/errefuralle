@@ -1,4 +1,4 @@
-# encoding: utf-8
+# encoding: UTF-8
 class PostsController < ApplicationController
   load_and_authorize_resource
 
@@ -17,10 +17,10 @@ class PostsController < ApplicationController
   def create
     @post.user = current_user
     if @post.save
-      flash[:notice] = 'Mini-noticia creada con éxito.'
+      flash[:notice] = 'Mini-noticia creada con exito.'
       redirect_to @post
     else
-      flash.now[:error] = 'Algún error al intentar crear Mini-noticia.'
+      flash.now[:error] = 'Algun error al intentar crear Mini-noticia.'
       render :action => 'new'
     end
   end
@@ -30,10 +30,10 @@ class PostsController < ApplicationController
   
   def update
     if @post.update_attributes(params[:post])
-      flash[:notice] = 'Mini-noticia modificada con éxito.'
+      flash[:notice] = 'Mini-noticia modificada con exito.'
       redirect_to @post
     else
-      flash.now[:error] = 'Algún error al intentar modificar Mini-noticia.'
+      flash.now[:error] = 'Algun error al intentar modificar Mini-noticia.'
       render :action => 'edit'
     end    
   end
