@@ -1,2 +1,36 @@
 - content_for :title, "Quienes somos"
-%h1 R-es: Comunidad hispana de usuarios de R-Project
+#about
+  %h1 R-es: Comunidad de Usuarios de R en castellano
+
+  %p
+    Espacio para la difusión de información relacionada con R en castellano.
+
+  %p
+    Al igual que funcionan otros grupos de usuarios de R en todo el mundo, la idea de crear un grupo en castellano está fundamentada en tener un sitio donde encontrar oferta relacionada con R (cursos, empleo, etc) a nivel mas local y no tanto a nivel global donde hay mucha información pero casi siempre nos pilla lejos.
+
+  %p
+    Este es un espacio para poder publicar un curso en una empresa, una Universidad; donde buscar profesionales de R; donde poder explicar en castellano de qué va tu código y enseñarlo a otros usuarios, etc.
+
+  %p
+    Cualquier usuario Hispanohablante está invitado a participar en algunas de nuestras secciones:
+
+  %ul.hello
+    %li
+      %b= link_to 'Mini-Noticias:', posts_url, :title => 'Ir a mini-noticias'
+      Donde podéis publicar desde cursos en empresas, universidades etc; cualquier noticia relacionada con R que queráis compartir; la publicación de algún paquete vuestro en CRAN; etc.
+    %li 
+      %b= link_to 'Ofertas de empleo:', job_offers_url, :title => 'Ir a ofertas de empleo'
+      Espacio donde buscar trabajo en España y latinoamérica o bien colgar ofertas para encontrar profesionales con experiencia en R.
+    %li 
+      %b= link_to 'Fragmentos de código:', snippets_url, :title => 'Ir a Fragmentos de código'
+      Aquí podéis colgar vuestro código y compartirlo con el resto de la comunidad.
+
+  %p
+    Ademas la comunidad de usuarios de R cuenta con una lista de correo para cualquier duda sobre R: 
+    = link_to "https://stat.ethz.ch/mailman/listinfo/r-help-es"
+
+  %p
+    Esperamos que disfrutes del sitio y que nos envíes cualquier sugerencia.
+
+  %p.hello
+    %i Un cordial saludo
